@@ -1,4 +1,4 @@
-# ocs2d : Occupation du Sol 2 Dimensions en Hauts-de-France
+# OCS2d : Occupation du Sol en 2 dimensions en Hauts-de-France
 
 Ressources pour l'exploitation de l'occupation du sol à 2 dimensions des Hauts-de-France.
 
@@ -10,6 +10,7 @@ Ressources pour l'exploitation de l'occupation du sol à 2 dimensions des Hauts-
 
 Fichiers de styles pour QGIS et GeoServer fruit du travail de la plateforme PPIGE.
 Ils correspondent à la sémiologie de la version Nord-Pas-De-Calais selon les millésimes 2005-2015
+```
 └── Styles
     ├── Qml
     │   └── legacy_npdc
@@ -23,6 +24,7 @@ Ils correspondent à la sémiologie de la version Nord-Pas-De-Calais selon les m
         └── legacy_npdc
             ├── sld_cs15.xml
             └── sld_us15.xml
+```
 
 ## ToDo
 
