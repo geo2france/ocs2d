@@ -12,12 +12,12 @@ Ils correspondent à la sémiologie de la version Nord-Pas-De-Calais selon les m
 └── Styles
     ├── Qml
     │   └── legacy_npdc
-    │       ├── cs_niv1.qml
-    │       ├── cs_niv2.qml
-    │       ├── cs_niv3.qml
-    │       ├── us_niv1.qml
-    │       ├── us_niv2.qml
-    │       └── us_niv3.qml
+    │       ├── cs15_niv1.qml
+    │       ├── cs15_niv2.qml
+    │       ├── cs15_niv3.qml
+    │       ├── us15_niv1.qml
+    │       ├── us15_niv2.qml
+    │       └── us15_niv3.qml
     └── Sld
         └── legacy_npdc
             ├── sld_cs15.xml
