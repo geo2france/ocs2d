@@ -1,8 +1,6 @@
 # OCS2d : Occupation du Sol en 2 dimensions en Hauts-de-France
 
-Ressources pour l'exploitation de l'occupation du sol à 2 dimensions des Hauts-de-France.
-
-**Objectifs** : capitaliser les sémiologies, scripts, traitements liés à l'OCS2d
+**Ressources pour l'exploitation de l'occupation du sol à 2 dimensions des Hauts-de-France.**
 
 ## Contenu du dépôt
 
