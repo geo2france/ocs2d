@@ -29,3 +29,9 @@ Ils correspondent à la sémiologie de la version Nord-Pas-De-Calais selon les m
 - MAJ des styles graphiques selon la nomenclature v2021
 - Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN.
 - Ajout du dictionnaire de données 2021
+
+## Licence
+
+GPL-3.0 license
+<https://github.com/geo2france/ocs2d/blob/main/LICENSE>
+
