@@ -29,6 +29,9 @@ Ils correspondent à la sémiologie de la version Nord-Pas-De-Calais selon les m
 - MAJ des styles graphiques selon la nomenclature v2021
 - Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN.
 - Ajout du dictionnaire de données 2021
+- Ajout de la nomenclature 2021 au format csv et xlsx
+- Ajout des projets QGIS de CQP (Contrôle Qualité Partenarial)
+- Documentation d'utilisation des projets QGIS de CQP
 
 ## Licence
 
