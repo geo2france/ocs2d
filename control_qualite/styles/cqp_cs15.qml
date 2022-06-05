@@ -1029,6 +1029,7 @@
       <Option name="QFieldSync/cloud_action" value="offline" type="QString"/>
       <Option name="QFieldSync/photo_naming" value="{}" type="QString"/>
       <Option name="dualview/previewExpressions" type="List">
+        <Option value="&quot;cs21&quot;" type="QString"/>
         <Option value="&quot;Nom&quot;" type="QString"/>
       </Option>
       <Option name="embeddedWidgets/count" value="0" type="int"/>
@@ -1153,7 +1154,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="us21" configurationFlags="None">
+    <field name="cs15" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1163,40 +1164,30 @@
         </config>
       </editWidget>
     </field>
-    <field name="indice21" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="source21" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="comment21" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photovol21" configurationFlags="None">
+    <field name="indice15" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="source15" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option name="IsMultiline" value="false" type="bool"/>
+            <Option name="UseHtml" value="false" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field name="comment15" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option name="IsMultiline" value="false" type="bool"/>
+            <Option name="UseHtml" value="false" type="bool"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -1262,163 +1253,103 @@
           <Option type="Map">
             <Option name="map" type="List">
               <Option type="Map">
-                <Option name="US1.1.1 Prairies" value="US1.1.1" type="QString"/>
+                <Option name="CS1.1.1 Surfaces baties" value="CS1.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.2 Bandes enherbees" value="US1.1.2" type="QString"/>
+                <Option name="CS1.1.2 Surfaces non baties" value="CS1.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.3 Cultures annuelles" value="US1.1.3" type="QString"/>
+                <Option name="CS1.2.1 Surfaces a materiaux mineraux - pierre - terre" value="CS1.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.4 Horticulture - pepinieres" value="US1.1.4" type="QString"/>
+                <Option name="CS1.2.2 Surfaces composees d autres materiaux" value="CS1.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.5 Cultures permanentes" value="US1.1.5" type="QString"/>
+                <Option name="CS2.1.1 Plage de sable" value="CS2.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.6 Autoconsommation" value="US1.1.6" type="QString"/>
+                <Option name="CS2.1.2 Dunes" value="CS2.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.7 Infrastructures agricoles" value="US1.1.7" type="QString"/>
+                <Option name="CS2.1.3 Vasieres et alluvions sableux" value="CS2.1.3" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.1 Zones de coupes" value="US1.2.1" type="QString"/>
+                <Option name="CS2.2.1 Plages de galets et alluvions grossiers" value="CS2.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.2 Peupleraies" value="US1.2.2" type="QString"/>
+                <Option name="CS2.2.2 Cotes rocheuses et falaises" value="CS2.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.3 Plantations recentes" value="US1.2.3" type="QString"/>
+                <Option name="CS3.1.1 Plans d eau" value="CS3.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.4 Autres plantations" value="US1.2.4" type="QString"/>
+                <Option name="CS3.1.2 Cours d eau" value="CS3.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.3.1 Extraction de materiaux en exploitation" value="US1.3.1" type="QString"/>
+                <Option name="CS3.2.1 Zone subtidale saumatre" value="CS3.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.3.2 Terrils en exploitation" value="US1.3.2" type="QString"/>
+                <Option name="CS3.2.2 Mer" value="CS3.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.4.0 Aquaculture - pisciculture" value="US1.4.0" type="QString"/>
+                <Option name="CS4.1.1 Feuillus sur dunes" value="CS4.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.1 Zones industrielles et activites economiques" value="US2.1.1" type="QString"/>
+                <Option name="CS4.1.2 Feuillus" value="CS4.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.2 Zone de stockage ou production d energie fossile" value="US2.1.2" type="QString"/>
+                <Option name="CS4.1.3 Boisements humides" value="CS4.1.3" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.3 Zone de stockage ou production de biogaz" value="US2.1.3" type="QString"/>
+                <Option name="CS4.2.1 Coniferes sur dunes" value="CS4.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.4 Zone de production d energie solaire" value="US2.1.4" type="QString"/>
+                <Option name="CS4.2.2 Coniferes" value="CS4.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.5 Zone de production eolienne" value="US2.1.5" type="QString"/>
+                <Option name="CS4.3.1 Peuplements mixtes sur dunes" value="CS4.3.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.2.0 Zones commerciales" value="US2.2.0" type="QString"/>
+                <Option name="CS4.3.2 Peuplements mixtes ou indetermines" value="CS4.3.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.1 Emprises scolaires - universitaires" value="US3.1.1" type="QString"/>
+                <Option name="CS4.4.0 Vergers" value="CS4.4.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.2 Emprises hospitalieres" value="US3.1.2" type="QString"/>
+                <Option name="CS5.1.1 Landes - fourres - broussailles" value="CS5.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.3 Cimetieres et lieux de culte" value="US3.1.3" type="QString"/>
+                <Option name="CS5.1.2 Fourres et landes humides" value="CS5.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.4 Parkings et places" value="US3.1.4" type="QString"/>
+                <Option name="CS5.1.3 Vegetations arbustives sur dunes" value="CS5.1.3" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.5 Dechetteries et decharges publiques" value="US3.1.5" type="QString"/>
+                <Option name="CS5.2.0 Vignes" value="CS5.2.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.6 Autres emprises collectives" value="US3.1.6" type="QString"/>
+                <Option name="CS6.1.1 Prairies mesophiles" value="CS6.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.1 Parcs et espaces verts paysagers" value="US3.2.1" type="QString"/>
+                <Option name="CS6.1.2 Prairies humides" value="CS6.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.2 Complexes sportifs et terrains de sports" value="US3.2.2" type="QString"/>
+                <Option name="CS6.2.0 Pelouses naturelles" value="CS6.2.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.3 Golfs" value="US3.2.3" type="QString"/>
+                <Option name="CS6.3.0 Terres arables" value="CS6.3.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.4 Campings" value="US3.2.4" type="QString"/>
+                <Option name="CS6.4.1 Formations herbacees humides continentales" value="CS6.4.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.5 Complexes culturels et zones de loisirs" value="US3.2.5" type="QString"/>
+                <Option name="CS6.4.2 Formations herbacees humides maritimes" value="CS6.4.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US4.1.1 Routier principal" value="US4.1.1" type="QString"/>
+                <Option name="CS6.5.0 Formations herbacees sur dunes" value="CS6.5.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US4.1.2 Routier secondaire" value="US4.1.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.2.1 Ferre principal" value="US4.2.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.2.2 Ferre secondaire" value="US4.2.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.3.0 Aerien" value="US4.3.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.4.0 Fluvial et maritime" value="US4.4.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.5.0 Espaces associes aux reseaux de transport" value="US4.5.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.1.1 Habitat continu fortement compact" value="US5.1.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.1.2 Habitat continu moyennement compact" value="US5.1.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.1.3 Habitat continu faiblement compact" value="US5.1.3" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.2.1 Habitat discontinu fortement compact" value="US5.2.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.2.2 Habitat discontinu moyennement compact" value="US5.2.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.2.3 Habitat discontinu faiblement compact" value="US5.2.3" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.3.1 Grands ensembles collectifs" value="US5.3.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.3.2 Collectifs" value="US5.3.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.4.0 Habitat isole" value="US5.4.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.1.1 Chantiers" value="US6.1.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.1.2 Extraction de materiaux en mutation" value="US6.1.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.2.1 Friches economiques" value="US6.2.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.2.2 Vacants urbains" value="US6.2.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.2.3 Espaces agricoles non exploites" value="US6.2.3" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US7.0.0 Usages indetermines" value="US7.0.0" type="QString"/>
+                <Option name="CS6.6.0 Autres couverts a dominante herbacee" value="CS6.6.0" type="QString"/>
               </Option>
             </Option>
           </Option>
@@ -1470,28 +1401,26 @@
   </fieldConfiguration>
   <aliases>
     <alias field="fid" index="0" name=""/>
-    <alias field="us21" index="1" name=""/>
-    <alias field="indice21" index="2" name=""/>
-    <alias field="source21" index="3" name="source"/>
-    <alias field="comment21" index="4" name="comment_producteur"/>
-    <alias field="photovol21" index="5" name=""/>
-    <alias field="area" index="6" name="surface_m2"/>
-    <alias field="id" index="7" name=""/>
-    <alias field="Nom" index="8" name="nom_zone"/>
-    <alias field="etat_cqp" index="9" name="etat_cqp"/>
-    <alias field="code_remplac" index="10" name="code_remplacement"/>
-    <alias field="erreur_geom" index="11" name="erreur_geometrique"/>
-    <alias field="com_cqp" index="12" name="commentaire_cqp"/>
-    <alias field="etat_cqe" index="13" name="valide_cqe"/>
-    <alias field="LIBELLE_NOACCENT" index="14" name="libelle"/>
+    <alias field="cs15" index="1" name=""/>
+    <alias field="indice15" index="2" name=""/>
+    <alias field="source15" index="3" name="source"/>
+    <alias field="comment15" index="4" name="comment_producteur"/>
+    <alias field="area" index="5" name="surface_m2"/>
+    <alias field="id" index="6" name=""/>
+    <alias field="Nom" index="7" name="nom_zone"/>
+    <alias field="etat_cqp" index="8" name="etat_cqp"/>
+    <alias field="code_remplac" index="9" name="code_remplacement"/>
+    <alias field="erreur_geom" index="10" name="erreur_geometrique"/>
+    <alias field="com_cqp" index="11" name="commentaire_cqp"/>
+    <alias field="etat_cqe" index="12" name="valide_cqe"/>
+    <alias field="LIBELLE_NOACCENT" index="13" name="libelle"/>
   </aliases>
   <defaults>
     <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="us21" expression="" applyOnUpdate="0"/>
-    <default field="indice21" expression="" applyOnUpdate="0"/>
-    <default field="source21" expression="" applyOnUpdate="0"/>
-    <default field="comment21" expression="" applyOnUpdate="0"/>
-    <default field="photovol21" expression="" applyOnUpdate="0"/>
+    <default field="cs15" expression="" applyOnUpdate="0"/>
+    <default field="indice15" expression="" applyOnUpdate="0"/>
+    <default field="source15" expression="" applyOnUpdate="0"/>
+    <default field="comment15" expression="" applyOnUpdate="0"/>
     <default field="area" expression="" applyOnUpdate="0"/>
     <default field="id" expression="" applyOnUpdate="0"/>
     <default field="Nom" expression="" applyOnUpdate="0"/>
@@ -1504,11 +1433,10 @@
   </defaults>
   <constraints>
     <constraint field="fid" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="us21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="indice21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="source21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="comment21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="photovol21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="cs15" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="indice15" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="source15" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="comment15" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
     <constraint field="area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
     <constraint field="id" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
     <constraint field="Nom" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
@@ -1521,11 +1449,10 @@
   </constraints>
   <constraintExpressions>
     <constraint field="fid" desc="" exp=""/>
-    <constraint field="us21" desc="" exp=""/>
-    <constraint field="indice21" desc="" exp=""/>
-    <constraint field="source21" desc="" exp=""/>
-    <constraint field="comment21" desc="" exp=""/>
-    <constraint field="photovol21" desc="" exp=""/>
+    <constraint field="cs15" desc="" exp=""/>
+    <constraint field="indice15" desc="" exp=""/>
+    <constraint field="source15" desc="" exp=""/>
+    <constraint field="comment15" desc="" exp=""/>
     <constraint field="area" desc="" exp=""/>
     <constraint field="id" desc="" exp=""/>
     <constraint field="Nom" desc="" exp=""/>
@@ -1543,9 +1470,6 @@
   <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
       <column name="fid" width="-1" hidden="0" type="field"/>
-      <column name="indice21" width="-1" hidden="0" type="field"/>
-      <column name="source21" width="-1" hidden="0" type="field"/>
-      <column name="comment21" width="-1" hidden="0" type="field"/>
       <column name="area" width="-1" hidden="0" type="field"/>
       <column name="id" width="-1" hidden="0" type="field"/>
       <column name="Nom" width="144" hidden="0" type="field"/>
@@ -1555,8 +1479,10 @@
       <column name="com_cqp" width="151" hidden="0" type="field"/>
       <column name="etat_cqe" width="-1" hidden="0" type="field"/>
       <column name="LIBELLE_NOACCENT" width="-1" hidden="0" type="field"/>
-      <column name="us21" width="-1" hidden="0" type="field"/>
-      <column name="photovol21" width="-1" hidden="0" type="field"/>
+      <column name="cs15" width="-1" hidden="0" type="field"/>
+      <column name="indice15" width="-1" hidden="0" type="field"/>
+      <column name="source15" width="-1" hidden="0" type="field"/>
+      <column name="comment15" width="-1" hidden="0" type="field"/>
       <column width="-1" hidden="1" type="actions"/>
     </columns>
   </attributetableconfig>
@@ -1591,19 +1517,19 @@ def my_form_open(dialog, layer, feature):
   <attributeEditorForm>
     <attributeEditorContainer groupBox="0" name="Zones Tests" columnCount="2" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
       <attributeEditorContainer groupBox="1" name="Info Polygone" columnCount="1" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
-        <attributeEditorField index="1" name="us21" showLabel="1"/>
-        <attributeEditorField index="14" name="LIBELLE_NOACCENT" showLabel="1"/>
-        <attributeEditorField index="3" name="source21" showLabel="1"/>
-        <attributeEditorField index="4" name="comment21" showLabel="1"/>
-        <attributeEditorField index="6" name="area" showLabel="1"/>
+        <attributeEditorField index="1" name="cs15" showLabel="1"/>
+        <attributeEditorField index="13" name="LIBELLE_NOACCENT" showLabel="1"/>
+        <attributeEditorField index="3" name="source15" showLabel="1"/>
+        <attributeEditorField index="4" name="comment15" showLabel="1"/>
+        <attributeEditorField index="5" name="area" showLabel="1"/>
       </attributeEditorContainer>
       <attributeEditorContainer groupBox="1" name="Controle Qualite" columnCount="1" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
-        <attributeEditorField index="8" name="Nom" showLabel="1"/>
-        <attributeEditorField index="9" name="etat_cqp" showLabel="1"/>
-        <attributeEditorField index="10" name="code_remplac" showLabel="1"/>
-        <attributeEditorField index="11" name="erreur_geom" showLabel="1"/>
-        <attributeEditorField index="12" name="com_cqp" showLabel="1"/>
-        <attributeEditorField index="13" name="etat_cqe" showLabel="1"/>
+        <attributeEditorField index="7" name="Nom" showLabel="1"/>
+        <attributeEditorField index="8" name="etat_cqp" showLabel="1"/>
+        <attributeEditorField index="9" name="code_remplac" showLabel="1"/>
+        <attributeEditorField index="10" name="erreur_geom" showLabel="1"/>
+        <attributeEditorField index="11" name="com_cqp" showLabel="1"/>
+        <attributeEditorField index="12" name="etat_cqe" showLabel="1"/>
       </attributeEditorContainer>
     </attributeEditorContainer>
   </attributeEditorForm>
@@ -1613,17 +1539,19 @@ def my_form_open(dialog, layer, feature):
     <field editable="0" name="area"/>
     <field editable="1" name="code_remplac"/>
     <field editable="1" name="com_cqp"/>
+    <field editable="0" name="comment15"/>
     <field editable="0" name="comment21"/>
+    <field editable="0" name="cs15"/>
     <field editable="0" name="cs21"/>
     <field editable="1" name="erreur_geom"/>
     <field editable="0" name="etat_cqe"/>
     <field editable="1" name="etat_cqp"/>
     <field editable="1" name="fid"/>
     <field editable="1" name="id"/>
+    <field editable="1" name="indice15"/>
     <field editable="0" name="indice21"/>
-    <field editable="1" name="photovol21"/>
+    <field editable="0" name="source15"/>
     <field editable="0" name="source21"/>
-    <field editable="0" name="us21"/>
   </editable>
   <labelOnTop>
     <field name="LIBELLE_NOACCENT" labelOnTop="0"/>
@@ -1631,17 +1559,19 @@ def my_form_open(dialog, layer, feature):
     <field name="area" labelOnTop="0"/>
     <field name="code_remplac" labelOnTop="0"/>
     <field name="com_cqp" labelOnTop="0"/>
+    <field name="comment15" labelOnTop="0"/>
     <field name="comment21" labelOnTop="0"/>
+    <field name="cs15" labelOnTop="0"/>
     <field name="cs21" labelOnTop="0"/>
     <field name="erreur_geom" labelOnTop="0"/>
     <field name="etat_cqe" labelOnTop="0"/>
     <field name="etat_cqp" labelOnTop="0"/>
     <field name="fid" labelOnTop="0"/>
     <field name="id" labelOnTop="0"/>
+    <field name="indice15" labelOnTop="0"/>
     <field name="indice21" labelOnTop="0"/>
-    <field name="photovol21" labelOnTop="0"/>
+    <field name="source15" labelOnTop="0"/>
     <field name="source21" labelOnTop="0"/>
-    <field name="us21" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
     <field name="LIBELLE_NOACCENT" reuseLastValue="0"/>
@@ -1649,21 +1579,23 @@ def my_form_open(dialog, layer, feature):
     <field name="area" reuseLastValue="0"/>
     <field name="code_remplac" reuseLastValue="0"/>
     <field name="com_cqp" reuseLastValue="0"/>
+    <field name="comment15" reuseLastValue="0"/>
     <field name="comment21" reuseLastValue="0"/>
+    <field name="cs15" reuseLastValue="0"/>
     <field name="cs21" reuseLastValue="0"/>
     <field name="erreur_geom" reuseLastValue="0"/>
     <field name="etat_cqe" reuseLastValue="0"/>
     <field name="etat_cqp" reuseLastValue="0"/>
     <field name="fid" reuseLastValue="0"/>
     <field name="id" reuseLastValue="0"/>
+    <field name="indice15" reuseLastValue="0"/>
     <field name="indice21" reuseLastValue="0"/>
-    <field name="photovol21" reuseLastValue="0"/>
+    <field name="source15" reuseLastValue="0"/>
     <field name="source21" reuseLastValue="0"/>
-    <field name="us21" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
   <previewExpression>"cs21"</previewExpression>
-  <mapTip>[% "cs21" || ' - ' ||  "LIBELLE_NOACCENT"  %]</mapTip>
+  <mapTip>[% "cs15" || ' - ' ||  "LIBELLE_NOACCENT"  %]</mapTip>
   <layerGeometryType>2</layerGeometryType>
 </qgis>

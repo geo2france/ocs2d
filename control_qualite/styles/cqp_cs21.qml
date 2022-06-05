@@ -1,30 +1,30 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis minScale="100000000" simplifyDrawingHints="1" readOnly="0" maxScale="0" labelsEnabled="1" symbologyReferenceScale="-1" simplifyAlgorithm="0" simplifyLocal="1" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" version="3.24.3-Tisler" simplifyDrawingTol="1" simplifyMaxScale="1">
+<qgis maxScale="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" readOnly="0" simplifyMaxScale="1" minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" labelsEnabled="1" simplifyDrawingTol="1" version="3.24.3-Tisler" simplifyAlgorithm="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal endField="" endExpression="" startExpression="" durationUnit="min" accumulate="0" enabled="0" mode="0" limitMode="0" startField="" durationField="fid" fixedDuration="0">
+  <temporal startField="" fixedDuration="0" limitMode="0" startExpression="" durationField="fid" durationUnit="min" accumulate="0" endField="" mode="0" endExpression="" enabled="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" referencescale="-1" type="RuleRenderer">
+  <renderer-v2 forceraster="0" referencescale="-1" symbollevels="0" enableorderby="0" type="RuleRenderer">
     <rules key="{956c065f-bdda-40e7-88f6-2317123335af}">
-      <rule filter="&quot;etat_cqp&quot; = 'erreur'" scalemaxdenom="10000" scalemindenom="1000" label="Erreur" symbol="0" key="{b8d54fcf-714c-4b4c-87af-47699bbfe0b3}"/>
-      <rule filter="&quot;etat_cqp&quot; = 'nsp'" scalemaxdenom="10000" scalemindenom="1000" label="Ne Se Prononce Pas" symbol="1" key="{00f47873-4fae-4264-8c2b-9d48e346b803}"/>
-      <rule filter="&quot;etat_cqp&quot; = 'ok'" scalemaxdenom="10000" scalemindenom="1000" label="OK" symbol="2" key="{7ce9ab7f-ea3d-4ff1-b655-4c59805c1a83}"/>
-      <rule filter="ELSE" scalemaxdenom="10000" scalemindenom="1000" label="Non Verifie" symbol="3" key="{a40f653f-bc74-4087-9d3d-03651a1562ea}"/>
-      <rule filter="&quot;etat_cqp&quot; = 'erreur'" scalemaxdenom="100000" scalemindenom="10000" label="Erreur" symbol="4" key="{5e43d1b9-698e-4fd5-b39a-625cfadd1150}"/>
-      <rule filter="&quot;etat_cqp&quot; = 'nsp'" scalemaxdenom="100000" scalemindenom="10000" label="Ne Se Prononce Pas" symbol="5" key="{be2a0901-02aa-475b-b6c9-e488f8946b2a}"/>
-      <rule filter="&quot;etat_cqp&quot; = 'ok'" scalemaxdenom="100000" scalemindenom="10000" label="OK" symbol="6" key="{6bab8a53-9fc3-4b73-871d-dc8f3a8393bd}"/>
-      <rule filter="ELSE" scalemaxdenom="100000" scalemindenom="10000" label="Non Verifie" symbol="7" key="{96c40256-4fd3-4f32-aab3-01320b4b6a0f}"/>
+      <rule scalemindenom="1000" symbol="0" scalemaxdenom="10000" filter="&quot;etat_cqp&quot; = 'erreur'" label="Erreur" key="{b8d54fcf-714c-4b4c-87af-47699bbfe0b3}"/>
+      <rule scalemindenom="1000" symbol="1" scalemaxdenom="10000" filter="&quot;etat_cqp&quot; = 'nsp'" label="Ne Se Prononce Pas" key="{00f47873-4fae-4264-8c2b-9d48e346b803}"/>
+      <rule scalemindenom="1000" symbol="2" scalemaxdenom="10000" filter="&quot;etat_cqp&quot; = 'ok'" label="OK" key="{7ce9ab7f-ea3d-4ff1-b655-4c59805c1a83}"/>
+      <rule scalemindenom="1000" symbol="3" scalemaxdenom="10000" filter="ELSE" label="Non Verifie" key="{a40f653f-bc74-4087-9d3d-03651a1562ea}"/>
+      <rule scalemindenom="10000" symbol="4" scalemaxdenom="100000" filter="&quot;etat_cqp&quot; = 'erreur'" label="Erreur" key="{5e43d1b9-698e-4fd5-b39a-625cfadd1150}"/>
+      <rule scalemindenom="10000" symbol="5" scalemaxdenom="100000" filter="&quot;etat_cqp&quot; = 'nsp'" label="Ne Se Prononce Pas" key="{be2a0901-02aa-475b-b6c9-e488f8946b2a}"/>
+      <rule scalemindenom="10000" symbol="6" scalemaxdenom="100000" filter="&quot;etat_cqp&quot; = 'ok'" label="OK" key="{6bab8a53-9fc3-4b73-871d-dc8f3a8393bd}"/>
+      <rule scalemindenom="10000" symbol="7" scalemaxdenom="100000" filter="ELSE" label="Non Verifie" key="{96c40256-4fd3-4f32-aab3-01320b4b6a0f}"/>
     </rules>
     <symbols>
-      <symbol name="0" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="0" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -32,7 +32,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+        <layer pass="0" class="SimpleFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="color" value="40,212,221,0" type="QString"/>
@@ -66,7 +66,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="1" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="1" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -74,7 +74,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+        <layer pass="0" class="SimpleFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="color" value="226,111,107,0" type="QString"/>
@@ -108,7 +108,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="2" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="2" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -116,7 +116,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+        <layer pass="0" class="SimpleFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="color" value="187,137,230,0" type="QString"/>
@@ -150,7 +150,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="3" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="3" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -158,7 +158,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+        <layer pass="0" class="SimpleFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="color" value="224,224,224,0" type="QString"/>
@@ -192,7 +192,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="4" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="4" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -200,7 +200,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="CentroidFill" locked="0">
+        <layer pass="0" class="CentroidFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="clip_on_current_part_only" value="0" type="QString"/>
             <Option name="clip_points" value="0" type="QString"/>
@@ -218,7 +218,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@4@0" clip_to_extent="1" force_rhr="0" alpha="1" type="marker">
+          <symbol force_rhr="0" name="@4@0" clip_to_extent="1" alpha="1" type="marker">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -226,7 +226,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="255,23,68,255" type="QString"/>
@@ -273,7 +273,7 @@
                 </Option>
               </data_defined_properties>
             </layer>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="255,23,68,255" type="QString"/>
@@ -323,7 +323,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol name="5" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="5" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -331,7 +331,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="CentroidFill" locked="0">
+        <layer pass="0" class="CentroidFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="clip_on_current_part_only" value="0" type="QString"/>
             <Option name="clip_points" value="0" type="QString"/>
@@ -349,7 +349,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@5@0" clip_to_extent="1" force_rhr="0" alpha="1" type="marker">
+          <symbol force_rhr="0" name="@5@0" clip_to_extent="1" alpha="1" type="marker">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -357,7 +357,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="255,255,255,255" type="QString"/>
@@ -404,7 +404,7 @@
                 </Option>
               </data_defined_properties>
             </layer>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="0,184,212,255" type="QString"/>
@@ -454,7 +454,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol name="6" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="6" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -462,7 +462,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="CentroidFill" locked="0">
+        <layer pass="0" class="CentroidFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="clip_on_current_part_only" value="0" type="QString"/>
             <Option name="clip_points" value="0" type="QString"/>
@@ -480,7 +480,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@6@0" clip_to_extent="1" force_rhr="0" alpha="1" type="marker">
+          <symbol force_rhr="0" name="@6@0" clip_to_extent="1" alpha="1" type="marker">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -488,7 +488,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="100,221,23,255" type="QString"/>
@@ -535,7 +535,7 @@
                 </Option>
               </data_defined_properties>
             </layer>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="100,221,23,255" type="QString"/>
@@ -585,7 +585,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol name="7" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+      <symbol force_rhr="0" name="7" clip_to_extent="1" alpha="1" type="fill">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -593,7 +593,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" pass="0" class="CentroidFill" locked="0">
+        <layer pass="0" class="CentroidFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="clip_on_current_part_only" value="0" type="QString"/>
             <Option name="clip_points" value="0" type="QString"/>
@@ -611,7 +611,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@7@0" clip_to_extent="1" force_rhr="0" alpha="1" type="marker">
+          <symbol force_rhr="0" name="@7@0" clip_to_extent="1" alpha="1" type="marker">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -619,7 +619,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="255,214,0,255" type="QString"/>
@@ -666,7 +666,7 @@
                 </Option>
               </data_defined_properties>
             </layer>
-            <layer enabled="1" pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="color" value="255,214,0,255" type="QString"/>
@@ -717,7 +717,7 @@
         </layer>
       </symbol>
     </symbols>
-    <effect enabled="1" type="effectStack">
+    <effect type="effectStack" enabled="1">
       <effect type="dropShadow">
         <Option type="Map">
           <Option name="blend_mode" value="13" type="QString"/>
@@ -870,12 +870,12 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontWeight="75" fontKerning="1" textColor="255,255,255,255" allowHtml="0" namedStyle="Bold" fontStrikeout="0" fontSizeUnit="Point" isExpression="1" blendMode="0" fieldName=" &quot;cs21&quot; || '_' ||  &quot;LIBELLE_NOACCENT&quot; " fontSize="10" previewBkgrdColor="255,255,255,255" useSubstitutions="0" legendString="Aa" fontFamily="Arial" fontWordSpacing="0" fontUnderline="0" fontItalic="0" capitalization="0" textOrientation="horizontal" textOpacity="1" fontLetterSpacing="0" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0">
+      <text-style capitalization="0" blendMode="0" textOrientation="horizontal" fontWeight="75" legendString="Aa" namedStyle="Bold" fontLetterSpacing="0" fieldName=" &quot;cs21&quot; || '_' ||  &quot;LIBELLE_NOACCENT&quot; " allowHtml="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontStrikeout="0" fontSize="10" previewBkgrdColor="255,255,255,255" isExpression="1" fontKerning="1" textOpacity="1" fontSizeUnit="Point" multilineHeight="1" fontWordSpacing="0" fontFamily="Arial" useSubstitutions="0" textColor="255,255,255,255" fontItalic="0" fontUnderline="0">
         <families/>
-        <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1" bufferColor="0,0,0,255" bufferJoinStyle="128" bufferSizeUnits="MM" bufferBlendMode="0" bufferOpacity="1" bufferDraw="1" bufferSize="0.80000000000000004"/>
-        <text-mask maskEnabled="0" maskOpacity="1" maskSize="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskJoinStyle="128" maskSizeUnits="MM" maskType="0"/>
-        <background shapeOffsetX="0" shapeRadiiUnit="Point" shapeBorderColor="128,128,128,255" shapeOffsetUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeRotationType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="Point" shapeSizeX="0" shapeRadiiX="0" shapeRotation="0" shapeSizeY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeSizeType="0" shapeOpacity="1" shapeDraw="0" shapeSVGFile="" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidth="0" shapeBlendMode="0" shapeOffsetY="0" shapeSizeUnit="Point" shapeRadiiY="0" shapeType="0">
-          <symbol name="markerSymbol" clip_to_extent="1" force_rhr="0" alpha="1" type="marker">
+        <text-buffer bufferSizeUnits="MM" bufferDraw="1" bufferColor="0,0,0,255" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSize="0.80000000000000004" bufferNoFill="1" bufferJoinStyle="128"/>
+        <text-mask maskedSymbolLayers="" maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskEnabled="0" maskSizeUnits="MM" maskType="0" maskSize="0"/>
+        <background shapeOffsetX="0" shapeSizeUnit="Point" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="Point" shapeSizeX="0" shapeType="0" shapeBlendMode="0" shapeOffsetY="0" shapeRadiiUnit="Point" shapeOpacity="1" shapeBorderWidthUnit="Point" shapeRadiiX="0" shapeBorderColor="128,128,128,255" shapeJoinStyle="64" shapeSVGFile="" shapeRotationType="0" shapeRotation="0" shapeRadiiY="0" shapeSizeY="0" shapeBorderWidth="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeType="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0">
+          <symbol force_rhr="0" name="markerSymbol" clip_to_extent="1" alpha="1" type="marker">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -883,7 +883,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" pass="0" class="SimpleMarker" locked="0">
+            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="cap_style" value="square" type="QString"/>
@@ -933,7 +933,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="fillSymbol" clip_to_extent="1" force_rhr="0" alpha="1" type="fill">
+          <symbol force_rhr="0" name="fillSymbol" clip_to_extent="1" alpha="1" type="fill">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -941,7 +941,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" pass="0" class="SimpleFill" locked="0">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
                 <Option name="color" value="255,255,255,255" type="QString"/>
@@ -976,7 +976,7 @@
             </layer>
           </symbol>
         </background>
-        <shadow shadowUnder="0" shadowOffsetUnit="MM" shadowRadiusUnit="MM" shadowOffsetDist="1" shadowRadius="1.5" shadowScale="100" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0.69999999999999996" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowBlendMode="6" shadowDraw="0"/>
+        <shadow shadowDraw="0" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetAngle="135" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0.69999999999999996" shadowOffsetDist="1" shadowColor="0,0,0,255" shadowScale="100"/>
         <dd_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -986,9 +986,9 @@
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format reverseDirectionSymbol="0" leftDirectionSymbol="&lt;" addDirectionSymbol="0" formatNumbers="0" wrapChar="_" useMaxLineLengthForAutoWrap="1" plussign="0" rightDirectionSymbol=">" decimals="3" autoWrapLength="0" multilineAlign="3" placeDirectionSymbol="0"/>
-      <placement layerType="PolygonGeometry" priority="5" placement="1" maxCurvedCharAngleOut="-25" dist="0" placementFlags="10" preserveRotation="1" rotationUnit="AngleDegrees" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" yOffset="0" offsetUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorClipping="0" geometryGenerator="" overrunDistance="0" geometryGeneratorType="PointGeometry" offsetType="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" polygonPlacementFlags="3" rotationAngle="0" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" xOffset="0" centroidInside="0" centroidWhole="1" quadOffset="1" repeatDistance="0" repeatDistanceUnits="MM" fitInPolygonOnly="0" distUnits="MM" lineAnchorType="0"/>
-      <rendering scaleVisibility="1" drawLabels="1" zIndex="0" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" scaleMin="500" maxNumLabels="2000" obstacle="1" upsidedownLabels="0" obstacleType="1" mergeLines="0" fontMaxPixelSize="10000" obstacleFactor="1" unplacedVisibility="0" displayAll="0" scaleMax="5000" fontLimitPixelSize="0" minFeatureSize="0"/>
+      <text-format decimals="3" useMaxLineLengthForAutoWrap="1" wrapChar="_" leftDirectionSymbol="&lt;" plussign="0" multilineAlign="3" placeDirectionSymbol="0" autoWrapLength="0" reverseDirectionSymbol="0" formatNumbers="0" addDirectionSymbol="0" rightDirectionSymbol=">"/>
+      <placement placementFlags="10" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorPercent="0.5" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" fitInPolygonOnly="0" dist="0" rotationUnit="AngleDegrees" layerType="PolygonGeometry" geometryGenerator="" maxCurvedCharAngleOut="-25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" overrunDistance="0" overrunDistanceUnit="MM" quadOffset="1" polygonPlacementFlags="3" centroidInside="0" xOffset="0" maxCurvedCharAngleIn="25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" offsetType="0" geometryGeneratorType="PointGeometry" placement="1" lineAnchorType="0" centroidWhole="1" geometryGeneratorEnabled="0" preserveRotation="1" priority="5" lineAnchorClipping="0" distUnits="MM" yOffset="0" rotationAngle="0" offsetUnits="MM"/>
+      <rendering obstacle="1" fontMaxPixelSize="10000" fontMinPixelSize="3" minFeatureSize="0" drawLabels="1" labelPerPart="0" unplacedVisibility="0" obstacleType="1" fontLimitPixelSize="0" limitNumLabels="0" upsidedownLabels="0" scaleMax="5000" displayAll="0" maxNumLabels="2000" zIndex="0" scaleMin="500" obstacleFactor="1" mergeLines="0" scaleVisibility="1"/>
       <dd_properties>
         <Option type="Map">
           <Option name="name" value="" type="QString"/>
@@ -1008,7 +1008,7 @@
           <Option name="drawToAllParts" value="false" type="bool"/>
           <Option name="enabled" value="0" type="QString"/>
           <Option name="labelAnchorPoint" value="point_on_exterior" type="QString"/>
-          <Option name="lineSymbol" value="&lt;symbol name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; type=&quot;line&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; value=&quot;&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; value=&quot;collection&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;capstyle&quot; value=&quot;square&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash&quot; value=&quot;5;2&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;joinstyle&quot; value=&quot;bevel&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_color&quot; value=&quot;60,60,60,255&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_style&quot; value=&quot;solid&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_width&quot; value=&quot;0.3&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_width_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;ring_filter&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;use_custom_dash&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_end_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;trim_distance_start&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_start_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_start_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; value=&quot;&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; value=&quot;collection&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString"/>
+          <Option name="lineSymbol" value="&lt;symbol force_rhr=&quot;0&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; value=&quot;&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; value=&quot;collection&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; enabled=&quot;1&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;capstyle&quot; value=&quot;square&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash&quot; value=&quot;5;2&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;joinstyle&quot; value=&quot;bevel&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_color&quot; value=&quot;60,60,60,255&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_style&quot; value=&quot;solid&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_width&quot; value=&quot;0.3&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_width_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;ring_filter&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;use_custom_dash&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_end_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;trim_distance_start&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_start_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_start_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; value=&quot;&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; value=&quot;collection&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString"/>
           <Option name="minLength" value="0" type="double"/>
           <Option name="minLengthMapUnitScale" value="3x:0,0,0,0,0,0" type="QString"/>
           <Option name="minLengthUnit" value="MM" type="QString"/>
@@ -1040,11 +1040,11 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory backgroundAlpha="255" sizeType="MM" minScaleDenominator="0" penWidth="0" spacing="5" labelPlacementMethod="XHeight" diagramOrientation="Up" backgroundColor="#ffffff" showAxis="1" maxScaleDenominator="1e+08" width="15" scaleBasedVisibility="0" spacingUnit="MM" height="15" sizeScale="3x:0,0,0,0,0,0" penAlpha="255" barWidth="5" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" opacity="1" rotationOffset="270" enabled="0" direction="0" penColor="#000000" lineSizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" minimumSize="0">
-      <fontProperties style="" description="Fira Sans Semi-Light,10,-1,5,50,0,0,0,0,0"/>
-      <attribute field="" color="#000000" label=""/>
+    <DiagramCategory spacingUnit="MM" backgroundAlpha="255" direction="0" showAxis="1" scaleBasedVisibility="0" diagramOrientation="Up" spacingUnitScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" minimumSize="0" backgroundColor="#ffffff" minScaleDenominator="0" width="15" penAlpha="255" penColor="#000000" height="15" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" spacing="5" penWidth="0" rotationOffset="270" opacity="1" scaleDependency="Area" barWidth="5" enabled="0" labelPlacementMethod="XHeight">
+      <fontProperties description="Fira Sans Semi-Light,10,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute field="" label="" color="#000000"/>
       <axisSymbol>
-        <symbol name="" clip_to_extent="1" force_rhr="0" alpha="1" type="line">
+        <symbol force_rhr="0" name="" clip_to_extent="1" alpha="1" type="line">
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" value="" type="QString"/>
@@ -1052,7 +1052,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <layer enabled="1" pass="0" class="SimpleLine" locked="0">
+          <layer pass="0" class="SimpleLine" locked="0" enabled="1">
             <Option type="Map">
               <Option name="align_dash_pattern" value="0" type="QString"/>
               <Option name="capstyle" value="square" type="QString"/>
@@ -1121,7 +1121,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="1" dist="0" showAll="1" linePlacementFlags="18" obstacle="0" zIndex="0" priority="0">
+  <DiagramLayerSettings priority="0" placement="1" obstacle="0" showAll="1" linePlacementFlags="18" zIndex="0" dist="0">
     <properties>
       <Option type="Map">
         <Option name="name" value="" type="QString"/>
@@ -1140,7 +1140,7 @@
       </Option>
     </checkConfiguration>
   </geometryOptions>
-  <legend type="default-vector" showLabelLegend="0"/>
+  <legend showLabelLegend="0" type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
     <field name="fid" configurationFlags="None">
@@ -1153,7 +1153,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="us21" configurationFlags="None">
+    <field name="cs21" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1190,13 +1190,6 @@
             <Option name="IsMultiline" value="false" type="bool"/>
             <Option name="UseHtml" value="false" type="bool"/>
           </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photovol21" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
         </config>
       </editWidget>
     </field>
@@ -1262,163 +1255,103 @@
           <Option type="Map">
             <Option name="map" type="List">
               <Option type="Map">
-                <Option name="US1.1.1 Prairies" value="US1.1.1" type="QString"/>
+                <Option name="CS1.1.1 Surfaces baties" value="CS1.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.2 Bandes enherbees" value="US1.1.2" type="QString"/>
+                <Option name="CS1.1.2 Surfaces non baties" value="CS1.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.3 Cultures annuelles" value="US1.1.3" type="QString"/>
+                <Option name="CS1.2.1 Surfaces a materiaux mineraux - pierre - terre" value="CS1.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.4 Horticulture - pepinieres" value="US1.1.4" type="QString"/>
+                <Option name="CS1.2.2 Surfaces composees d autres materiaux" value="CS1.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.5 Cultures permanentes" value="US1.1.5" type="QString"/>
+                <Option name="CS2.1.1 Plage de sable" value="CS2.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.6 Autoconsommation" value="US1.1.6" type="QString"/>
+                <Option name="CS2.1.2 Dunes" value="CS2.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.1.7 Infrastructures agricoles" value="US1.1.7" type="QString"/>
+                <Option name="CS2.1.3 Vasieres et alluvions sableux" value="CS2.1.3" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.1 Zones de coupes" value="US1.2.1" type="QString"/>
+                <Option name="CS2.2.1 Plages de galets et alluvions grossiers" value="CS2.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.2 Peupleraies" value="US1.2.2" type="QString"/>
+                <Option name="CS2.2.2 Cotes rocheuses et falaises" value="CS2.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.3 Plantations recentes" value="US1.2.3" type="QString"/>
+                <Option name="CS3.1.1 Plans d eau" value="CS3.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.2.4 Autres plantations" value="US1.2.4" type="QString"/>
+                <Option name="CS3.1.2 Cours d eau" value="CS3.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.3.1 Extraction de materiaux en exploitation" value="US1.3.1" type="QString"/>
+                <Option name="CS3.2.1 Zone subtidale saumatre" value="CS3.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.3.2 Terrils en exploitation" value="US1.3.2" type="QString"/>
+                <Option name="CS3.2.2 Mer" value="CS3.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US1.4.0 Aquaculture - pisciculture" value="US1.4.0" type="QString"/>
+                <Option name="CS4.1.1 Feuillus sur dunes" value="CS4.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.1 Zones industrielles et activites economiques" value="US2.1.1" type="QString"/>
+                <Option name="CS4.1.2 Feuillus" value="CS4.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.2 Zone de stockage ou production d energie fossile" value="US2.1.2" type="QString"/>
+                <Option name="CS4.1.3 Boisements humides" value="CS4.1.3" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.3 Zone de stockage ou production de biogaz" value="US2.1.3" type="QString"/>
+                <Option name="CS4.2.1 Coniferes sur dunes" value="CS4.2.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.4 Zone de production d energie solaire" value="US2.1.4" type="QString"/>
+                <Option name="CS4.2.2 Coniferes" value="CS4.2.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.1.5 Zone de production eolienne" value="US2.1.5" type="QString"/>
+                <Option name="CS4.3.1 Peuplements mixtes sur dunes" value="CS4.3.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US2.2.0 Zones commerciales" value="US2.2.0" type="QString"/>
+                <Option name="CS4.3.2 Peuplements mixtes ou indetermines" value="CS4.3.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.1 Emprises scolaires - universitaires" value="US3.1.1" type="QString"/>
+                <Option name="CS4.4.0 Vergers" value="CS4.4.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.2 Emprises hospitalieres" value="US3.1.2" type="QString"/>
+                <Option name="CS5.1.1 Landes - fourres - broussailles" value="CS5.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.3 Cimetieres et lieux de culte" value="US3.1.3" type="QString"/>
+                <Option name="CS5.1.2 Fourres et landes humides" value="CS5.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.4 Parkings et places" value="US3.1.4" type="QString"/>
+                <Option name="CS5.1.3 Vegetations arbustives sur dunes" value="CS5.1.3" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.5 Dechetteries et decharges publiques" value="US3.1.5" type="QString"/>
+                <Option name="CS5.2.0 Vignes" value="CS5.2.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.1.6 Autres emprises collectives" value="US3.1.6" type="QString"/>
+                <Option name="CS6.1.1 Prairies mesophiles" value="CS6.1.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.1 Parcs et espaces verts paysagers" value="US3.2.1" type="QString"/>
+                <Option name="CS6.1.2 Prairies humides" value="CS6.1.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.2 Complexes sportifs et terrains de sports" value="US3.2.2" type="QString"/>
+                <Option name="CS6.2.0 Pelouses naturelles" value="CS6.2.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.3 Golfs" value="US3.2.3" type="QString"/>
+                <Option name="CS6.3.0 Terres arables" value="CS6.3.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.4 Campings" value="US3.2.4" type="QString"/>
+                <Option name="CS6.4.1 Formations herbacees humides continentales" value="CS6.4.1" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US3.2.5 Complexes culturels et zones de loisirs" value="US3.2.5" type="QString"/>
+                <Option name="CS6.4.2 Formations herbacees humides maritimes" value="CS6.4.2" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US4.1.1 Routier principal" value="US4.1.1" type="QString"/>
+                <Option name="CS6.5.0 Formations herbacees sur dunes" value="CS6.5.0" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="US4.1.2 Routier secondaire" value="US4.1.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.2.1 Ferre principal" value="US4.2.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.2.2 Ferre secondaire" value="US4.2.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.3.0 Aerien" value="US4.3.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.4.0 Fluvial et maritime" value="US4.4.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US4.5.0 Espaces associes aux reseaux de transport" value="US4.5.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.1.1 Habitat continu fortement compact" value="US5.1.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.1.2 Habitat continu moyennement compact" value="US5.1.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.1.3 Habitat continu faiblement compact" value="US5.1.3" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.2.1 Habitat discontinu fortement compact" value="US5.2.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.2.2 Habitat discontinu moyennement compact" value="US5.2.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.2.3 Habitat discontinu faiblement compact" value="US5.2.3" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.3.1 Grands ensembles collectifs" value="US5.3.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.3.2 Collectifs" value="US5.3.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US5.4.0 Habitat isole" value="US5.4.0" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.1.1 Chantiers" value="US6.1.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.1.2 Extraction de materiaux en mutation" value="US6.1.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.2.1 Friches economiques" value="US6.2.1" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.2.2 Vacants urbains" value="US6.2.2" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US6.2.3 Espaces agricoles non exploites" value="US6.2.3" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="US7.0.0 Usages indetermines" value="US7.0.0" type="QString"/>
+                <Option name="CS6.6.0 Autres couverts a dominante herbacee" value="CS6.6.0" type="QString"/>
               </Option>
             </Option>
           </Option>
@@ -1469,94 +1402,89 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="fid" index="0" name=""/>
-    <alias field="us21" index="1" name=""/>
-    <alias field="indice21" index="2" name=""/>
-    <alias field="source21" index="3" name="source"/>
-    <alias field="comment21" index="4" name="comment_producteur"/>
-    <alias field="photovol21" index="5" name=""/>
-    <alias field="area" index="6" name="surface_m2"/>
-    <alias field="id" index="7" name=""/>
-    <alias field="Nom" index="8" name="nom_zone"/>
-    <alias field="etat_cqp" index="9" name="etat_cqp"/>
-    <alias field="code_remplac" index="10" name="code_remplacement"/>
-    <alias field="erreur_geom" index="11" name="erreur_geometrique"/>
-    <alias field="com_cqp" index="12" name="commentaire_cqp"/>
-    <alias field="etat_cqe" index="13" name="valide_cqe"/>
-    <alias field="LIBELLE_NOACCENT" index="14" name="libelle"/>
+    <alias name="" index="0" field="fid"/>
+    <alias name="" index="1" field="cs21"/>
+    <alias name="" index="2" field="indice21"/>
+    <alias name="source" index="3" field="source21"/>
+    <alias name="comment_producteur" index="4" field="comment21"/>
+    <alias name="surface_m2" index="5" field="area"/>
+    <alias name="" index="6" field="id"/>
+    <alias name="nom_zone" index="7" field="Nom"/>
+    <alias name="etat_cqp" index="8" field="etat_cqp"/>
+    <alias name="code_remplacement" index="9" field="code_remplac"/>
+    <alias name="erreur_geometrique" index="10" field="erreur_geom"/>
+    <alias name="commentaire_cqp" index="11" field="com_cqp"/>
+    <alias name="valide_cqe" index="12" field="etat_cqe"/>
+    <alias name="libelle" index="13" field="LIBELLE_NOACCENT"/>
   </aliases>
   <defaults>
-    <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="us21" expression="" applyOnUpdate="0"/>
-    <default field="indice21" expression="" applyOnUpdate="0"/>
-    <default field="source21" expression="" applyOnUpdate="0"/>
-    <default field="comment21" expression="" applyOnUpdate="0"/>
-    <default field="photovol21" expression="" applyOnUpdate="0"/>
-    <default field="area" expression="" applyOnUpdate="0"/>
-    <default field="id" expression="" applyOnUpdate="0"/>
-    <default field="Nom" expression="" applyOnUpdate="0"/>
-    <default field="etat_cqp" expression="CASE &#xa;WHEN &quot;code_remplac&quot; IS NULL AND &quot;erreur_geom&quot; = 0 AND &quot;etat_cqp&quot; != 'nsp' THEN 'ok'&#xa;WHEN &quot;code_remplac&quot; IS NOT NULL OR &quot;erreur_geom&quot; = 1 THEN 'erreur' &#xa;WHEN &quot;etat_cqp&quot; = 'nsp' THEN  'nsp'&#xa;WHEN &quot;etat_cqp&quot; = 'ok' THEN  'ok'&#xa;ELSE 'noverif'&#xa;END" applyOnUpdate="1"/>
-    <default field="code_remplac" expression="" applyOnUpdate="0"/>
-    <default field="erreur_geom" expression="0" applyOnUpdate="0"/>
-    <default field="com_cqp" expression="" applyOnUpdate="0"/>
-    <default field="etat_cqe" expression="0" applyOnUpdate="0"/>
-    <default field="LIBELLE_NOACCENT" expression="" applyOnUpdate="0"/>
+    <default field="fid" applyOnUpdate="0" expression=""/>
+    <default field="cs21" applyOnUpdate="0" expression=""/>
+    <default field="indice21" applyOnUpdate="0" expression=""/>
+    <default field="source21" applyOnUpdate="0" expression=""/>
+    <default field="comment21" applyOnUpdate="0" expression=""/>
+    <default field="area" applyOnUpdate="0" expression=""/>
+    <default field="id" applyOnUpdate="0" expression=""/>
+    <default field="Nom" applyOnUpdate="0" expression=""/>
+    <default field="etat_cqp" applyOnUpdate="1" expression="CASE &#xa;WHEN &quot;code_remplac&quot; IS NULL AND &quot;erreur_geom&quot; = 0 AND &quot;etat_cqp&quot; != 'nsp' THEN 'ok'&#xa;WHEN &quot;code_remplac&quot; IS NOT NULL OR &quot;erreur_geom&quot; = 1 THEN 'erreur' &#xa;WHEN &quot;etat_cqp&quot; = 'nsp' THEN  'nsp'&#xa;WHEN &quot;etat_cqp&quot; = 'ok' THEN  'ok'&#xa;ELSE 'noverif'&#xa;END"/>
+    <default field="code_remplac" applyOnUpdate="0" expression=""/>
+    <default field="erreur_geom" applyOnUpdate="0" expression="0"/>
+    <default field="com_cqp" applyOnUpdate="0" expression=""/>
+    <default field="etat_cqe" applyOnUpdate="0" expression="0"/>
+    <default field="LIBELLE_NOACCENT" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint field="fid" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="us21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="indice21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="source21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="comment21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="photovol21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="id" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="Nom" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="etat_cqp" unique_strength="0" notnull_strength="2" constraints="1" exp_strength="0"/>
-    <constraint field="code_remplac" unique_strength="0" notnull_strength="0" constraints="4" exp_strength="2"/>
-    <constraint field="erreur_geom" unique_strength="0" notnull_strength="0" constraints="4" exp_strength="2"/>
-    <constraint field="com_cqp" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="etat_cqe" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="LIBELLE_NOACCENT" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="fid" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="cs21" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="indice21" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="source21" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="comment21" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="area" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="id" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="Nom" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="2" constraints="1" field="etat_cqp" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="4" field="code_remplac" exp_strength="2"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="4" field="erreur_geom" exp_strength="2"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="com_cqp" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="etat_cqe" exp_strength="0"/>
+    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="LIBELLE_NOACCENT" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="fid" desc="" exp=""/>
-    <constraint field="us21" desc="" exp=""/>
-    <constraint field="indice21" desc="" exp=""/>
-    <constraint field="source21" desc="" exp=""/>
-    <constraint field="comment21" desc="" exp=""/>
-    <constraint field="photovol21" desc="" exp=""/>
-    <constraint field="area" desc="" exp=""/>
-    <constraint field="id" desc="" exp=""/>
-    <constraint field="Nom" desc="" exp=""/>
-    <constraint field="etat_cqp" desc="" exp=""/>
-    <constraint field="code_remplac" desc="Le champ état doit être en erreur pour proposer un nouveau code" exp=" &quot;etat_cqp&quot; = 'erreur' "/>
-    <constraint field="erreur_geom" desc="Le champ état doit être en erreur pour cocher cette case" exp=" &quot;etat_cqp&quot; = 'erreur' "/>
-    <constraint field="com_cqp" desc="" exp=""/>
-    <constraint field="etat_cqe" desc="" exp=""/>
-    <constraint field="LIBELLE_NOACCENT" desc="" exp=""/>
+    <constraint desc="" field="fid" exp=""/>
+    <constraint desc="" field="cs21" exp=""/>
+    <constraint desc="" field="indice21" exp=""/>
+    <constraint desc="" field="source21" exp=""/>
+    <constraint desc="" field="comment21" exp=""/>
+    <constraint desc="" field="area" exp=""/>
+    <constraint desc="" field="id" exp=""/>
+    <constraint desc="" field="Nom" exp=""/>
+    <constraint desc="" field="etat_cqp" exp=""/>
+    <constraint desc="Le champ état doit être en erreur pour proposer un nouveau code" field="code_remplac" exp=" &quot;etat_cqp&quot; = 'erreur' "/>
+    <constraint desc="Le champ état doit être en erreur pour cocher cette case" field="erreur_geom" exp=" &quot;etat_cqp&quot; = 'erreur' "/>
+    <constraint desc="" field="com_cqp" exp=""/>
+    <constraint desc="" field="etat_cqe" exp=""/>
+    <constraint desc="" field="LIBELLE_NOACCENT" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
     <columns>
-      <column name="fid" width="-1" hidden="0" type="field"/>
-      <column name="indice21" width="-1" hidden="0" type="field"/>
-      <column name="source21" width="-1" hidden="0" type="field"/>
-      <column name="comment21" width="-1" hidden="0" type="field"/>
-      <column name="area" width="-1" hidden="0" type="field"/>
-      <column name="id" width="-1" hidden="0" type="field"/>
-      <column name="Nom" width="144" hidden="0" type="field"/>
-      <column name="etat_cqp" width="216" hidden="0" type="field"/>
-      <column name="code_remplac" width="218" hidden="0" type="field"/>
-      <column name="erreur_geom" width="211" hidden="0" type="field"/>
-      <column name="com_cqp" width="151" hidden="0" type="field"/>
-      <column name="etat_cqe" width="-1" hidden="0" type="field"/>
-      <column name="LIBELLE_NOACCENT" width="-1" hidden="0" type="field"/>
-      <column name="us21" width="-1" hidden="0" type="field"/>
-      <column name="photovol21" width="-1" hidden="0" type="field"/>
+      <column width="-1" name="fid" hidden="0" type="field"/>
+      <column width="-1" name="cs21" hidden="0" type="field"/>
+      <column width="-1" name="indice21" hidden="0" type="field"/>
+      <column width="-1" name="source21" hidden="0" type="field"/>
+      <column width="-1" name="comment21" hidden="0" type="field"/>
+      <column width="-1" name="area" hidden="0" type="field"/>
+      <column width="-1" name="id" hidden="0" type="field"/>
+      <column width="144" name="Nom" hidden="0" type="field"/>
+      <column width="216" name="etat_cqp" hidden="0" type="field"/>
+      <column width="218" name="code_remplac" hidden="0" type="field"/>
+      <column width="211" name="erreur_geom" hidden="0" type="field"/>
+      <column width="151" name="com_cqp" hidden="0" type="field"/>
+      <column width="-1" name="etat_cqe" hidden="0" type="field"/>
+      <column width="-1" name="LIBELLE_NOACCENT" hidden="0" type="field"/>
       <column width="-1" hidden="1" type="actions"/>
     </columns>
   </attributetableconfig>
@@ -1589,59 +1517,55 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorContainer groupBox="0" name="Zones Tests" columnCount="2" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
-      <attributeEditorContainer groupBox="1" name="Info Polygone" columnCount="1" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
-        <attributeEditorField index="1" name="us21" showLabel="1"/>
-        <attributeEditorField index="14" name="LIBELLE_NOACCENT" showLabel="1"/>
-        <attributeEditorField index="3" name="source21" showLabel="1"/>
-        <attributeEditorField index="4" name="comment21" showLabel="1"/>
-        <attributeEditorField index="6" name="area" showLabel="1"/>
+    <attributeEditorContainer groupBox="0" visibilityExpression="" name="Zones Tests" columnCount="2" showLabel="1" visibilityExpressionEnabled="0">
+      <attributeEditorContainer groupBox="1" visibilityExpression="" name="Info Polygone" columnCount="1" showLabel="1" visibilityExpressionEnabled="0">
+        <attributeEditorField name="cs21" index="1" showLabel="1"/>
+        <attributeEditorField name="LIBELLE_NOACCENT" index="13" showLabel="1"/>
+        <attributeEditorField name="source21" index="3" showLabel="1"/>
+        <attributeEditorField name="comment21" index="4" showLabel="1"/>
+        <attributeEditorField name="area" index="5" showLabel="1"/>
       </attributeEditorContainer>
-      <attributeEditorContainer groupBox="1" name="Controle Qualite" columnCount="1" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
-        <attributeEditorField index="8" name="Nom" showLabel="1"/>
-        <attributeEditorField index="9" name="etat_cqp" showLabel="1"/>
-        <attributeEditorField index="10" name="code_remplac" showLabel="1"/>
-        <attributeEditorField index="11" name="erreur_geom" showLabel="1"/>
-        <attributeEditorField index="12" name="com_cqp" showLabel="1"/>
-        <attributeEditorField index="13" name="etat_cqe" showLabel="1"/>
+      <attributeEditorContainer groupBox="1" visibilityExpression="" name="Controle Qualite" columnCount="1" showLabel="1" visibilityExpressionEnabled="0">
+        <attributeEditorField name="Nom" index="7" showLabel="1"/>
+        <attributeEditorField name="etat_cqp" index="8" showLabel="1"/>
+        <attributeEditorField name="code_remplac" index="9" showLabel="1"/>
+        <attributeEditorField name="erreur_geom" index="10" showLabel="1"/>
+        <attributeEditorField name="com_cqp" index="11" showLabel="1"/>
+        <attributeEditorField name="etat_cqe" index="12" showLabel="1"/>
       </attributeEditorContainer>
     </attributeEditorContainer>
   </attributeEditorForm>
   <editable>
-    <field editable="0" name="LIBELLE_NOACCENT"/>
-    <field editable="0" name="Nom"/>
-    <field editable="0" name="area"/>
-    <field editable="1" name="code_remplac"/>
-    <field editable="1" name="com_cqp"/>
-    <field editable="0" name="comment21"/>
-    <field editable="0" name="cs21"/>
-    <field editable="1" name="erreur_geom"/>
-    <field editable="0" name="etat_cqe"/>
-    <field editable="1" name="etat_cqp"/>
-    <field editable="1" name="fid"/>
-    <field editable="1" name="id"/>
-    <field editable="0" name="indice21"/>
-    <field editable="1" name="photovol21"/>
-    <field editable="0" name="source21"/>
-    <field editable="0" name="us21"/>
+    <field name="LIBELLE_NOACCENT" editable="0"/>
+    <field name="Nom" editable="0"/>
+    <field name="area" editable="0"/>
+    <field name="code_remplac" editable="1"/>
+    <field name="com_cqp" editable="1"/>
+    <field name="comment21" editable="0"/>
+    <field name="cs21" editable="0"/>
+    <field name="erreur_geom" editable="1"/>
+    <field name="etat_cqe" editable="0"/>
+    <field name="etat_cqp" editable="1"/>
+    <field name="fid" editable="1"/>
+    <field name="id" editable="1"/>
+    <field name="indice21" editable="0"/>
+    <field name="source21" editable="0"/>
   </editable>
   <labelOnTop>
-    <field name="LIBELLE_NOACCENT" labelOnTop="0"/>
-    <field name="Nom" labelOnTop="0"/>
-    <field name="area" labelOnTop="0"/>
-    <field name="code_remplac" labelOnTop="0"/>
-    <field name="com_cqp" labelOnTop="0"/>
-    <field name="comment21" labelOnTop="0"/>
-    <field name="cs21" labelOnTop="0"/>
-    <field name="erreur_geom" labelOnTop="0"/>
-    <field name="etat_cqe" labelOnTop="0"/>
-    <field name="etat_cqp" labelOnTop="0"/>
-    <field name="fid" labelOnTop="0"/>
-    <field name="id" labelOnTop="0"/>
-    <field name="indice21" labelOnTop="0"/>
-    <field name="photovol21" labelOnTop="0"/>
-    <field name="source21" labelOnTop="0"/>
-    <field name="us21" labelOnTop="0"/>
+    <field labelOnTop="0" name="LIBELLE_NOACCENT"/>
+    <field labelOnTop="0" name="Nom"/>
+    <field labelOnTop="0" name="area"/>
+    <field labelOnTop="0" name="code_remplac"/>
+    <field labelOnTop="0" name="com_cqp"/>
+    <field labelOnTop="0" name="comment21"/>
+    <field labelOnTop="0" name="cs21"/>
+    <field labelOnTop="0" name="erreur_geom"/>
+    <field labelOnTop="0" name="etat_cqe"/>
+    <field labelOnTop="0" name="etat_cqp"/>
+    <field labelOnTop="0" name="fid"/>
+    <field labelOnTop="0" name="id"/>
+    <field labelOnTop="0" name="indice21"/>
+    <field labelOnTop="0" name="source21"/>
   </labelOnTop>
   <reuseLastValue>
     <field name="LIBELLE_NOACCENT" reuseLastValue="0"/>
@@ -1657,9 +1581,7 @@ def my_form_open(dialog, layer, feature):
     <field name="fid" reuseLastValue="0"/>
     <field name="id" reuseLastValue="0"/>
     <field name="indice21" reuseLastValue="0"/>
-    <field name="photovol21" reuseLastValue="0"/>
     <field name="source21" reuseLastValue="0"/>
-    <field name="us21" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>

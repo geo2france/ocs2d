@@ -1153,7 +1153,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="us21" configurationFlags="None">
+    <field name="us10" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1163,7 +1163,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="indice21" configurationFlags="None">
+    <field name="indice10" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1173,7 +1173,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="source21" configurationFlags="None">
+    <field name="source10" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1183,20 +1183,13 @@
         </config>
       </editWidget>
     </field>
-    <field name="comment21" configurationFlags="None">
+    <field name="comment10" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
             <Option name="IsMultiline" value="false" type="bool"/>
             <Option name="UseHtml" value="false" type="bool"/>
           </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photovol21" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
         </config>
       </editWidget>
     </field>
@@ -1470,28 +1463,26 @@
   </fieldConfiguration>
   <aliases>
     <alias field="fid" index="0" name=""/>
-    <alias field="us21" index="1" name=""/>
-    <alias field="indice21" index="2" name=""/>
-    <alias field="source21" index="3" name="source"/>
-    <alias field="comment21" index="4" name="comment_producteur"/>
-    <alias field="photovol21" index="5" name=""/>
-    <alias field="area" index="6" name="surface_m2"/>
-    <alias field="id" index="7" name=""/>
-    <alias field="Nom" index="8" name="nom_zone"/>
-    <alias field="etat_cqp" index="9" name="etat_cqp"/>
-    <alias field="code_remplac" index="10" name="code_remplacement"/>
-    <alias field="erreur_geom" index="11" name="erreur_geometrique"/>
-    <alias field="com_cqp" index="12" name="commentaire_cqp"/>
-    <alias field="etat_cqe" index="13" name="valide_cqe"/>
-    <alias field="LIBELLE_NOACCENT" index="14" name="libelle"/>
+    <alias field="us10" index="1" name=""/>
+    <alias field="indice10" index="2" name=""/>
+    <alias field="source10" index="3" name="source"/>
+    <alias field="comment10" index="4" name="comment_producteur"/>
+    <alias field="area" index="5" name="surface_m2"/>
+    <alias field="id" index="6" name=""/>
+    <alias field="Nom" index="7" name="nom_zone"/>
+    <alias field="etat_cqp" index="8" name="etat_cqp"/>
+    <alias field="code_remplac" index="9" name="code_remplacement"/>
+    <alias field="erreur_geom" index="10" name="erreur_geometrique"/>
+    <alias field="com_cqp" index="11" name="commentaire_cqp"/>
+    <alias field="etat_cqe" index="12" name="valide_cqe"/>
+    <alias field="LIBELLE_NOACCENT" index="13" name="libelle"/>
   </aliases>
   <defaults>
     <default field="fid" expression="" applyOnUpdate="0"/>
-    <default field="us21" expression="" applyOnUpdate="0"/>
-    <default field="indice21" expression="" applyOnUpdate="0"/>
-    <default field="source21" expression="" applyOnUpdate="0"/>
-    <default field="comment21" expression="" applyOnUpdate="0"/>
-    <default field="photovol21" expression="" applyOnUpdate="0"/>
+    <default field="us10" expression="" applyOnUpdate="0"/>
+    <default field="indice10" expression="" applyOnUpdate="0"/>
+    <default field="source10" expression="" applyOnUpdate="0"/>
+    <default field="comment10" expression="" applyOnUpdate="0"/>
     <default field="area" expression="" applyOnUpdate="0"/>
     <default field="id" expression="" applyOnUpdate="0"/>
     <default field="Nom" expression="" applyOnUpdate="0"/>
@@ -1504,11 +1495,10 @@
   </defaults>
   <constraints>
     <constraint field="fid" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="us21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="indice21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="source21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="comment21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
-    <constraint field="photovol21" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="us10" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="indice10" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="source10" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
+    <constraint field="comment10" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
     <constraint field="area" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
     <constraint field="id" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
     <constraint field="Nom" unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0"/>
@@ -1521,11 +1511,10 @@
   </constraints>
   <constraintExpressions>
     <constraint field="fid" desc="" exp=""/>
-    <constraint field="us21" desc="" exp=""/>
-    <constraint field="indice21" desc="" exp=""/>
-    <constraint field="source21" desc="" exp=""/>
-    <constraint field="comment21" desc="" exp=""/>
-    <constraint field="photovol21" desc="" exp=""/>
+    <constraint field="us10" desc="" exp=""/>
+    <constraint field="indice10" desc="" exp=""/>
+    <constraint field="source10" desc="" exp=""/>
+    <constraint field="comment10" desc="" exp=""/>
     <constraint field="area" desc="" exp=""/>
     <constraint field="id" desc="" exp=""/>
     <constraint field="Nom" desc="" exp=""/>
@@ -1543,9 +1532,6 @@
   <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
       <column name="fid" width="-1" hidden="0" type="field"/>
-      <column name="indice21" width="-1" hidden="0" type="field"/>
-      <column name="source21" width="-1" hidden="0" type="field"/>
-      <column name="comment21" width="-1" hidden="0" type="field"/>
       <column name="area" width="-1" hidden="0" type="field"/>
       <column name="id" width="-1" hidden="0" type="field"/>
       <column name="Nom" width="144" hidden="0" type="field"/>
@@ -1555,8 +1541,10 @@
       <column name="com_cqp" width="151" hidden="0" type="field"/>
       <column name="etat_cqe" width="-1" hidden="0" type="field"/>
       <column name="LIBELLE_NOACCENT" width="-1" hidden="0" type="field"/>
-      <column name="us21" width="-1" hidden="0" type="field"/>
-      <column name="photovol21" width="-1" hidden="0" type="field"/>
+      <column name="us10" width="-1" hidden="0" type="field"/>
+      <column name="indice10" width="-1" hidden="0" type="field"/>
+      <column name="source10" width="-1" hidden="0" type="field"/>
+      <column name="comment10" width="-1" hidden="0" type="field"/>
       <column width="-1" hidden="1" type="actions"/>
     </columns>
   </attributetableconfig>
@@ -1591,19 +1579,19 @@ def my_form_open(dialog, layer, feature):
   <attributeEditorForm>
     <attributeEditorContainer groupBox="0" name="Zones Tests" columnCount="2" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
       <attributeEditorContainer groupBox="1" name="Info Polygone" columnCount="1" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
-        <attributeEditorField index="1" name="us21" showLabel="1"/>
-        <attributeEditorField index="14" name="LIBELLE_NOACCENT" showLabel="1"/>
-        <attributeEditorField index="3" name="source21" showLabel="1"/>
-        <attributeEditorField index="4" name="comment21" showLabel="1"/>
-        <attributeEditorField index="6" name="area" showLabel="1"/>
+        <attributeEditorField index="1" name="us10" showLabel="1"/>
+        <attributeEditorField index="13" name="LIBELLE_NOACCENT" showLabel="1"/>
+        <attributeEditorField index="3" name="source10" showLabel="1"/>
+        <attributeEditorField index="4" name="comment10" showLabel="1"/>
+        <attributeEditorField index="5" name="area" showLabel="1"/>
       </attributeEditorContainer>
       <attributeEditorContainer groupBox="1" name="Controle Qualite" columnCount="1" visibilityExpressionEnabled="0" showLabel="1" visibilityExpression="">
-        <attributeEditorField index="8" name="Nom" showLabel="1"/>
-        <attributeEditorField index="9" name="etat_cqp" showLabel="1"/>
-        <attributeEditorField index="10" name="code_remplac" showLabel="1"/>
-        <attributeEditorField index="11" name="erreur_geom" showLabel="1"/>
-        <attributeEditorField index="12" name="com_cqp" showLabel="1"/>
-        <attributeEditorField index="13" name="etat_cqe" showLabel="1"/>
+        <attributeEditorField index="7" name="Nom" showLabel="1"/>
+        <attributeEditorField index="8" name="etat_cqp" showLabel="1"/>
+        <attributeEditorField index="9" name="code_remplac" showLabel="1"/>
+        <attributeEditorField index="10" name="erreur_geom" showLabel="1"/>
+        <attributeEditorField index="11" name="com_cqp" showLabel="1"/>
+        <attributeEditorField index="12" name="etat_cqe" showLabel="1"/>
       </attributeEditorContainer>
     </attributeEditorContainer>
   </attributeEditorForm>
@@ -1613,6 +1601,8 @@ def my_form_open(dialog, layer, feature):
     <field editable="0" name="area"/>
     <field editable="1" name="code_remplac"/>
     <field editable="1" name="com_cqp"/>
+    <field editable="0" name="comment10"/>
+    <field editable="0" name="comment15"/>
     <field editable="0" name="comment21"/>
     <field editable="0" name="cs21"/>
     <field editable="1" name="erreur_geom"/>
@@ -1620,9 +1610,15 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="etat_cqp"/>
     <field editable="1" name="fid"/>
     <field editable="1" name="id"/>
+    <field editable="1" name="indice10"/>
+    <field editable="1" name="indice15"/>
     <field editable="0" name="indice21"/>
     <field editable="1" name="photovol21"/>
+    <field editable="0" name="source10"/>
+    <field editable="0" name="source15"/>
     <field editable="0" name="source21"/>
+    <field editable="0" name="us10"/>
+    <field editable="0" name="us15"/>
     <field editable="0" name="us21"/>
   </editable>
   <labelOnTop>
@@ -1631,6 +1627,8 @@ def my_form_open(dialog, layer, feature):
     <field name="area" labelOnTop="0"/>
     <field name="code_remplac" labelOnTop="0"/>
     <field name="com_cqp" labelOnTop="0"/>
+    <field name="comment10" labelOnTop="0"/>
+    <field name="comment15" labelOnTop="0"/>
     <field name="comment21" labelOnTop="0"/>
     <field name="cs21" labelOnTop="0"/>
     <field name="erreur_geom" labelOnTop="0"/>
@@ -1638,9 +1636,15 @@ def my_form_open(dialog, layer, feature):
     <field name="etat_cqp" labelOnTop="0"/>
     <field name="fid" labelOnTop="0"/>
     <field name="id" labelOnTop="0"/>
+    <field name="indice10" labelOnTop="0"/>
+    <field name="indice15" labelOnTop="0"/>
     <field name="indice21" labelOnTop="0"/>
     <field name="photovol21" labelOnTop="0"/>
+    <field name="source10" labelOnTop="0"/>
+    <field name="source15" labelOnTop="0"/>
     <field name="source21" labelOnTop="0"/>
+    <field name="us10" labelOnTop="0"/>
+    <field name="us15" labelOnTop="0"/>
     <field name="us21" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
@@ -1649,6 +1653,8 @@ def my_form_open(dialog, layer, feature):
     <field name="area" reuseLastValue="0"/>
     <field name="code_remplac" reuseLastValue="0"/>
     <field name="com_cqp" reuseLastValue="0"/>
+    <field name="comment10" reuseLastValue="0"/>
+    <field name="comment15" reuseLastValue="0"/>
     <field name="comment21" reuseLastValue="0"/>
     <field name="cs21" reuseLastValue="0"/>
     <field name="erreur_geom" reuseLastValue="0"/>
@@ -1656,9 +1662,15 @@ def my_form_open(dialog, layer, feature):
     <field name="etat_cqp" reuseLastValue="0"/>
     <field name="fid" reuseLastValue="0"/>
     <field name="id" reuseLastValue="0"/>
+    <field name="indice10" reuseLastValue="0"/>
+    <field name="indice15" reuseLastValue="0"/>
     <field name="indice21" reuseLastValue="0"/>
     <field name="photovol21" reuseLastValue="0"/>
+    <field name="source10" reuseLastValue="0"/>
+    <field name="source15" reuseLastValue="0"/>
     <field name="source21" reuseLastValue="0"/>
+    <field name="us10" reuseLastValue="0"/>
+    <field name="us15" reuseLastValue="0"/>
     <field name="us21" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>

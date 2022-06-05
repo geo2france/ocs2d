@@ -366,7 +366,7 @@
         <Option name="FIELD" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="cs21" type="QString"/>
+            <Option name="static_value" value="us15" type="QString"/>
           </Option>
         </Option>
         <Option name="FIELDS_TO_COPY" type="List">
@@ -393,7 +393,7 @@
         <Option name="INPUT_2" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="nomenclature_ocs2d_cs2021_sig_c00c81c5_5ef2_420d_a03c_a49753adc6dc" type="QString"/>
+            <Option name="static_value" value="nomenclature_ocs2d_us2021_sig_e8c9afd1_807c_483f_9581_02819e33a3db" type="QString"/>
           </Option>
         </Option>
         <Option name="METHOD" type="List">
@@ -451,15 +451,15 @@
         <Option name="STYLE" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="/home/nrochard/Gitlab/ocs2d/control_qualite/styles/cqp_cs21.qml" type="QString"/>
+            <Option name="static_value" value="/home/nrochard/Gitlab/ocs2d/control_qualite/styles/cqp_us15.qml" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="couchecq" value="Nom_CS_2021_Abbeville_1_83d093a5_0fe9_42e0_b528_48129ebd8bdf" type="QString"/>
-    <Option name="native:joinattributestable_1:Sortie_CQP_v3" type="QgsProcessingOutputLayerDefinition">
+    <Option name="couchecq" value="Nom_US_2015_CA_Bethune_2_a60507a9_9b2d_42f0_9c78_8556647fff2f" type="QString"/>
+    <Option name="native:joinattributestable_1:Couche_CQP" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
           <Option name="fileEncoding" value="System" type="QString"/>
@@ -476,7 +476,7 @@
   <Option name="help"/>
   <Option name="modelVariables"/>
   <Option name="model_group" value="OCS2d" type="QString"/>
-  <Option name="model_name" value="Formulaire CS21 pour CQP" type="QString"/>
+  <Option name="model_name" value="Formulaire US15 pour CQP" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="couchecq" type="Map">
       <Option name="data_types" type="List">
