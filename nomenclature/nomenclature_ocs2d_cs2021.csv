@@ -1,0 +1,35 @@
+CODE;CODE_LIBELLE;LIBELLE;CODE_LIBELLE_NOACCENT;LIBELLE_NOACCENT
+CS1.1.1;CS1.1.1 Surfaces bâties;Surfaces bâties;CS1.1.1 Surfaces baties;Surfaces baties
+CS1.1.2;CS1.1.2 Surfaces non bâties;Surfaces non bâties;CS1.1.2 Surfaces non baties;Surfaces non baties
+CS1.2.1;CS1.2.1 Surfaces à matériaux minéraux - pierre - terre;Surfaces à matériaux minéraux - pierre - terre;CS1.2.1 Surfaces a materiaux mineraux - pierre - terre;Surfaces a materiaux mineraux - pierre - terre
+CS1.2.2;CS1.2.2 Surfaces composées d'autres matériaux;Surfaces composées d'autres matériaux;CS1.2.2 Surfaces composees d autres materiaux;Surfaces composees d autres materiaux
+CS2.1.1;CS2.1.1 Plage de sable;Plage de sable;CS2.1.1 Plage de sable;Plage de sable
+CS2.1.2;CS2.1.2 Dunes;Dunes;CS2.1.2 Dunes;Dunes
+CS2.1.3;CS2.1.3 Vasières et alluvions sableux;Vasières et alluvions sableux;CS2.1.3 Vasieres et alluvions sableux;Vasieres et alluvions sableux
+CS2.2.1;CS2.2.1 Plages de galets et alluvions grossiers;Plages de galets et alluvions grossiers;CS2.2.1 Plages de galets et alluvions grossiers;Plages de galets et alluvions grossiers
+CS2.2.2;CS2.2.2 Côtes rocheuses et falaises;Côtes rocheuses et falaises;CS2.2.2 Cotes rocheuses et falaises;Cotes rocheuses et falaises
+CS3.1.1;CS3.1.1 Plans d'eau;Plans d'eau;CS3.1.1 Plans d eau;Plans d eau
+CS3.1.2;CS3.1.2 Cours d'eau;Cours d'eau;CS3.1.2 Cours d eau;Cours d eau
+CS3.2.1;CS3.2.1 Zone subtidale saumâtre;Zone subtidale saumâtre;CS3.2.1 Zone subtidale saumatre;Zone subtidale saumatre
+CS3.2.2;CS3.2.2 Mer;Mer;CS3.2.2 Mer;Mer
+CS4.1.1;CS4.1.1 Feuillus sur dunes;Feuillus sur dunes;CS4.1.1 Feuillus sur dunes;Feuillus sur dunes
+CS4.1.2;CS4.1.2 Feuillus;Feuillus;CS4.1.2 Feuillus;Feuillus
+CS4.1.3;CS4.1.3 Boisements humides;Boisements humides;CS4.1.3 Boisements humides;Boisements humides
+CS4.2.1;CS4.2.1 Conifères sur dunes;Conifères sur dunes;CS4.2.1 Coniferes sur dunes;Coniferes sur dunes
+CS4.2.2;CS4.2.2 Conifères;Conifères;CS4.2.2 Coniferes;Coniferes
+CS4.3.1;CS4.3.1 Peuplements mixtes sur dunes;Peuplements mixtes sur dunes;CS4.3.1 Peuplements mixtes sur dunes;Peuplements mixtes sur dunes
+CS4.3.2;CS4.3.2 Peuplements mixtes ou indéterminés;Peuplements mixtes ou indéterminés;CS4.3.2 Peuplements mixtes ou indetermines;Peuplements mixtes ou indetermines
+CS4.4.0;CS4.4.0 Vergers;Vergers;CS4.4.0 Vergers;Vergers
+CS5.1.1;CS5.1.1 Landes - fourrés - broussailles;Landes - fourrés - broussailles;CS5.1.1 Landes - fourres - broussailles;Landes - fourres - broussailles
+CS5.1.2;CS5.1.2 Fourrés et landes humides;Fourrés et landes humides;CS5.1.2 Fourres et landes humides;Fourres et landes humides
+CS5.1.3;CS5.1.3 Végétations arbustives sur dunes;Végétations arbustives sur dunes;CS5.1.3 Vegetations arbustives sur dunes;Vegetations arbustives sur dunes
+CS5.2.0;CS5.2.0 Vignes;Vignes;CS5.2.0 Vignes;Vignes
+CS6.1.1;CS6.1.1 Prairies mésophiles;Prairies mésophiles;CS6.1.1 Prairies mesophiles;Prairies mesophiles
+CS6.1.2;CS6.1.2 Prairies humides;Prairies humides;CS6.1.2 Prairies humides;Prairies humides
+CS6.2.0;CS6.2.0 Pelouses naturelles;Pelouses naturelles;CS6.2.0 Pelouses naturelles;Pelouses naturelles
+CS6.3.0;CS6.3.0 Terres arables;Terres arables;CS6.3.0 Terres arables;Terres arables
+CS6.4.1;CS6.4.1 Formations herbacées humides continentales;Formations herbacées humides continentales;CS6.4.1 Formations herbacees humides continentales;Formations herbacees humides continentales
+CS6.4.2;CS6.4.2 Formations herbacées humides maritimes;Formations herbacées humides maritimes;CS6.4.2 Formations herbacees humides maritimes;Formations herbacees humides maritimes
+CS6.5.0;CS6.5.0 Formations herbacées sur dunes;Formations herbacées sur dunes;CS6.5.0 Formations herbacees sur dunes;Formations herbacees sur dunes
+CS6.6.0;CS6.6.0 Autres couverts à dominante herbacée;Autres couverts à dominante herbacée;CS6.6.0 Autres couverts a dominante herbacee;Autres couverts a dominante herbacee
+;;;;

@@ -1,0 +1,54 @@
+CODE;CODE_LIBELLE;LIBELLE;CODE_LIBELLE_NOACCENT;LIBELLE_NOACCENT
+US1.1.1;US1.1.1 Prairies;Prairies;US1.1.1 Prairies;Prairies
+US1.1.2;US1.1.2 Bandes enherbées;Bandes enherbées;US1.1.2 Bandes enherbees;Bandes enherbees
+US1.1.3;US1.1.3 Cultures annuelles;Cultures annuelles;US1.1.3 Cultures annuelles;Cultures annuelles
+US1.1.4;US1.1.4 Horticulture - pépinières;Horticulture - pépinières;US1.1.4 Horticulture - pepinieres;Horticulture - pepinieres
+US1.1.5;US1.1.5 Cultures permanentes;Cultures permanentes;US1.1.5 Cultures permanentes;Cultures permanentes
+US1.1.6;US1.1.6 Autoconsommation;Autoconsommation;US1.1.6 Autoconsommation;Autoconsommation
+US1.1.7;US1.1.7 Infrastructures agricoles;Infrastructures agricoles;US1.1.7 Infrastructures agricoles;Infrastructures agricoles
+US1.2.1;US1.2.1 Zones de coupes;Zones de coupes;US1.2.1 Zones de coupes;Zones de coupes
+US1.2.2;US1.2.2 Peupleraies;Peupleraies;US1.2.2 Peupleraies;Peupleraies
+US1.2.3;US1.2.3 Plantations récentes;Plantations récentes;US1.2.3 Plantations recentes;Plantations recentes
+US1.2.4;US1.2.4 Autres plantations;Autres plantations;US1.2.4 Autres plantations;Autres plantations
+US1.3.1;US1.3.1 Extraction de matériaux en exploitation;Extraction de matériaux en exploitation;US1.3.1 Extraction de materiaux en exploitation;Extraction de materiaux en exploitation
+US1.3.2;US1.3.2 Terrils en exploitation;Terrils en exploitation;US1.3.2 Terrils en exploitation;Terrils en exploitation
+US1.4.0;US1.4.0 Aquaculture - pisciculture;Aquaculture - pisciculture;US1.4.0 Aquaculture - pisciculture;Aquaculture - pisciculture
+US2.1.1;US2.1.1 Zones industrielles et activités économiques;Zones industrielles et activités économiques;US2.1.1 Zones industrielles et activites economiques;Zones industrielles et activites economiques
+US2.1.2;US2.1.2 Zone de stockage ou production d'énergie fossile;Zone de stockage ou production d'énergie fossile;US2.1.2 Zone de stockage ou production d energie fossile;Zone de stockage ou production d energie fossile
+US2.1.3;US2.1.3 Zone de stockage ou production de biogaz;Zone de stockage ou production de biogaz;US2.1.3 Zone de stockage ou production de biogaz;Zone de stockage ou production de biogaz
+US2.1.4;US2.1.4 Zone de production d'énergie solaire;Zone de production d'énergie solaire;US2.1.4 Zone de production d energie solaire;Zone de production d energie solaire
+US2.1.5;US2.1.5 Zone de production éolienne;Zone de production éolienne;US2.1.5 Zone de production eolienne;Zone de production eolienne
+US2.2.0;US2.2.0 Zones commerciales;Zones commerciales;US2.2.0 Zones commerciales;Zones commerciales
+US3.1.1;US3.1.1 Emprises scolaires - universitaires;Emprises scolaires - universitaires;US3.1.1 Emprises scolaires - universitaires;Emprises scolaires - universitaires
+US3.1.2;US3.1.2 Emprises hospitalières;Emprises hospitalières;US3.1.2 Emprises hospitalieres;Emprises hospitalieres
+US3.1.3;US3.1.3 Cimetières et lieux de culte;Cimetières et lieux de culte;US3.1.3 Cimetieres et lieux de culte;Cimetieres et lieux de culte
+US3.1.4;US3.1.4 Parkings et places;Parkings et places;US3.1.4 Parkings et places;Parkings et places
+US3.1.5;US3.1.5 Déchetteries et décharges publiques;Déchetteries et décharges publiques;US3.1.5 Dechetteries et decharges publiques;Dechetteries et decharges publiques
+US3.1.6;US3.1.6 Autres emprises collectives;Autres emprises collectives;US3.1.6 Autres emprises collectives;Autres emprises collectives
+US3.2.1;US3.2.1 Parcs et espaces verts paysagers;Parcs et espaces verts paysagers;US3.2.1 Parcs et espaces verts paysagers;Parcs et espaces verts paysagers
+US3.2.2;US3.2.2 Complexes sportifs et terrains de sports;Complexes sportifs et terrains de sports;US3.2.2 Complexes sportifs et terrains de sports;Complexes sportifs et terrains de sports
+US3.2.3;US3.2.3 Golfs;Golfs;US3.2.3 Golfs;Golfs
+US3.2.4;US3.2.4 Campings;Campings;US3.2.4 Campings;Campings
+US3.2.5;US3.2.5 Complexes culturels et zones de loisirs;Complexes culturels et zones de loisirs;US3.2.5 Complexes culturels et zones de loisirs;Complexes culturels et zones de loisirs
+US4.1.1;US4.1.1 Routier principal;Routier principal;US4.1.1 Routier principal;Routier principal
+US4.1.2;US4.1.2 Routier secondaire;Routier secondaire;US4.1.2 Routier secondaire;Routier secondaire
+US4.2.1;US4.2.1 Ferré principal;Ferré principal;US4.2.1 Ferre principal;Ferre principal
+US4.2.2;US4.2.2 Ferré secondaire;Ferré secondaire;US4.2.2 Ferre secondaire;Ferre secondaire
+US4.3.0;US4.3.0 Aérien;Aérien;US4.3.0 Aerien;Aerien
+US4.4.0;US4.4.0 Fluvial et maritime;Fluvial et maritime;US4.4.0 Fluvial et maritime;Fluvial et maritime
+US4.5.0;US4.5.0 Espaces associés aux réseaux de transport;Espaces associés aux réseaux de transport;US4.5.0 Espaces associes aux reseaux de transport;Espaces associes aux reseaux de transport
+US5.1.1;US5.1.1 Habitat continu fortement compact;Habitat continu fortement compact;US5.1.1 Habitat continu fortement compact;Habitat continu fortement compact
+US5.1.2;US5.1.2 Habitat continu moyennement compact;Habitat continu moyennement compact;US5.1.2 Habitat continu moyennement compact;Habitat continu moyennement compact
+US5.1.3;US5.1.3 Habitat continu faiblement compact;Habitat continu faiblement compact;US5.1.3 Habitat continu faiblement compact;Habitat continu faiblement compact
+US5.2.1;US5.2.1 Habitat discontinu fortement compact;Habitat discontinu fortement compact;US5.2.1 Habitat discontinu fortement compact;Habitat discontinu fortement compact
+US5.2.2;US5.2.2 Habitat discontinu moyennement compact;Habitat discontinu moyennement compact;US5.2.2 Habitat discontinu moyennement compact;Habitat discontinu moyennement compact
+US5.2.3;US5.2.3 Habitat discontinu faiblement compact;Habitat discontinu faiblement compact;US5.2.3 Habitat discontinu faiblement compact;Habitat discontinu faiblement compact
+US5.3.1;US5.3.1 Grands ensembles collectifs;Grands ensembles collectifs;US5.3.1 Grands ensembles collectifs;Grands ensembles collectifs
+US5.3.2;US5.3.2 Collectifs;Collectifs;US5.3.2 Collectifs;Collectifs
+US5.4.0;US5.4.0 Habitat isolé;Habitat isolé;US5.4.0 Habitat isole;Habitat isole
+US6.1.1;US6.1.1 Chantiers;Chantiers;US6.1.1 Chantiers;Chantiers
+US6.1.2;US6.1.2 Extraction de matériaux en mutation;Extraction de matériaux en mutation;US6.1.2 Extraction de materiaux en mutation;Extraction de materiaux en mutation
+US6.2.1;US6.2.1 Friches économiques;Friches économiques;US6.2.1 Friches economiques;Friches economiques
+US6.2.2;US6.2.2 Vacants urbains;Vacants urbains;US6.2.2 Vacants urbains;Vacants urbains
+US6.2.3;US6.2.3 Espaces agricoles non exploités;Espaces agricoles non exploités;US6.2.3 Espaces agricoles non exploites;Espaces agricoles non exploites
+US7.0.0;US7.0.0 Usages indéterminés;Usages indéterminés;US7.0.0 Usages indetermines;Usages indetermines
