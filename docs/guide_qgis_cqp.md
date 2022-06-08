@@ -1,6 +1,6 @@
 # Contrôle Qualité Partenarial (CQP) de l'OCS2d avec QGIS
 
-![Logo Geo2France](/img/geo2france_alt.png)
+![Logo Geo2France](./img/geo2france_alt.png)
 
 Ce document l'utilisation des ressources préconfigurées et optimiser la vérification des différents polygones CS (couvert) et US (usage) sur le territoire des Hauts-de-France.
 
@@ -12,7 +12,7 @@ Ce document l'utilisation des ressources préconfigurées et optimiser la vérif
 ## Ressources en ligne
 
 - Télécharger l'intégralité du dépôt via le bouton **Code** > Download ZIP
-![Telechargement Depot](/img/github_1.png)
+![Telechargement Depot](./img/github_1.png)
 - Télécharger les zones tests à vérifier via l'outil Pydio sur Geo2France : <https://www.geo2france.fr/files/ws--28/Zones_Tests/Sources>
 
 > :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
@@ -57,7 +57,7 @@ La mise en forme est automatique et le formulaire pré-configuré.
 5. Utilisez le pour interroger le formulaire
 
 > :warning: Si le formulaire QGIS ne s'affiche pas, assurez vous d'avoir correctement paramétré QGIS :warning:
-![Réglage QGIS](/img/qgis_settings_1.jpg)
+![Réglage QGIS](./img/qgis_settings_1.jpg)
 
 ### En images
 
@@ -68,4 +68,4 @@ La mise en forme est automatique et le formulaire pré-configuré.
 **Q.** La photo aérienne de 1998 semble être décalée par rapport aux données ?
 **R.** L'image 1998 sur le Nord-Pas-De-Calais présente un problème de projection, des investigations sont en cours. Cependant, il n'y a pas d'incidence pour le contrôle.
 
-![Financeurs](/img/bandeau_financeurs.png)
+![Financeurs](./img/bandeau_financeurs.png)
