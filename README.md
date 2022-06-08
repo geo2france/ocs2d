@@ -24,7 +24,6 @@
 │   ├── dictionnaire_ocs2d_hdf.pdf
 │   ├── img
 │   └── guide_qgis_cqp.md
-│   └── guide_qgis_cqp.pdf
 ├── LICENSE
 ├── logos
 ├── nomenclature
@@ -39,8 +38,7 @@
 
 ## Comment contrôler la données OCS2d avec QGIS ?
 
-Consultez le tutoriel ici : 
-Version PDF téléchargeable ici : 
+Consultez le [guide de formation au contrôle qualité partenarial](https://github.com/geo2france/ocs2d/blob/main/docs/guide_qgis_cqp.md)
 
 ### Sémiologie graphique OCS2d
 
