@@ -15,6 +15,7 @@ Ce document l'utilisation des ressources préconfigurées et optimiser la vérif
 ![Telechargement_Depot](./img/github_1.png)
 - Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Zones_Tests/Sources>
 ![Pydio](./img/pydio_1.gif)
+
 > :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
 
 ## Indexer des couches téléchargeables
@@ -27,6 +28,7 @@ Référencer les fichiers téléchargés dans le tableau en ligne ci-dessous et 
 ### Installation du plugin Go2NextFeature3
 
 Avant de lancer le projet, téléchargez le plugin QGIS Go2NextFeature3. Ce plugin facilite le balayage d'entités.
+
 Dans QGIS : Menu Extensions > Installer/Gérer les extensions > Go2NextFeature3
 
 ### Fonctionnement du projet
@@ -66,12 +68,12 @@ Selon l'échelle de visualisation, l'affichage basculera entre polygones et symb
 4. Cliquer sur le nom du GPKG chargé et activer le mode édition
 ![Edition](./img/qgis_settings_7a.png)
 
-5. Cliquer sur le bouton du panneau Go2NextFeature :fast_forward: pour parcourir les entités
+5. Cliquer sur le bouton du panneau Go2NextFeature :fast_forward: pour parcourir les entités. L'objet à contrôler sera centré sur la carte.
 
 6. Utilisez l'icône _identifier des entités_ pour afficher les informations du formulaire
 ![Identifier](./img/qgis_settings_7b.png)
 
-La partie de droite (non éditable) renseigne des informations actuelles de l'objet. Éditer la partie gauche selon les valeurs possibles.
+La partie de droite (_non éditable_) renseigne des informations actuelles de l'objet. Éditer la partie gauche selon les valeurs possibles.
 Si un _code_remplacement_ est sélectionné ou si la case _erreur géométrique_ est cochée, le statut _etat_cqp_ bascule automatiquement en erreur.
 
 ![Formulaire](./img/formulaire_1.png)
@@ -83,11 +85,13 @@ Une fois le formulaire validé (le contour du polygone changera de couleur), se 
 
 ### CQP terminé
 
-Le contrôle est terminé lorsque l'ensemble des polygones des différentes couches a été vérifiées.
+Le contrôle est terminé lorsque l'ensemble des polygones des différentes couches (GPKG) ont été vérifiés.
 Vous ne devez plus avoir de symbole :warning: visible sur la carte (ou de polygone avec un contour blanc)
 
-Une fois la phase de contrôle terminée : renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise**
+Une fois la phase de contrôle terminée : renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** :
 <https://www.geo2france.fr/files/ws--28/Zones_Tests/CQ_Finalise>
+
+> :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
 
 Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
