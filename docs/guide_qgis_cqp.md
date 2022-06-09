@@ -85,15 +85,15 @@ Une fois le formulaire validé (le contour du polygone changera de couleur), se 
 
 ### CQP terminé
 
-Le contrôle est terminé lorsque l'ensemble des polygones des différentes couches (GPKG) ont été vérifiés.
-Vous ne devez plus avoir de symbole :warning: visible sur la carte (ou de polygone avec un contour blanc)
+Le contrôle est terminé lorsque l'ensemble des polygones des différentes couches (GPKG) ont été vérifiés. Vous ne devez plus avoir de symbole :warning: visible sur la carte (ou de polygone avec un contour blanc).
 
-Une fois la phase de contrôle terminée : renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** :
-<https://www.geo2france.fr/files/ws--28/Zones_Tests/CQ_Finalise>
+Une fois la phase de contrôle terminée :
+
+1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Zones_Tests/CQ_Finalise>
 
 > :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
 
-Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
+2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
 ### FAQ
 
