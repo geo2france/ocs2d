@@ -36,7 +36,7 @@
     └── sld
 ```
 
-## Comment contrôler la données OCS2d avec QGIS ?
+## Comment contrôler la donnée OCS2d avec QGIS ?
 
 Consultez le [guide de formation au contrôle qualité partenarial](https://github.com/geo2france/ocs2d/blob/main/docs/guide_qgis_cqp.md)
 
@@ -50,7 +50,7 @@ Les versions 2021 seront publiées ultérieurement.
 
 - [ ] Publication des styles graphiques QML et SLD selon la nomenclature v2021 finale.
 - [ ] Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN.
-- [ ]  Pontage nomenclature OCSGE.
+- [ ] Pontage nomenclature OCSGE.
 - [ ] Correspondance décret ZAN.
 - [x] ~~Ajout du dictionnaire de données 2021~~
 - [x] ~~Ajout de la nomenclature 2021 au format csv~~
