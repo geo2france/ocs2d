@@ -38,7 +38,7 @@
 
 ## Comment contrôler la donnée OCS2d avec QGIS ?
 
-Consultez le [guide de formation au contrôle qualité partenarial](https://github.com/geo2france/ocs2d/blob/main/docs/guide_qgis_cqp.md)
+Consultez le [guide du contrôle qualité partenarial (CQP) avec QGIS](https://github.com/geo2france/ocs2d/blob/main/docs/guide_qgis_cqp.md)
 
 ### Sémiologie graphique OCS2d
 
