@@ -85,7 +85,7 @@ Une fois le formulaire validé (le contour du polygone changera de couleur), se 
 
 ---
 
-#### Démonstration
+#### Demo
 
 ![Demo CQP](./img/demo_cqp_1.gif)
 
@@ -99,7 +99,9 @@ Une fois la phase de contrôle terminée :
 
 1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Zones_Tests/CQ_Finalise>
 
-> :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
+> :information_source: Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France :information_source:
+
+> :warning: **S'assurer que la couche au format GPKG n'est plus ouverte dans QGIS avant upload sur Pydio (en cas de doute, fermer QGIS). Lorsqu'ils sont ouverts, les GPKG créés 2 fichiers de verrouillage (`*.gpgk-shm` et `*.gpkg-wal`) qui pourraient empêcher le CQE de vérifier correctement les différentes couches**
 
 2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
@@ -108,5 +110,9 @@ Une fois la phase de contrôle terminée :
 **Q.** La photo aérienne de 1998 semble être décalée par rapport aux données ?
 
 **R.** L'image 1998 sur le Nord-Pas-De-Calais présente un problème de projection, des investigations sont en cours. Cependant, il n'y a pas d'incidence pour le contrôle.
+
+**Q.** Comment signaler une erreur manifeste ne faisant pas partie du tirage aléatoire du CQE ?
+
+**R.** Créer une nouvelle couche de données à part (Point,EPSG:2154), ne pas ajouter d'objet directement dans les couches diffusées par le CQE.
 
 ![Financeurs](./img/bandeau_financeurs.png)
