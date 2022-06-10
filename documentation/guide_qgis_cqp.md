@@ -2,7 +2,7 @@
 
 ![Logo_Geo2France](./img/geo2france_alt.png)
 
-Ce document l'utilisation des ressources préconfigurées et optimiser la vérification des différents polygones CS (couvert) et US (usage) sur le territoire des Hauts-de-France.
+Ce document explique l'utilisation des ressources préconfigurées afin d'optimiser la vérification des différents polygones CS (couvert) et US (usage) sur le territoire des Hauts-de-France.
 
 ## Prérequis
 
@@ -82,6 +82,14 @@ Une fois le formulaire validé (le contour du polygone changera de couleur), se 
 
 > :warning: Si le formulaire QGIS ne s'affiche pas, assurez vous d'avoir correctement paramétré QGIS :warning:
 ![Parametre_Formulaire](./img/qgis_settings_1.jpg)
+
+---
+
+#### Démonstration
+
+![Demo CQP](./img/demo_cqp_1.gif)
+
+----
 
 ### CQP terminé
 
