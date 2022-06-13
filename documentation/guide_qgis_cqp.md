@@ -107,6 +107,9 @@ Une fois la phase de contrôle terminée :
 
 ### Question fréquemment posée lors du contrôle qualité
 
-Cf documentation en ligne via : <https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial>
+Cf documentation en ligne :
+<https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial>
+
+---
 
 ![Financeurs](./img/bandeau_financeurs.png)
