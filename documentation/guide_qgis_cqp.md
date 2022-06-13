@@ -105,14 +105,8 @@ Une fois la phase de contrôle terminée :
 
 2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
-### FAQ
+### Question fréquemment posée lors du contrôle qualité
 
-**Q.** La photo aérienne de 1998 semble être décalée par rapport aux données ?
-
-**R.** L'image 1998 sur le Nord-Pas-De-Calais présente un problème de projection, des investigations sont en cours. Cependant, il n'y a pas d'incidence pour le contrôle.
-
-**Q.** Comment signaler une erreur manifeste ne faisant pas partie du tirage aléatoire du CQE ?
-
-**R.** Créer une nouvelle couche de données à part (Point,EPSG:2154), ne pas ajouter d'objet directement dans les couches diffusées par le CQE.
+Cf documentation en ligne via : <https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial>
 
 ![Financeurs](./img/bandeau_financeurs.png)
