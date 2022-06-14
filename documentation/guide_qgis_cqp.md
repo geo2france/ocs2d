@@ -16,7 +16,7 @@ En complément, deux documents essentiels sont à consulter :
 
 ## Ressources en ligne
 
-- Télécharger l'intégralité du dépôt via le bouton **Code** > Download ZIP
+- Télécharger l'intégralité du dépôt <https://github.com/geo2france/ocs2d/> via le bouton **Code** > Download ZIP
 ![Telechargement_Depot](./img/github_1.png)
 - Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Zones_Tests/Sources>
 ![Pydio](./img/pydio_1.gif)
@@ -110,9 +110,9 @@ Une fois la phase de contrôle terminée :
 
 2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
-### Question fréquemment posée lors du contrôle qualité
+### Questions fréquemment posées lors du contrôle qualité
 
-Cf documentation en ligne :
+La documentation ci-après est régulièrement actualisée :
 <https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial>
 
 ---
