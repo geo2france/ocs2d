@@ -3,6 +3,10 @@
 ![Logo_Geo2France](./img/geo2france_alt.png)
 
 Ce document explique l'utilisation des ressources préconfigurées afin d'optimiser la vérification des différents polygones CS (couvert) et US (usage) sur le territoire des Hauts-de-France.
+En complément, deux documents essentiels sont à consulter :
+
+- [Dictionnaire de données de l'OCS2d (version non finalisée)](https://github.com/geo2france/ocs2d/blob/main/documentation/dictionnaire_ocs2d_hdf.pdf)
+- [Guide méthodologique du contrôle qualité externe](https://github.com/geo2france/ocs2d/blob/main/documentation/guide_methodo_cqp_ocs2d_hdf.pdf)
 
 ## Prérequis
 
