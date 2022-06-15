@@ -4,10 +4,11 @@
 
 Ce document explique l'utilisation des ressources préconfigurées afin d'optimiser la vérification des différents polygones CS (couvert) et US (usage) sur le territoire des Hauts-de-France.
 
-En complément, deux documents essentiels sont à consulter :
+En complément, trois documents essentiels sont à consulter :
 
 - [Dictionnaire de données de l'OCS2d (version non finalisée)](https://github.com/geo2france/ocs2d/blob/main/documentation/dictionnaire_ocs2d_hdf.pdf)
 - [Guide méthodologique du contrôle qualité externe](https://github.com/geo2france/ocs2d/blob/main/documentation/guide_methodo_cqp_ocs2d_hdf.pdf)
+- [Questions fréquemment posées lors du contrôle qualité](https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial)
 
 ## Prérequis
 
@@ -109,11 +110,6 @@ Une fois la phase de contrôle terminée :
 > :warning: **S'assurer que la couche au format GPKG n'est plus ouverte dans QGIS avant upload sur Pydio (en cas de doute, fermer QGIS). Lorsqu'ils sont ouverts, les GPKG créés 2 fichiers de verrouillage (`*.gpgk-shm` et `*.gpkg-wal`) qui pourraient empêcher le CQE de vérifier correctement les différentes couches**
 
 2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
-
-### Questions fréquemment posées lors du contrôle qualité
-
-La documentation ci-après est régulièrement actualisée :
-<https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial>
 
 ---
 
