@@ -44,7 +44,7 @@ Consultez le [guide du contrôle qualité partenarial (CQP) avec QGIS](https://g
 Pour vous aider, trois documents complémentaires essentiels sont consultables :
 
 - [Dictionnaire de données de l'OCS2d (version non finalisée)](https://github.com/geo2france/ocs2d/blob/main/documentation/dictionnaire_ocs2d_hdf.pdf)
-- [Guide méthodologique du contrôle qualité externe](https://github.com/geo2france/ocs2d/blob/main/documentation/guide_methodo_cqp_ocs2d_hdf.pdf)
+- [Guide méthodologique du contrôle qualité externe](https://github.com/geo2france/ocs2d/blob/main/documentation/guide_methodo_cqe_ocs2d_hdf.pdf)
 - [Questions fréquemment posées lors du contrôle qualité](https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial)
 
 ### Sémiologie graphique OCS2d
