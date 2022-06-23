@@ -111,6 +111,27 @@ Une fois la phase de contrôle terminée :
 
 2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
+### Comment signaler des erreurs manifestes hors tirage du CQE ?
+
+Ne pas ajouter d'objets directement sur les couches de tirage du CQE.
+Il conviendra d'ajouter une couche complémentaire de type point dans le GeoPackage.
+
+**Menu _Couche_**: _Créer une nouvelle couche_ > _Nouvelle couche GeoPackage_
+
+- Sélectionner le GPKG existant d'une zone test dans laquelle vous voulez ajouter un signalement (hors tirage CQE)
+- Sélectionner type de Point, EPSG:2154
+- Ajouter les champs utiles (à minima champ commentaire)
+
+![gpkg_1](https://raw.githubusercontent.com/geo2france/ocs2d/main/documentation/img/creation_couche_gpkg_1.png)
+
+- Lors de l'affichage de cet avertissement, choisir d'_ajouter une nouvelle couche_
+
+![gpkg_2](https://raw.githubusercontent.com/geo2france/ocs2d/main/documentation/img/creation_couche_gpkg_2.png)
+
+La base GeoPackage contient maintenant une couche de signalement en plus du tirage CQE.
+
+![gpkg_3](https://raw.githubusercontent.com/geo2france/ocs2d/main/documentation/img/creation_couche_gpkg_3.png)
+
 ---
 
 ![Financeurs](./img/bandeau_financeurs.png)
