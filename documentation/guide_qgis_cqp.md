@@ -50,6 +50,13 @@ Ce projet contient les données en fond de plan dont vous avez besoin pour le co
 Il dispose de thèmes préconfigurés synchronisant les couches et fonds de plan en fonction des types (CS ou US) et des millésimes.
 ![Gestion_Theme](./img/qgis_settings_2.png)
 
+### Activer les Macros
+
+A l'ouverture du projet, un avertissement de sécurité s'affichera. Autoriser l'activation des macros.
+Cette modification faites suite à un retour en CoTech pour n'avoir que le contour de l'objet lors de l'identification. (par défaut QGIS affiche un fond rouge semi-transparent).
+
+![Autoriser_Macro](./img/qgis_macro.png)
+
 ### Ajout des couches à contrôler et formulaire
 
 Glisser/Déposer un des GeoPackages à contrôler dans le projet QGIS.
