@@ -19,7 +19,7 @@ En complément, trois documents essentiels sont à consulter :
 
 - Télécharger l'intégralité du dépôt <https://github.com/geo2france/ocs2d/> via le bouton **Code** > Download ZIP
 ![Telechargement_Depot](./img/github_1.png)
-- Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Zones_Tests/Sources>
+- Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Somme_Z1/Sources>
 ![Pydio](./img/pydio_1.gif)
 
 > :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
@@ -27,7 +27,7 @@ En complément, trois documents essentiels sont à consulter :
 ## Indexer des couches téléchargeables
 
 Référencer les fichiers téléchargés dans le tableau en ligne ci-dessous et n'oubliez pas de mettre à jour le champ **Etat** (liste déroulante)
-[Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
+[Index_Couches_Somme_Zone_1](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
 ## Utilisation de QGIS
 
@@ -49,6 +49,13 @@ Ce projet contient les données en fond de plan dont vous avez besoin pour le co
 
 Il dispose de thèmes préconfigurés synchronisant les couches et fonds de plan en fonction des types (CS ou US) et des millésimes.
 ![Gestion_Theme](./img/qgis_settings_2.png)
+
+### Activer les Macros
+
+A l'ouverture du projet, un avertissement de sécurité s'affichera. Autoriser l'activation des macros.
+Cette modification faites suite à un retour en CoTech pour n'avoir que le contour de l'objet lors de l'identification. (par défaut QGIS affiche un fond rouge semi-transparent).
+
+![Autoriser_Macro](./img/qgis_macro.png)
 
 ### Ajout des couches à contrôler et formulaire
 
@@ -103,13 +110,13 @@ Le contrôle est terminé lorsque l'ensemble des polygones des différentes couc
 
 Une fois la phase de contrôle terminée :
 
-1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Zones_Tests/CQ_Finalise>
+1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Somme_Z1/CQ_Finalise>
 
 > :information_source: Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France :information_source:
 
 > :warning: **S'assurer que la couche au format GPKG n'est plus ouverte dans QGIS avant upload sur Pydio (en cas de doute, fermer QGIS). Lorsqu'ils sont ouverts, les GPKG créés 2 fichiers de verrouillage (`*.gpgk-shm` et `*.gpkg-wal`) qui pourraient empêcher le CQE de vérifier correctement les différentes couches**
 
-2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Zones_Tests_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
+2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Somme_Zone1_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?usp=sharing)
 
 ### Comment signaler des erreurs manifestes hors tirage du CQE ?
 
