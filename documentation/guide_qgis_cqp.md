@@ -16,7 +16,7 @@ En complément, trois documents essentiels sont à consulter :
 - Une connexion Internet (les fonds de plan sont des flux OGC)
 
 > **Warning**
-> Attention des bugs ont été constatés sur certaines versions LTR (ex : 3.22.7).
+> Des bugs ont été constatés sur certaines versions LTR (ex : 3.22.7).
 > Pensez à mettre vos installations QGIS à jour.
 > Le kit CQP a été réalise et testé avec QGIS 3.22.11.
 
