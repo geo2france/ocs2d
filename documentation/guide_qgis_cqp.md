@@ -15,6 +15,11 @@ En complément, trois documents essentiels sont à consulter :
 - QGIS version LTR [3.22] ou supérieure
 - Une connexion Internet (les fonds de plan sont des flux OGC)
 
+> **Warning**
+> Attention des bugs ont été constatés sur certaines versions LTR (ex : 3.22.7).
+> Pensez à mettre vos installations QGIS à jour.
+> Le kit CQP a été réalise et testé avec QGIS 3.22.11.
+
 ## Ressources en ligne
 
 - Télécharger l'intégralité du dépôt <https://github.com/geo2france/ocs2d/> via le bouton **Code** > Download ZIP
