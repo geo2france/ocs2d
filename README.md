@@ -28,7 +28,7 @@
 │   │   └── cqp_us21.qml
 │   └── svg
 ├── documentation
-│   ├── dictionnaire_ocs2d_hdf_v3.pdf
+│   ├── dictionnaire_ocs2d_hdf.pdf
 │   ├── guide_methodo_cqe_ocs2d_hdf.pdf
 │   ├── guide_qgis_cqp.md
 │   └── img
