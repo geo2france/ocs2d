@@ -6,39 +6,46 @@
 
 ```
 ├── control_qualite
-│   ├── data
-│   ├── list
-│   │   ├── list_ocs2d_cs.csv
-│   │   └── list_ocs2d_us.csv
-│   ├── model_cqp_ocs2d.qgz
-│   ├── styles
-│   │   ├── cqp_cs10.qml
-│   │   ├── cqp_cs15.qml
-│   │   ├── cqp_cs21.qml
-│   │   ├── cqp_us10.qml
-│   │   ├── cqp_us15.qml
-│   │   └── cqp_us21.qml
-│   └── svg
+│   ├── data
+│   ├── list
+│   │   ├── list_ocs2d_cs.csv
+│   │   └── list_ocs2d_us.csv
+│   ├── model_cqp_ocs2d.qgz
+│   ├── model_cqp_ocs2d.qgz.mldata
+│   ├── modeler
+│   │   ├── forms4cqp_cs10.model3
+│   │   ├── forms4cqp_cs15.model3
+│   │   ├── forms4cqp_cs21.model3
+│   │   ├── forms4cqp_us10.model3
+│   │   ├── forms4cqp_us15.model3
+│   │   └── forms4cqp_us21.model3
+│   ├── styles
+│   │   ├── cqp_cs10.qml
+│   │   ├── cqp_cs15.qml
+│   │   ├── cqp_cs21.qml
+│   │   ├── cqp_us10.qml
+│   │   ├── cqp_us15.qml
+│   │   └── cqp_us21.qml
+│   └── svg
 ├── documentation
-│   ├── dictionnaire_ocs2d_hdf.pdf
-│   ├── guide_methodo_cqe_ocs2d_hdf.pdf
-│   ├── guide_qgis_cqp.md
-│   └── img
+│   ├── dictionnaire_ocs2d_hdf_v3.pdf
+│   ├── guide_methodo_cqe_ocs2d_hdf.pdf
+│   ├── guide_qgis_cqp.md
+│   └── img
 ├── LICENSE
 ├── logos
-├── modeler
 ├── nomenclature
-│   ├── nomenclature_ocs2d_cs2021.csv
-│   └── nomenclature_ocs2d_us2021.csv
+│   ├── nomenclature_ocs2d_cs2021.csv
+│   └── nomenclature_ocs2d_us2021.csv
 ├── README.md
-├── sql
 └── styles
     ├── qml
-    │   ├── legacy_npdc
-    │   └── new_2021
+    │   ├── legacy_npdc
+        └── new_hdf
     └── sld
         ├── legacy_npdc
-        └── new_2021
+        └── new_hdf
+
 ```
 
 ## Comment contrôler la donnée OCS2d avec QGIS ?
@@ -55,11 +62,11 @@ Pour vous aider, trois documents complémentaires essentiels sont consultables :
 
 Le dossier `/styles` contient les fichiers de styles pour QGIS et GeoServer, fruit du travail de la plateforme PPIGE. Ils correspondent à la sémiologie de la version Nord-Pas-De-Calais selon les millésimes 2005-2015.
 
-Les versions 2021 seront publiées ultérieurement.
+**MAJ Septembre 2022** : les styles de la nouvelle nomenclature sont disponibles dans les répertoires `/new_hdf` en QML (QGIS) et SLD (GeoServer). Les LYR ArcGIS ne sont pas encore disponibles.
 
 ## ToDo
 
-- [ ] Publication des styles graphiques QML et SLD selon la nomenclature v2021 finale.
+- [x] ~~Publication des styles graphiques QML et SLD selon la nomenclature v2021 finale.~~
 - [ ] Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN.
 - [ ] Pontage nomenclature OCSGE.
 - [ ] Correspondance décret ZAN.
