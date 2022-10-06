@@ -1,6 +1,6 @@
 # OCS2d : Occupation du Sol en 2 dimensions en Hauts-de-France
 
-**Ressources pour l'exploitation de l'occupation du sol à 2 dimensions (usages et couverts) des Hauts-de-France.**
+**Ressources pour l'exploitation de l'occupation du sol à 2 dimensions (usage et couvert) des Hauts-de-France.**
 
 ## Contenu du dépôt
 
