@@ -19,7 +19,7 @@ En complément, trois documents essentiels sont à consulter :
 
 - Télécharger l'intégralité du dépôt <https://github.com/geo2france/ocs2d/> via le bouton **Code** > Download ZIP
 ![Telechargement_Depot](./img/github_1.png)
-- Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Somme_Z1/Sources> ou <https://www.geo2france.fr/files/ws--28/Somme_Z2/Sources>
+- Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Somme_Z3/Sources>
 ![Pydio](./img/pydio_1.gif)
 
 > :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
@@ -110,7 +110,7 @@ Le contrôle est terminé lorsque l'ensemble des polygones des différentes couc
 
 Une fois la phase de contrôle terminée :
 
-1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Somme_Z1/CQ_Finalise> ou <https://www.geo2france.fr/files/ws--28/Somme_Z2/CQ_Finalise>
+1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Somme_Z3/CQ_Finalise>
 
 > :information_source: Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France :information_source:
 
