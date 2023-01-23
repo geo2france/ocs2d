@@ -1,54 +1,54 @@
-"CODEUS1";"LIBELLEUS1";"CODEUS2";"LIBELLEUS2";"CODEUS3";"LIBELLEUS3"
-"US1";"Production primaire";"US1.1";"Agriculture";"US1.1.1";"Prairies"
-"US1";"Production primaire";"US1.1";"Agriculture";"US1.1.2";"Bandes enherbées"
-"US1";"Production primaire";"US1.1";"Agriculture";"US1.1.3";"Cultures annuelles"
-"US1";"Production primaire";"US1.1";"Agriculture";"US1.1.4";"Horticulture - pépinières"
-"US1";"Production primaire";"US1.1";"Agriculture";"US1.1.5";"Cultures permanentes"
-"US1";"Production primaire";"US1.1";"Agriculture";"US1.1.6";"Autoconsommation"
-"US1";"Production primaire";"US1.1";"Agriculture";"US1.1.7";"Infrastructures agricoles"
-"US1";"Production primaire";"US1.2";"Sylviculture";"US1.2.1";"Zones de coupes"
-"US1";"Production primaire";"US1.2";"Sylviculture";"US1.2.2";"Peupleraies"
-"US1";"Production primaire";"US1.2";"Sylviculture";"US1.2.3";"Plantations récentes"
-"US1";"Production primaire";"US1.2";"Sylviculture";"US1.2.4";"Autres plantations"
-"US1";"Production primaire";"US1.3";"Activités d'extraction";"US1.3.1";"Extraction de matériaux en exploitation"
-"US1";"Production primaire";"US1.3";"Activités d'extraction";"US1.3.2";"Terrils en exploitation"
-"US1";"Production primaire";"US1.4";"Aquaculture - pisciculture";"US1.4.0";"Aquaculture - pisciculture"
-"US2";"Activités économiques secondaires et tertiaires";"US2.1";"Zones industrielles et d'activités économiques";"US2.1.1";"Zones industrielles et activités économiques"
-"US2";"Activités économiques secondaires et tertiaires";"US2.1";"Zones industrielles et d'activités économiques";"US2.1.2";"Zone de stockage ou production d'énergie fossile"
-"US2";"Activités économiques secondaires et tertiaires";"US2.1";"Zones industrielles et d'activités économiques";"US2.1.3";"Zone de stockage ou production de biogaz"
-"US2";"Activités économiques secondaires et tertiaires";"US2.1";"Zones industrielles et d'activités économiques";"US2.1.4";"Zone de production d'énergie solaire"
-"US2";"Activités économiques secondaires et tertiaires";"US2.1";"Zones industrielles et d'activités économiques";"US2.1.5";"Zone de production éolienne"
-"US2";"Activités économiques secondaires et tertiaires";"US2.2";"Zones commerciales";"US2.2.0";"Zones commerciales"
-"US3";"Services et usages collectifs";"US3.1";"Services publics - équipements collectifs";"US3.1.1";"Emprises scolaires - universitaires"
-"US3";"Services et usages collectifs";"US3.1";"Services publics - équipements collectifs";"US3.1.2";"Emprises hospitalières"
-"US3";"Services et usages collectifs";"US3.1";"Services publics - équipements collectifs";"US3.1.3";"Cimetières et lieux de culte"
-"US3";"Services et usages collectifs";"US3.1";"Services publics - équipements collectifs";"US3.1.4";"Parkings et places"
-"US3";"Services et usages collectifs";"US3.1";"Services publics - équipements collectifs";"US3.1.5";"Déchetteries et décharges publiques"
-"US3";"Services et usages collectifs";"US3.1";"Services publics - équipements collectifs";"US3.1.6";"Autres emprises collectives"
-"US3";"Services et usages collectifs";"US3.2";"Loisirs et services culturels";"US3.2.1";"Parcs et espaces verts paysagers"
-"US3";"Services et usages collectifs";"US3.2";"Loisirs et services culturels";"US3.2.2";"Complexes sportifs et terrains de sports"
-"US3";"Services et usages collectifs";"US3.2";"Loisirs et services culturels";"US3.2.3";"Golfs"
-"US3";"Services et usages collectifs";"US3.2";"Loisirs et services culturels";"US3.2.4";"Campings"
-"US3";"Services et usages collectifs";"US3.2";"Loisirs et services culturels";"US3.2.5";"Complexes culturels et zones de loisirs"
-"US4";"Transports - logistiques et infrastructures";"US4.1";"Routier";"US4.1.1";"Routier principal"
-"US4";"Transports - logistiques et infrastructures";"US4.1";"Routier";"US4.1.2";"Routier secondaire"
-"US4";"Transports - logistiques et infrastructures";"US4.2";"Ferré";"US4.2.1";"Ferré principal"
-"US4";"Transports - logistiques et infrastructures";"US4.2";"Ferré";"US4.2.2";"Ferré secondaire"
-"US4";"Transports - logistiques et infrastructures";"US4.3";"Aérien";"US4.3.0";"Aérien"
-"US4";"Transports - logistiques et infrastructures";"US4.4";"Fluvial et maritime";"US4.4.0";"Fluvial et maritime"
-"US4";"Transports - logistiques et infrastructures";"US4.5";"Espaces associés aux réseaux de transports";"US4.5.0";"Espaces associés aux réseaux de transports"
-"US5";"Habitats";"US5.1";"Tissu urbain continu";"US5.1.1";"Habitat continu fortement compact"
-"US5";"Habitats";"US5.1";"Tissu urbain continu";"US5.1.2";"Habitat continu moyennement compact"
-"US5";"Habitats";"US5.1";"Tissu urbain continu";"US5.1.3";"Habitat continu faiblement compact"
-"US5";"Habitats";"US5.2";"Tissu urbain discontinu";"US5.2.1";"Habitat discontinu fortement compact"
-"US5";"Habitats";"US5.2";"Tissu urbain discontinu";"US5.2.2";"Habitat discontinu moyennement compact"
-"US5";"Habitats";"US5.2";"Tissu urbain discontinu";"US5.2.3";"Habitat discontinu faiblement compact"
-"US5";"Habitats";"US5.3";"Ensembles collectifs";"US5.3.1";"Grands ensembles collectifs"
-"US5";"Habitats";"US5.3";"Ensembles collectifs";"US5.3.2";"Collectifs"
-"US5";"Habitats";"US5.4";"Habitat isolé";"US5.4.0";"Habitat isolé"
-"US6";"Usages temporaires";"US6.1";"Zones en mutation";"US6.1.1";"Chantiers"
-"US6";"Usages temporaires";"US6.1";"Zones en mutation";"US6.1.2";"Extraction de matériaux en mutation"
-"US6";"Usages temporaires";"US6.2";"Zones délaissées";"US6.2.1";"Friches économiques"
-"US6";"Usages temporaires";"US6.2";"Zones délaissées";"US6.2.2";"Vacants urbains"
-"US6";"Usages temporaires";"US6.2";"Zones délaissées";"US6.2.3";"Espaces agricoles non exploités"
-"US7";"Usages indéterminés";"US7.0";"Usages indéterminés";"US7.0.0";"Usages indéterminés"
+CODEUS1;LIBELLEUS1;CODEUS2;LIBELLEUS2;CODEUS3;LIBELLEUS3
+US1;Production primaire;US1.1;Agriculture;US1.1.1;Prairies
+US1;Production primaire;US1.1;Agriculture;US1.1.2;Bandes enherbées
+US1;Production primaire;US1.1;Agriculture;US1.1.3;Cultures annuelles
+US1;Production primaire;US1.1;Agriculture;US1.1.4;Horticulture - pépinières
+US1;Production primaire;US1.1;Agriculture;US1.1.5;Cultures permanentes
+US1;Production primaire;US1.1;Agriculture;US1.1.6;Autoconsommation
+US1;Production primaire;US1.1;Agriculture;US1.1.7;Infrastructures agricoles
+US1;Production primaire;US1.2;Sylviculture;US1.2.1;Zones de coupes
+US1;Production primaire;US1.2;Sylviculture;US1.2.2;Peupleraies
+US1;Production primaire;US1.2;Sylviculture;US1.2.3;Plantations récentes
+US1;Production primaire;US1.2;Sylviculture;US1.2.4;Autres plantations
+US1;Production primaire;US1.3;Activités d'extraction;US1.3.1;Extraction de matériaux en exploitation
+US1;Production primaire;US1.3;Activités d'extraction;US1.3.2;Terrils en exploitation
+US1;Production primaire;US1.4;Aquaculture - pisciculture;US1.4.0;Aquaculture - pisciculture
+US2;Activités économiques secondaires et tertiaires;US2.1;Zones industrielles et d'activités économiques;US2.1.1;Zones industrielles et activités économiques
+US2;Activités économiques secondaires et tertiaires;US2.1;Zones industrielles et d'activités économiques;US2.1.2;Zone de stockage ou production d'énergie fossile
+US2;Activités économiques secondaires et tertiaires;US2.1;Zones industrielles et d'activités économiques;US2.1.3;Zone de stockage ou production de biogaz
+US2;Activités économiques secondaires et tertiaires;US2.1;Zones industrielles et d'activités économiques;US2.1.4;Zone de production d'énergie solaire
+US2;Activités économiques secondaires et tertiaires;US2.1;Zones industrielles et d'activités économiques;US2.1.5;Zone de production éolienne
+US2;Activités économiques secondaires et tertiaires;US2.2;Zones commerciales;US2.2.0;Zones commerciales
+US3;Services et usages collectifs;US3.1;Services publics - équipements collectifs;US3.1.1;Emprises scolaires - universitaires
+US3;Services et usages collectifs;US3.1;Services publics - équipements collectifs;US3.1.2;Emprises hospitalières
+US3;Services et usages collectifs;US3.1;Services publics - équipements collectifs;US3.1.3;Cimetières et lieux de culte
+US3;Services et usages collectifs;US3.1;Services publics - équipements collectifs;US3.1.4;Parkings et places
+US3;Services et usages collectifs;US3.1;Services publics - équipements collectifs;US3.1.5;Déchetteries et décharges publiques
+US3;Services et usages collectifs;US3.1;Services publics - équipements collectifs;US3.1.6;Autres emprises collectives
+US3;Services et usages collectifs;US3.2;Loisirs et services culturels;US3.2.1;Parcs et espaces verts paysagers
+US3;Services et usages collectifs;US3.2;Loisirs et services culturels;US3.2.2;Complexes sportifs et terrains de sports
+US3;Services et usages collectifs;US3.2;Loisirs et services culturels;US3.2.3;Golfs
+US3;Services et usages collectifs;US3.2;Loisirs et services culturels;US3.2.4;Campings
+US3;Services et usages collectifs;US3.2;Loisirs et services culturels;US3.2.5;Complexes culturels et zones de loisirs
+US4;Transports - logistiques et infrastructures;US4.1;Routier;US4.1.1;Routier principal
+US4;Transports - logistiques et infrastructures;US4.1;Routier;US4.1.2;Routier secondaire
+US4;Transports - logistiques et infrastructures;US4.2;Ferré;US4.2.1;Ferré principal
+US4;Transports - logistiques et infrastructures;US4.2;Ferré;US4.2.2;Ferré secondaire
+US4;Transports - logistiques et infrastructures;US4.3;Aérien;US4.3.0;Aérien
+US4;Transports - logistiques et infrastructures;US4.4;Fluvial et maritime;US4.4.0;Fluvial et maritime
+US4;Transports - logistiques et infrastructures;US4.5;Espaces associés aux réseaux de transports;US4.5.0;Espaces associés aux réseaux de transports
+US5;Habitats;US5.1;Tissu urbain continu;US5.1.1;Habitat continu fortement compact
+US5;Habitats;US5.1;Tissu urbain continu;US5.1.2;Habitat continu moyennement compact
+US5;Habitats;US5.1;Tissu urbain continu;US5.1.3;Habitat continu faiblement compact
+US5;Habitats;US5.2;Tissu urbain discontinu;US5.2.1;Habitat discontinu fortement compact
+US5;Habitats;US5.2;Tissu urbain discontinu;US5.2.2;Habitat discontinu moyennement compact
+US5;Habitats;US5.2;Tissu urbain discontinu;US5.2.3;Habitat discontinu faiblement compact
+US5;Habitats;US5.3;Ensembles collectifs;US5.3.1;Grands ensembles collectifs
+US5;Habitats;US5.3;Ensembles collectifs;US5.3.2;Collectifs
+US5;Habitats;US5.4;Habitat isolé;US5.4.0;Habitat isolé
+US6;Usages temporaires;US6.1;Zones en mutation;US6.1.1;Chantiers
+US6;Usages temporaires;US6.1;Zones en mutation;US6.1.2;Extraction de matériaux en mutation
+US6;Usages temporaires;US6.2;Zones délaissées;US6.2.1;Friches économiques
+US6;Usages temporaires;US6.2;Zones délaissées;US6.2.2;Vacants urbains
+US6;Usages temporaires;US6.2;Zones délaissées;US6.2.3;Espaces agricoles non exploités
+US7;Usages indéterminés;US7.0;Usages indéterminés;US7.0.0;Usages indéterminés
