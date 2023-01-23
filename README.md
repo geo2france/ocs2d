@@ -67,9 +67,9 @@ Le dossier `/styles` contient les fichiers de styles pour QGIS et GeoServer, fru
 ## ToDo
 
 - [x] ~~Publication des styles graphiques QML et SLD selon la nomenclature v2021 finale.~~
-- [ ] Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN.
+- [ ] Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN de 2022.
 - [ ] Pontage nomenclature OCSGE.
-- [ ] Correspondance décret ZAN.
+- [ ] Correspondance décret ZAN/Loi LCR.
 - [x] ~~Ajout du dictionnaire de données 2021~~
 - [x] ~~Ajout de la nomenclature 2021 au format csv~~
 - [x] ~~Ajout des projets QGIS de CQP (Contrôle Qualité Partenarial)~~
