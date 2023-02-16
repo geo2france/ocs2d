@@ -8,24 +8,10 @@
 ├── control_qualite
 │   ├── data
 │   ├── list
-│   │   ├── list_ocs2d_cs.csv
-│   │   └── list_ocs2d_us.csv
 │   ├── model_cqp_ocs2d.qgz
 │   ├── model_cqp_ocs2d.qgz.mldata
 │   ├── modeler
-│   │   ├── forms4cqp_cs10.model3
-│   │   ├── forms4cqp_cs15.model3
-│   │   ├── forms4cqp_cs21.model3
-│   │   ├── forms4cqp_us10.model3
-│   │   ├── forms4cqp_us15.model3
-│   │   └── forms4cqp_us21.model3
 │   ├── styles
-│   │   ├── cqp_cs10.qml
-│   │   ├── cqp_cs15.qml
-│   │   ├── cqp_cs21.qml
-│   │   ├── cqp_us10.qml
-│   │   ├── cqp_us15.qml
-│   │   └── cqp_us21.qml
 │   └── svg
 ├── documentation
 │   ├── dictionnaire_ocs2d_hdf.pdf
@@ -39,13 +25,8 @@
 │   └── nomenclature_ocs2d_us2021.csv
 ├── README.md
 └── styles
-    ├── qml
-    │   ├── legacy_npdc
-        └── new_hdf
-    └── sld
-        ├── legacy_npdc
-        └── new_hdf
-
+    ├── lyr
+    └── qml
 ```
 
 ## Comment contrôler la donnée OCS2d avec QGIS ?
@@ -67,13 +48,13 @@ Le dossier `/styles` contient les fichiers de styles pour QGIS et GeoServer, fru
 ## ToDo
 
 - [x] ~~Publication des styles graphiques QML et SLD selon la nomenclature v2021 finale.~~
-- [ ] Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN de 2022.
-- [ ] Pontage nomenclature OCSGE.
-- [ ] Correspondance décret ZAN/Loi LCR.
+- [ ] Pontage nomenclature OCSGE
 - [x] ~~Ajout du dictionnaire de données 2021~~
 - [x] ~~Ajout de la nomenclature 2021 au format csv~~
 - [x] ~~Ajout des projets QGIS de CQP (Contrôle Qualité Partenarial)~~
 - [x] ~~Documentation d'utilisation des projets QGIS de CQP~~
+- [ ] Correspondance décret ZAN/Loi LCR
+- [ ] Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN de 2022
 
 ## Licence
 
