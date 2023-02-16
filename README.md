@@ -1,6 +1,6 @@
 # OCS2d : Occupation du Sol en 2 dimensions en Hauts-de-France
 
-**Ressources pour l'exploitation de l'occupation du sol à 2 dimensions (usage et couvert) des Hauts-de-France.**
+**Ressources pour l'exploitation de l'OCS2d : occupation du sol à 2 dimensions (usage et couvert) des Hauts-de-France.**
 
 ## Contenu du dépôt
 
@@ -41,9 +41,7 @@ Pour vous aider, trois documents complémentaires essentiels sont consultables :
 
 ### Sémiologie graphique OCS2d
 
-Le dossier `/styles` contient les fichiers de styles pour QGIS et GeoServer, fruit du travail de la plateforme PPIGE. Ils correspondent à la sémiologie de la version Nord-Pas-De-Calais selon les millésimes 2005-2015.
-
-**MAJ Septembre 2022** : les styles de la nouvelle nomenclature sont disponibles dans les répertoires `/new_hdf` en QML (QGIS) et SLD (GeoServer). Les LYR ArcGIS ne sont pas encore disponibles.
+Le dossier `/styles` contient les fichiers de styles pour QGIS et ArcGIS. Ils reprennent le travail effectué par la plateforme PPIGE lors du projet OCS2d Nord-Pas-De-Calais 2005-2015 tout en s'adaptant aux modifications mineures apportées sur la nomenclature pour le projet Geo2France 2021.
 
 ## ToDo
 
