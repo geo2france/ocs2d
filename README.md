@@ -48,7 +48,7 @@ Le dossier `/styles` contient les fichiers de styles pour QGIS et GeoServer, fru
 ## ToDo
 
 - [x] ~~Publication des styles graphiques QML et SLD selon la nomenclature v2021 finale.~~
-- [ ] Pontage nomenclature OCSGE
+- [x] ~~Pontage nomenclature OCSGE~~
 - [x] ~~Ajout du dictionnaire de données 2021~~
 - [x] ~~Ajout de la nomenclature 2021 au format csv~~
 - [x] ~~Ajout des projets QGIS de CQP (Contrôle Qualité Partenarial)~~
