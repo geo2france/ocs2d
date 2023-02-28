@@ -26,7 +26,8 @@
 ├── README.md
 └── styles
     ├── lyr
-    └── qml
+    ├── qml
+    └── sld
 ```
 
 ## Comment contrôler la donnée OCS2d avec QGIS ?
