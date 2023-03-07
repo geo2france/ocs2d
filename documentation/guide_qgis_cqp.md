@@ -27,7 +27,7 @@ En complément, trois documents essentiels sont à consulter :
 ## Indexer des couches téléchargeables
 
 Référencer les fichiers téléchargés dans le tableau en ligne ci-dessous et n'oubliez pas de mettre à jour le champ **Etat** (liste déroulante)
-[Index_Couches_Somme_Zone_1_2_3](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=1350610596)
+[Index_Couches_Oise](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=1350610596)
 
 ## Utilisation de QGIS
 
@@ -116,7 +116,7 @@ Une fois la phase de contrôle terminée :
 
 > :warning: **S'assurer que la couche au format GPKG n'est plus ouverte dans QGIS avant upload sur Pydio (en cas de doute, fermer QGIS). Lorsqu'ils sont ouverts, les GPKG créés 2 fichiers de verrouillage (`*.gpgk-shm` et `*.gpkg-wal`) qui pourraient empêcher le CQE de vérifier correctement les différentes couches**
 
-2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Somme_Zone_CQP](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=1350610596)
+2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Oise](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=1350610596)
 
 ### Comment signaler des erreurs manifestes hors tirage du CQE ?
 
