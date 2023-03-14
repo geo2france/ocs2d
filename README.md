@@ -42,18 +42,11 @@ Pour vous aider, trois documents complémentaires essentiels sont consultables :
 
 ### Sémiologie graphique OCS2d
 
-Le dossier `/styles` contient les fichiers de styles pour QGIS et ArcGIS. Ils reprennent le travail effectué par la plateforme PPIGE lors du projet OCS2d Nord-Pas-De-Calais 2005-2015 tout en s'adaptant aux modifications mineures apportées sur la nomenclature pour le projet Geo2France 2021.
+Le dossier `/styles` contient les fichiers de styles pour GeoServer, QGIS et ArcGIS. Ils reprennent le travail effectué par la plateforme PPIGE lors du projet OCS2d Nord-Pas-De-Calais 2005-2015 tout en s'adaptant aux modifications mineures apportées sur la nomenclature pour le projet Geo2France 2021.
 
-## ToDo
-
-- [x] ~~Publication des styles graphiques QML et SLD selon la nomenclature v2021 finale.~~
-- [x] ~~Pontage nomenclature OCSGE~~
-- [x] ~~Ajout du dictionnaire de données 2021~~
-- [x] ~~Ajout de la nomenclature 2021 au format csv~~
-- [x] ~~Ajout des projets QGIS de CQP (Contrôle Qualité Partenarial)~~
-- [x] ~~Documentation d'utilisation des projets QGIS de CQP~~
-- [ ] Correspondance décret ZAN/Loi LCR
-- [ ] Ajout des scripts SQL "masque ZAN" simulant artificialisé/non artificialisé selon le décret ZAN de 2022
+- Les styles LYR sont compatibles avec toutes les versions d'ArcGIS Desktop et ArcGIS Pro.
+- Les styles QML ont été testés avec la version QGIS LTR (ancienne LTR 3.22 et nouvelle 3.28).
+- Les versions SLD sont compatibles avec les versions GeoServer 2.22 et supérieures.
 
 ## Licence
 
