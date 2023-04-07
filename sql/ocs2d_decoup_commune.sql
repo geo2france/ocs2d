@@ -69,7 +69,7 @@ SELECT
 FROM
   ocs_com
 -- Jointure des différents niveaux de nomenclatures en CS et US
-LEFT JOIN ocs2d.nomenclature_cs_ocs2d AS cs10 ON ocs_com.cs10 = cs10.codecs3
-LEFT JOIN ocs2d.nomenclature_us_ocs2d AS us10 ON ocs_com.us10 = us10.codeus3
-LEFT JOIN ocs2d.nomenclature_cs_ocs2d AS cs21 ON ocs_com.cs21 = cs21.codecs3
-LEFT JOIN ocs2d.nomenclature_us_ocs2d AS us21 ON ocs_com.us21 = us21.codeus3
+LEFT JOIN ocs2d.nomenclature_ocs2d_cs2021 AS cs10 ON ocs_com.cs10 = cs10.codecs3
+LEFT JOIN ocs2d.nomenclature_ocs2d_us2021 AS us10 ON ocs_com.us10 = us10.codeus3
+LEFT JOIN ocs2d.nomenclature_ocs2d_cs2021 AS cs21 ON ocs_com.cs21 = cs21.codecs3
+LEFT JOIN ocs2d.nomenclature_ocs2d_us2021 AS us21 ON ocs_com.us21 = us21.codeus3
