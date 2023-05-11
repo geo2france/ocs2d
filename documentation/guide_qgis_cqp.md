@@ -12,14 +12,14 @@ En complément, trois documents essentiels sont à consulter :
 
 ## Prérequis
 
-- QGIS version LTR [3.22] ou supérieure
+- QGIS version LTR [3.28] ou supérieure
 - Une connexion Internet (les fonds de plan sont des flux OGC)
 
 ## Ressources en ligne
 
 - Télécharger l'intégralité du dépôt <https://github.com/geo2france/ocs2d/> via le bouton **Code** > Download ZIP
 ![Telechargement_Depot](./img/github_1.png)
-- Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Oise/Sources>
+- Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Aisne/Sources>
 ![Pydio](./img/pydio_1.gif)
 
 > :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
@@ -27,7 +27,7 @@ En complément, trois documents essentiels sont à consulter :
 ## Indexer des couches téléchargeables
 
 Référencer les fichiers téléchargés dans le tableau en ligne ci-dessous et n'oubliez pas de mettre à jour le champ **Etat** (liste déroulante)
-[Index_Couches_Oise](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=1350610596)
+[Index_Couches_Aisne](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=461776520)
 
 ## Utilisation de QGIS
 
@@ -110,13 +110,13 @@ Le contrôle est terminé lorsque l'ensemble des polygones des différentes couc
 
 Une fois la phase de contrôle terminée :
 
-1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Oise/CQ_Finalise>
+1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Aisne/CQ_Finalise>
 
 > :information_source: Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France :information_source:
 
 > :warning: **S'assurer que la couche au format GPKG n'est plus ouverte dans QGIS avant upload sur Pydio (en cas de doute, fermer QGIS). Lorsqu'ils sont ouverts, les GPKG créés 2 fichiers de verrouillage (`*.gpgk-shm` et `*.gpkg-wal`) qui pourraient empêcher le CQE de vérifier correctement les différentes couches**
 
-2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Oise](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=1350610596)
+2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Aisne](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit#gid=461776520)
 
 ### Comment signaler des erreurs manifestes hors tirage du CQE ?
 

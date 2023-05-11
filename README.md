@@ -23,6 +23,7 @@
 ├── nomenclature
 │   ├── nomenclature_ocs2d_cs2021.csv
 │   └── nomenclature_ocs2d_us2021.csv
+├── sql
 ├── README.md
 └── styles
     ├── lyr
@@ -45,7 +46,7 @@ Pour vous aider, trois documents complémentaires essentiels sont consultables :
 Le dossier `/styles` contient les fichiers de styles pour GeoServer, QGIS et ArcGIS. Ils reprennent le travail effectué par la plateforme PPIGE lors du projet OCS2d Nord-Pas-De-Calais 2005-2015 tout en s'adaptant aux modifications mineures apportées sur la nomenclature pour le projet Geo2France 2021.
 
 - Les styles LYR sont compatibles avec toutes les versions d'ArcGIS Desktop et ArcGIS Pro.
-- Les styles QML ont été testés avec la version QGIS LTR (ancienne LTR 3.22 et nouvelle 3.28).
+- Les styles QML ont été testés avec la version QGIS LTR (ancienne LTR 3.22 et nouvelle LTR 3.28).
 - Les versions SLD sont compatibles avec les versions GeoServer 2.22 et supérieures.
 
 ## Licence
