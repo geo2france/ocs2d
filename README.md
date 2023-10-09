@@ -70,6 +70,8 @@ Dans le dossier `maintenance` vous trouverez :
 
 - Un fichier GeoJSON contenant le modèle de donnée
 - Le formulaire QGIS associé qui s'assurera du bon formatage des informations.
+- La plupart des champs sont automatisés : assurez vous de renseigner les champs en surbrillance
+- Indiquer dans le champ `display_creator` votre identifiant portail Geo2France (exemple : _pdupont_)
 
 L'import de signalements ne peut se faire que par l'administrateur du projet. Merci de lui envoyer le fichier.
 Si le fichier n'est pas bien formaté ou que les consignes ne sont pas respectées, les erreurs ne pourront être prise en compte.

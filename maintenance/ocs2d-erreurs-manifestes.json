@@ -1,7 +1,7 @@
 {
 "type": "FeatureCollection",
-"name": "Maintenance OCS2d-Erreurs manifestes",
+"name": "ocs2d-erreurs-manifestes",
 "features": [
-{ "type": "Feature", "id": "5effa98b-a3a0-4d39-b268-2f4f49e0f8c0", "properties": { "title": "5effa98b-a3a0-4d39-b268-2f4f49e0f8c0", "description": "", "status": "draft", "created_on": "2023-09-18T11:03:09.797+02:00", "updated_on": "2023-10-09T14:37:37.917+02:00", "deletion_on": null, "feature_type": "124-erreurs-manifestes", "project": "40-maintenance-ocs2d", "display_creator": "Nicolas Rochard", "display_last_editor": "Nicolas Rochard", "creator": 1671, "us_new": { "label": "US5.3.1 Grands ensembles collectifs" }, "comment": "SIGNALEMENT A SUPPRIMER", "millesime": "2021", "type_erreur": "Attribut" }, "geometry": { "type": "Point", "coordinates": [ 3.106483997963547, 50.641624172713279 ] } }
+{ "type": "Feature", "id": "5effa98b-a3a0-4d39-b268-2f4f49e0f8c0", "properties": { "title": "5effa98b-a3a0-4d39-b268-2f4f49e0f8c0", "description": "", "status": "draft", "created_on": "2023-09-18T11:03:09.797+02:00", "updated_on": "2023-10-09T14:37:37.917+02:00", "deletion_on": null, "feature_type": "124-erreurs-manifestes", "project": "40-maintenance-ocs2d", "display_creator": "Nicolas Rochard", "display_last_editor": "Nicolas Rochard", "creator": 1671, "cs_new": { "label": "CS1.1.2 Surfaces non bâties" }, "us_new": { "label": "US5.3.1 Grands ensembles collectifs" }, "comment": "A SUPPRIMER - SIGNALEMENT TYPE", "millesime": "2021", "type_erreur": "Attribut" }, "geometry": { "type": "Point", "coordinates": [ 3.106483997963547, 50.641624172713279 ] } }
 ]
 }
