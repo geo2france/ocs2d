@@ -61,6 +61,7 @@ Dans le cas contraire, vous pourrez consulter les signalements sans pouvoir en a
 Rendez-vous sur le projet de maintenance OCS2d via GeoContrib : <https://www.geo2france.fr/geocontrib/projet/40-maintenance-ocs2d>
 
 - Ne rien indiquer dans le `Nom` ou la `Description` et se concentrer uniquement que les informations de la partie **Données Métier**
+- Toutes les valeurs sont bien présentes pour Code CS de remplacement et Code US de remplacement. Seuls les 10 premiers éléments s'affichent par défaut. Saisissez dans le champs une partie du libellé ou du code pour afficher les valeurs possibles.
 - Les champs `Pris en compte` et `Version` sont réservés au prestataire, merci de les laisser en l'état.
 
 ### Depuis son propre SIG (cas particulier uniquement)
