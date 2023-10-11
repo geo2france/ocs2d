@@ -77,6 +77,31 @@ Dans le dossier `maintenance` vous trouverez :
 L'import de signalements ne peut se faire que par l'administrateur du projet. Merci de lui envoyer le fichier.
 Si le fichier n'est pas bien formaté ou que les consignes ne sont pas respectées, les erreurs ne pourront être prise en compte.
 
+Le formulaire associé (fichier QML) va pré-coder les valeurs par défaut et utiliser la bonne syntaxe pour que le ré-import soit fonctionnel.
+Voici un tableau récapitulatif des valeurs possibles ou par défaut. Attention à la syntaxe.
+
+| nom du champ        | type de champ | exemple valeur                              | valeur possible / par défaut |
+|---------------------|---------------|---------------------------------------------|------------------------------|
+| id                  | String        | NE PAS MODIFIER                             | _NULL_                       |
+| title               | String        | NE PAS MODIFIER                             | _NULL_                       |
+| description         | String        | NE PAS MODIFIER                             | _NULL_                       |
+| status              | String        | NE PAS MODIFIER                             | draft                        |
+| created_on          | DateTime      | 18/09/2023 11:03:09                         | date et heure actuelle       |
+| updated_on          | DateTime      | NE PAS MODIFIER                             | _NULL_                       |
+| deletion_on         | String        | NE PAS MODIFIER                             | _NULL_                       |
+| feature_type        | String        | NE PAS MODIFIER                             | 124-erreurs-manifestes       |
+| project             | String        | NE PAS MODIFIER                             | 40-maintenance-ocs2d         |
+| display_creator     | String        | pdupont                                     | identifiant Geo2France       |
+| display_last_editor | String        | NE PAS MODIFIER                             | _NULL_                       |
+| creator             | Integer       | NE PAS MODIFIER                             | _NULL_                       |
+| cs_new              | JSON          | { "label": "CS4.1.2 Feuillus" }             | [voir liste de valeurs possibles](maintenance/ocs2d_valeur_json_cs.csv) |
+| us_new              | JSON          | { "label": "US2.2.0 Zones commerciales" }   | [voir liste de valeurs possibles](maintenance/ocs2d_valeur_json_us.csv) |
+| comment             | String        | c'est une zone commerciale                  | champ libre                  |
+| millesime           | String        | 2021                                        | 2021, 2015, 2010, 2005       |
+| type_erreur         | String        | Attribut                                    | Attribut, Géométrie, Attribut + Géométrie |
+
+Dernière recommandation : ne pas altérer la projection du fichier GeoJSON. Il doit rester en EPSG:4326.
+
 ### Sémiologie graphique OCS2d
 
 Le dossier `/styles` contient les fichiers de styles pour GeoServer, QGIS et ArcGIS. Ils reprennent le travail effectué par la plateforme PPIGE lors du projet OCS2d Nord-Pas-De-Calais 2005-2015 tout en s'adaptant aux modifications mineures apportées sur la nomenclature pour le projet Geo2France 2021.
