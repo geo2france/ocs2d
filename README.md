@@ -77,7 +77,7 @@ Dans le dossier `maintenance` vous trouverez :
 L'import de signalements ne peut se faire que par l'administrateur du projet. Merci de lui envoyer le fichier.
 Si le fichier n'est pas bien formaté ou que les consignes ne sont pas respectées, les erreurs ne pourront être prise en compte.
 
-Le formulaire associé (fichier QML) va pré-coder les valeurs par défaut et utiliser la bonne syntaxe pour que le réimport soit fonctionnel.
+Le formulaire associé (fichier QML) va pré-coder les valeurs par défaut et utiliser la bonne syntaxe pour que le ré-import soit fonctionnel.
 Voici un tableau récapitulatif des valeurs possibles ou par défaut. Attention à la syntaxe.
 
 | nom du champ        | type de champ | exemple valeur                              | valeur possible / par défaut |
@@ -91,7 +91,7 @@ Voici un tableau récapitulatif des valeurs possibles ou par défaut. Attention 
 | deletion_on         | String        | NE PAS MODIFIER                             | _NULL_                       |
 | feature_type        | String        | NE PAS MODIFIER                             | 124-erreurs-manifestes       |
 | project             | String        | NE PAS MODIFIER                             | 40-maintenance-ocs2d         |
-| display_creator     | String        | jdupont                                     | identifiant Geo2France       |
+| display_creator     | String        | pdupont                                     | identifiant Geo2France       |
 | display_last_editor | String        | NE PAS MODIFIER                             | _NULL_                       |
 | creator             | Integer       | NE PAS MODIFIER                             | _NULL_                       |
 | cs_new              | JSON          | { "label": "CS4.1.2 Feuillus" }             | [voir liste de valeurs possibles](maintenance/ocs2d_valeur_json_cs.csv) |
