@@ -91,7 +91,7 @@ Voici un tableau récapitulatif des valeurs possibles ou par défaut. Attention 
 | deletion_on         | String        | NE PAS MODIFIER                             | _NULL_                       |
 | feature_type        | String        | NE PAS MODIFIER                             | 124-erreurs-manifestes       |
 | project             | String        | NE PAS MODIFIER                             | 40-maintenance-ocs2d         |
-| display_creator     | String        | pdupont                                     | identifiant Geo2France       |
+| display_creator     | String        | pdupont                                     | identifiant (login) Geo2France       |
 | display_last_editor | String        | NE PAS MODIFIER                             | _NULL_                       |
 | creator             | Integer       | NE PAS MODIFIER                             | _NULL_                       |
 | cs_new              | JSON          | { "label": "CS4.1.2 Feuillus" }             | [voir liste de valeurs possibles](maintenance/ocs2d_valeur_json_cs.csv) |
