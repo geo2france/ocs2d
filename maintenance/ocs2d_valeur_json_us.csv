@@ -1,53 +1,53 @@
-"{ ""label"": ""US1.1.1 Prairies"" }"
-"{ ""label"": ""US1.1.2 Bandes enherbées"" }"
-"{ ""label"": ""US1.1.3 Cultures annuelles"" }"
-"{ ""label"": ""US1.1.4 Horticulture - pépinières"" }"
-"{ ""label"": ""US1.1.5 Cultures permanentes"" }"
-"{ ""label"": ""US1.1.6 Autoconsommation"" }"
-"{ ""label"": ""US1.1.7 Infrastructures agricoles"" }"
-"{ ""label"": ""US1.2.1 Zones de coupes"" }"
-"{ ""label"": ""US1.2.2 Peupleraies"" }"
-"{ ""label"": ""US1.2.3 Plantations récentes"" }"
-"{ ""label"": ""US1.2.4 Autres plantations"" }"
-"{ ""label"": ""US1.3.1 Extraction de matériaux en exploitation"" }"
-"{ ""label"": ""US1.3.2 Terrils en exploitation"" }"
-"{ ""label"": ""US1.4.0 Aquaculture - pisciculture"" }"
-"{ ""label"": ""US2.1.1 Zones industrielles et activités économiques"" }"
-"{ ""label"": ""US2.1.2 Zone de stockage ou production d'énergie fossile"" }"
-"{ ""label"": ""US2.1.3 Zone de stockage ou production de biogaz"" }"
-"{ ""label"": ""US2.1.4 Zone de production d'énergie solaire"" }"
-"{ ""label"": ""US2.1.5 Zone de production éolienne"" }"
-"{ ""label"": ""US2.2.0 Zones commerciales"" }"
-"{ ""label"": ""US3.1.1 Emprises scolaires - universitaires"" }"
-"{ ""label"": ""US3.1.2 Emprises hospitalières"" }"
-"{ ""label"": ""US3.1.3 Cimetières et lieux de culte"" }"
-"{ ""label"": ""US3.1.4 Parkings et places"" }"
-"{ ""label"": ""US3.1.5 Déchetteries et décharges publiques"" }"
-"{ ""label"": ""US3.1.6 Autres emprises collectives"" }"
-"{ ""label"": ""US3.2.1 Parcs et espaces verts paysagers"" }"
-"{ ""label"": ""US3.2.2 Complexes sportifs et terrains de sports"" }"
-"{ ""label"": ""US3.2.3 Golfs"" }"
-"{ ""label"": ""US3.2.4 Campings"" }"
-"{ ""label"": ""US3.2.5 Complexes culturels et zones de loisirs"" }"
-"{ ""label"": ""US4.1.1 Routier principal"" }"
-"{ ""label"": ""US4.1.2 Routier secondaire"" }"
-"{ ""label"": ""US4.2.1 Ferré principal"" }"
-"{ ""label"": ""US4.2.2 Ferré secondaire"" }"
-"{ ""label"": ""US4.3.0 Aérien"" }"
-"{ ""label"": ""US4.4.0 Fluvial et maritime"" }"
-"{ ""label"": ""US4.5.0 Espaces associés aux réseaux de transports"" }"
-"{ ""label"": ""US5.1.1 Habitat continu fortement compact"" }"
-"{ ""label"": ""US5.1.2 Habitat continu moyennement compact"" }"
-"{ ""label"": ""US5.1.3 Habitat continu faiblement compact"" }"
-"{ ""label"": ""US5.2.1 Habitat discontinu fortement compact"" }"
-"{ ""label"": ""US5.2.2 Habitat discontinu moyennement compact"" }"
-"{ ""label"": ""US5.2.3 Habitat discontinu faiblement compact"" }"
-"{ ""label"": ""US5.3.1 Grands ensembles collectifs"" }"
-"{ ""label"": ""US5.3.2 Collectifs"" }"
-"{ ""label"": ""US5.4.0 Habitat isolé"" }"
-"{ ""label"": ""US6.1.1 Chantiers"" }"
-"{ ""label"": ""US6.1.2 Extraction de matériaux en mutation"" }"
-"{ ""label"": ""US6.2.1 Friches économiques"" }"
-"{ ""label"": ""US6.2.2 Vacants urbains"" }"
-"{ ""label"": ""US6.2.3 Espaces agricoles non exploités"" }"
-"{ ""label"": ""US7.0.0 Usages indéterminés"" }"
+{ "label": "US1.1.1 Prairies" }
+{ "label": "US1.1.2 Bandes enherbées" }
+{ "label": "US1.1.3 Cultures annuelles" }
+{ "label": "US1.1.4 Horticulture - pépinières" }
+{ "label": "US1.1.5 Cultures permanentes" }
+{ "label": "US1.1.6 Autoconsommation" }
+{ "label": "US1.1.7 Infrastructures agricoles" }
+{ "label": "US1.2.1 Zones de coupes" }
+{ "label": "US1.2.2 Peupleraies" }
+{ "label": "US1.2.3 Plantations récentes" }
+{ "label": "US1.2.4 Autres plantations" }
+{ "label": "US1.3.1 Extraction de matériaux en exploitation" }
+{ "label": "US1.3.2 Terrils en exploitation" }
+{ "label": "US1.4.0 Aquaculture - pisciculture" }
+{ "label": "US2.1.1 Zones industrielles et activités économiques" }
+{ "label": "US2.1.2 Zone de stockage ou production d'énergie fossile" }
+{ "label": "US2.1.3 Zone de stockage ou production de biogaz" }
+{ "label": "US2.1.4 Zone de production d'énergie solaire" }
+{ "label": "US2.1.5 Zone de production éolienne" }
+{ "label": "US2.2.0 Zones commerciales" }
+{ "label": "US3.1.1 Emprises scolaires - universitaires" }
+{ "label": "US3.1.2 Emprises hospitalières" }
+{ "label": "US3.1.3 Cimetières et lieux de culte" }
+{ "label": "US3.1.4 Parkings et places" }
+{ "label": "US3.1.5 Déchetteries et décharges publiques" }
+{ "label": "US3.1.6 Autres emprises collectives" }
+{ "label": "US3.2.1 Parcs et espaces verts paysagers" }
+{ "label": "US3.2.2 Complexes sportifs et terrains de sports" }
+{ "label": "US3.2.3 Golfs" }
+{ "label": "US3.2.4 Campings" }
+{ "label": "US3.2.5 Complexes culturels et zones de loisirs" }
+{ "label": "US4.1.1 Routier principal" }
+{ "label": "US4.1.2 Routier secondaire" }
+{ "label": "US4.2.1 Ferré principal" }
+{ "label": "US4.2.2 Ferré secondaire" }
+{ "label": "US4.3.0 Aérien" }
+{ "label": "US4.4.0 Fluvial et maritime" }
+{ "label": "US4.5.0 Espaces associés aux réseaux de transports" }
+{ "label": "US5.1.1 Habitat continu fortement compact" }
+{ "label": "US5.1.2 Habitat continu moyennement compact" }
+{ "label": "US5.1.3 Habitat continu faiblement compact" }
+{ "label": "US5.2.1 Habitat discontinu fortement compact" }
+{ "label": "US5.2.2 Habitat discontinu moyennement compact" }
+{ "label": "US5.2.3 Habitat discontinu faiblement compact" }
+{ "label": "US5.3.1 Grands ensembles collectifs" }
+{ "label": "US5.3.2 Collectifs" }
+{ "label": "US5.4.0 Habitat isolé" }
+{ "label": "US6.1.1 Chantiers" }
+{ "label": "US6.1.2 Extraction de matériaux en mutation" }
+{ "label": "US6.2.1 Friches économiques" }
+{ "label": "US6.2.2 Vacants urbains" }
+{ "label": "US6.2.3 Espaces agricoles non exploités" }
+{ "label": "US7.0.0 Usages indéterminés" }
