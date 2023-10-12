@@ -100,6 +100,7 @@ Voici un tableau récapitulatif des valeurs possibles ou par défaut. Attention 
 | millesime           | String        | 2021                                        | 2021, 2015, 2010, 2005       |
 | type_erreur         | String        | Attribut                                    | Attribut, Géométrie, Attribut + Géométrie |
 
+⚠️ Attention à ne supprimer le signalement type du modèle qu'après avoir insérer l'ensemble de vos données de signalement ⚠️
 Dernière recommandation : ne pas altérer la projection du fichier GeoJSON. Il doit rester en EPSG:4326.
 
 ### Sémiologie graphique OCS2d
