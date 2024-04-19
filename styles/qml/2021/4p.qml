@@ -146,10 +146,10 @@
   </elevation>
   <renderer-v2 symbollevels="0" enableorderby="0" attr="p4_21" type="categorizedSymbol" referencescale="-1" forceraster="0">
     <categories>
-      <category label="1" symbol="0" uuid="{a0f665f9-4f65-43d8-be87-60d05e4df016}" type="long" value="1" render="true"/>
-      <category label="2" symbol="1" uuid="{926806c2-7cc5-4841-a134-eb12f10319e9}" type="long" value="2" render="true"/>
-      <category label="3" symbol="2" uuid="{680ba60e-5b79-4855-b962-fbc9e170ebd0}" type="long" value="3" render="true"/>
-      <category label="4" symbol="3" uuid="{2196d4b5-095e-417d-8d84-e2fde0c7166d}" type="long" value="4" render="true"/>
+      <category label="Espaces Urbanisés" symbol="0" uuid="{a0f665f9-4f65-43d8-be87-60d05e4df016}" type="long" value="1" render="true"/>
+      <category label="Espaces Agricoles" symbol="1" uuid="{926806c2-7cc5-4841-a134-eb12f10319e9}" type="long" value="2" render="true"/>
+      <category label="Espaces Naturels, Semi-Naturels" symbol="2" uuid="{680ba60e-5b79-4855-b962-fbc9e170ebd0}" type="long" value="3" render="true"/>
+      <category label="Infrastructures" symbol="3" uuid="{2196d4b5-095e-417d-8d84-e2fde0c7166d}" type="long" value="4" render="true"/>
     </categories>
     <symbols>
       <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="fill" force_rhr="0" alpha="1" name="0">
@@ -392,6 +392,7 @@
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
     <DiagramCategory diagramOrientation="Up" sizeScale="3x:0,0,0,0,0,0" width="15" barWidth="5" lineSizeScale="3x:0,0,0,0,0,0" minimumSize="0" penAlpha="255" showAxis="1" penWidth="0" enabled="0" spacingUnitScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" sizeType="MM" spacingUnit="MM" minScaleDenominator="0" backgroundAlpha="255" maxScaleDenominator="1e+08" scaleDependency="Area" height="15" scaleBasedVisibility="0" spacing="5" opacity="1" penColor="#000000" backgroundColor="#ffffff" direction="0" rotationOffset="270" lineSizeType="MM">
       <fontProperties strikethrough="0" italic="0" underline="0" style="" bold="0" description="Fira Sans Semi-Light,10,-1,5,50,0,0,0,0,0"/>
+      <attribute colorOpacity="1" label="" field="" color="#000000"/>
       <axisSymbol>
         <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="line" force_rhr="0" alpha="1" name="">
           <data_defined_properties>
