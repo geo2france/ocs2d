@@ -6,40 +6,35 @@
 
 ```
 ├── control_qualite
-│   ├── data
-│   │   ├── data_exo
-│   │   └── dissolve
-│   ├── list
-│   ├── model_cqp_ocs2d.qgz
-│   ├── model_cqp_ocs2d.qgz.mldata
-│   ├── modeler
-│   ├── styles
-│   └── svg
+│ ├── data
+│ │ ├── data_exo
+│ │ └── dissolve
+│ ├── list
+│ │ ├── list_ocs2d_cs.csv
+│ │ └── list_ocs2d_us.csv
+│ ├── model_cqp_ocs2d.qgz
+│ ├── model_cqp_ocs2d.qgz.mldata
+│ ├── modeler
+│ ├── styles
+│ └── svg
 ├── documentation
-│   ├── dictionnaire_ocs2d_hdf.pdf
-│   ├── guide_methodo_cqe_ocs2d_hdf.pdf
-│   ├── guide_qgis_cqp.md
+│ ├── dictionnaire_ocs2d_hdf.pdf
+│ ├── guide_methodo_cqe_ocs2d_hdf.pdf
+│ ├── guide_qgis_cqp.md
+│ └── img
+├── indicateurs
+│ └── nomenclatures_4p_21p
 ├── LICENSE
 ├── logos
 ├── maintenance
-│   ├── ocs2d-erreurs-manifestes.json
-│   ├── ocs2d-erreurs-manifestes.qml
-│   ├── ocs2d_valeur_json_cs.csv
-│   └── ocs2d_valeur_json_us.csv
 ├── nomenclature
-│   ├── nomenclature_OCS2d_2021_final.xlsx
-│   ├── nomenclature_ocs2d_21p2021.csv
-│   ├── nomenclature_ocs2d_4p2021.csv
-│   ├── nomenclature_ocs2d_cs2021.csv
-│   └── nomenclature_ocs2d_us2021.csv
+│ ├── nomenclature_OCS2d_2021_final.xlsx
+│ ├── nomenclature_ocs2d_21p2021.csv
+│ ├── nomenclature_ocs2d_4p2021.csv
+│ ├── nomenclature_ocs2d_cs2021.csv
+│ └── nomenclature_ocs2d_us2021.csv
 ├── README.md
-├── sql
-│   ├── calcul_4p_21p_2021.sql
-│   ├── calcul_4p_21p_multidates.sql
-│   ├── methode_4p_21p
-│   │   ├── matrice_21postes_ocs2d_2021.xlsx
-│   │   └── matrice_4postes_ocs2d_2021.xlsx
-│   └── ocs2d_decoup_commune.sql
+├── sql_astuces
 └── styles
     ├── lyr
     ├── qml
