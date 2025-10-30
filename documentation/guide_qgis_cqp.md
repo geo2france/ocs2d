@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Cette méthode concerne le protocole CQP utilisé pour le millésime OCS2D 2021.
+
 # Contrôle Qualité Partenarial (CQP) de l'OCS2d avec QGIS
 
 ![Logo_Geo2France](./img/geo2france_alt.png)
@@ -13,42 +16,27 @@ En complément, trois documents essentiels sont à consulter :
 ## Prérequis
 
 - QGIS version LTR [3.40] ou supérieure
-- Une connexion Internet (les fonds de plan sont des flux OGC, en COG, ou en FlatGeobuf)
-
-## Ressources en ligne
-
-- Télécharger l'archive contenant le **Kit_CQP_QGIS** depuis le répertoire du département à contrôler : <https://www.geo2france.fr/portal/s/5/documents?folderId=07216b86ac12000c4b375b2d293397ca>
-
-![Telechargement_QGIS](./img/github_1.png)
-
-- Télécharger la zone à vérifier depuis le répertoire **A_Verifier** via l'espace collaboratif sur Geo2France accessible depuis : <https://www.geo2france.fr/portal/s/5/documents?folderId=072201ddac12000c7fe3e428546c1d5f>
-
-![Documents_Sources](./img/pydio_1.gif)
-
-> :information_source: **Vous devez avoir un compte Geo2France et être membre de l'espace Occupation du Sol 2d (adhésion libre sans modération)** :information_source:
-
-## Indexer des couches téléchargeables
-
-Référencer les fichiers téléchargés dans le tableau en ligne ci-dessous et n'oubliez pas de mettre à jour le champ **Etat** (liste déroulante)
-
-[Index_Couches_CQP](https://www.geo2france.fr/portal/dw/oeditor?docId=0719e7b3ac12000c54c4d19031ed39d8&mode=edit)
+- Une connexion Internet (les fonds de plan sont des flux OGC ou en COG)
 
 ## Utilisation de QGIS
 
+### Installation du plugin Go2NextFeature3
+
+Avant de lancer le projet, téléchargez le plugin QGIS Go2NextFeature3. Ce plugin facilite le balayage d'entités.
+
+Dans QGIS : Menu Extensions > Installer/Gérer les extensions > Go2NextFeature3
+
 ### Fonctionnement du projet
 
-Décompresser l'archive `Kit_CQP_QGIS.zip` et ouvrir le projet QGIS.
+Décompresser l'archive `ocs2d-main.zip` et ouvrir le projet QGIS situé dans le dossier **control_qualite** : `model_cqp_ocs2d.qgz`
 
 Ce projet contient les données en fond de plan dont vous avez besoin pour le contrôle :
 
-- Couches fusionnées (dissolve) US et CS 2024
-- L'ensemble des prises de vues aériennes y compris les images antérieures 2021 pour analyser les US 6.x
+- Couches fusionnées US et CS pour les millésimes 2021 / 2015 (NPDC) / 2010 (PIC)
+- L'ensemble des prises de vues aériennes y compris les images historiques pour analyser les US 6.x
 - Le Scan 25
-- Le Registre Parcellaire Agricole de l'IGN
-- Les TUP des fichiers fonciers du CEREMA
 
 Il dispose de thèmes préconfigurés synchronisant les couches et fonds de plan en fonction des types (CS ou US) et des millésimes.
-
 ![Gestion_Theme](./img/qgis_settings_2.png)
 
 ### Activer les Macros
@@ -72,52 +60,36 @@ Selon l'échelle de visualisation, l'affichage basculera entre polygones et symb
 
 ![Echelle](./img/qgis_settings_4.png)
 
-2. Ouvrir la table attributaire du GPKG chargé
+2. Cliquer sur l'icône Go2NextFeature3
+![Go2NextFeature_Icon](./img/qgis_settings_5.png)
 
-![Table_Attributaire](./img/qgis_settings_5.png)
-
-3. Basculer en vue formulaire et sélectionner l'option _Panoramique automatique sur l'entité courante_
+3. Sélectionner, depuis le panneau du plugin, la couche du GPKG à vérifier
 
 ![Go2NextFeature_Panneau](./img/qgis_settings_6.png)
 
-4. Activer le mode édition
-
+4. Cliquer sur le nom du GPKG chargé et activer le mode édition
 ![Edition](./img/qgis_settings_7a.png)
 
-5. Cliquer sur la première ligne pour commencer, la carte se centrera automatiquement sur l'objet à vérifier.
+5. Cliquer sur le bouton du panneau Go2NextFeature :fast_forward: pour parcourir les entités. L'objet à contrôler sera centré sur la carte.
 
-6. Le formulaire s'actualise automatiquement et affiche les informations de l'objet sélectionné.
-
+6. Utilisez l'icône _identifier des entités_ pour afficher les informations du formulaire
 ![Identifier](./img/qgis_settings_7b.png)
 
-La partie supérieure (_non éditable_) renseigne des informations actuelles de l'objet.
-Seule la partie _Contrôle Qualité_ est éditable.
+La partie de droite (_non éditable_) renseigne des informations actuelles de l'objet. Éditer la partie gauche selon les valeurs possibles.
 Si un _code_remplacement_ est sélectionné ou si la case _erreur géométrique_ est cochée, le statut _etat_cqp_ bascule automatiquement en erreur.
+
 ![Formulaire](./img/formulaire_1.png)
 
-Une fois le formulaire validé (le contour du polygone changera de couleur), se rendre à l'objet suivant avec le bouton :fast_forward: et éditer le formulaire au fil de l'eau. Enregistrer régulièrement votre travail ![Edition](./img/qgis_settings_8.png)
+Une fois le formulaire validé (le contour du polygone changera de couleur), se rendre à l'objet suivant avec le bouton :fast_forward: et ouvrir le formulaire - étape 5 et 6 - enregistrer régulièrement votre travail ![Edition](./img/qgis_settings_8.png)
+
+> :warning: Si le formulaire QGIS ne s'affiche pas, assurez vous d'avoir correctement paramétré QGIS :warning:
+![Parametre_Formulaire](./img/qgis_settings_1.jpg)
 
 ---
 
 #### Demo
 
 ![Demo CQP](./img/demo_cqp_1.gif)
-
-----
-
-### CQP terminé
-
-Le contrôle est terminé lorsque l'ensemble des polygones des deux couches (GPKG) US et CS ont été vérifiés. Vous ne devez plus avoir de symbole :warning: visible sur la carte (ou de polygone avec un contour blanc).
-
-Une fois la phase de contrôle terminée :
-
-1. Renvoyer les GPKG sur l'espace collaboratif Geo2France dans le dossier **Controle_Termine** : <https://www.geo2france.fr/portal/s/5/documents?folderId=072201ddac12000c7fe3e428546c1d5f>
-
-> :information_source: Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France :information_source:
-
-> :warning: **S'assurer que la couche au format GPKG n'est plus ouverte dans QGIS avant upload sur Pydio (en cas de doute, fermer QGIS). Lorsqu'ils sont ouverts, les GPKG créés 2 fichiers de verrouillage (`*.gpgk-shm` et `*.gpkg-wal`) qui pourraient empêcher le CQE de vérifier correctement les différentes couches**
-
-2. Mettre à jour le champ **Etat** du fichier [Index_Couches_CQP](https://www.geo2france.fr/portal/dw/oeditor?docId=0719e7b3ac12000c54c4d19031ed39d8&mode=edit)
 
 ---
 
