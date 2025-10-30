@@ -2,6 +2,9 @@
 
 **Ressources pour l'exploitation de l'OCS2d : occupation du sol à 2 dimensions (usage et couvert) des Hauts-de-France.**
 
+> [!TIP]
+> Ce dépôt partage les pratiques, outils et automatisations utilisés pour le contrôle qualité de l'OCS2d.
+
 ## Contenu du dépôt
 
 ```
@@ -52,7 +55,8 @@ Pour vous aider, trois documents complémentaires essentiels sont consultables :
 - [Guide méthodologique du contrôle qualité externe](https://github.com/geo2france/ocs2d/blob/main/documentation/guide_methodo_cqe_ocs2d_hdf.pdf)
 - [Questions fréquemment posées lors du contrôle qualité](https://github.com/geo2france/ocs2d/wiki/FAQ-Contr%C3%B4le-Qualit%C3%A9-Partenarial)
 
-**MAJ - 30 octobre 2025 - Les phases de contrôle qualité participatif s'organisent depuis le portail collaboratif Geo2France (propulsé par [eXo Plateform](https://github.com/exoplatform))**
+> [!NOTE]
+> Les phases de contrôle qualité participatif s'organisent depuis le portail collaboratif Geo2France.
 
 ## Maintenance : signalement des erreurs manifestes
 
