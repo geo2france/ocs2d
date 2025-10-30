@@ -1,16 +1,16 @@
 ----------------------------------
 --- Optimisation par des INDEX ---
 ----------------------------------
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_gid ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (gid);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs21 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs21);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us21 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us21);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs15 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs15);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us15 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us15);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs10 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs10);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us10 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us10);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs05 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs05);
-CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us05 ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us05);
-CREATE INDEX IF NOT EXISTS dx_mv_ocs2d_geom ON ocs2d.ocs2d_hdf_2005_2010_2015_2021 USING GIST (geom);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_fid ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (fid);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs21 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs21);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us21 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us21);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs15 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs15);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us15 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us15);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs10 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs10);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us10 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us10);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_cs05 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (cs05);
+CREATE INDEX IF NOT EXISTS idx_mv_ocs2d_us05 ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING BTREE (us05);
+CREATE INDEX IF NOT EXISTS dx_mv_ocs2d_geom ON ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 USING GIST (geom);
 
 -----------------------------------------
 --- Génération de l'enveloppe urbaine ---
@@ -36,7 +36,7 @@ WITH dilatation_enveloppe AS (
     SELECT
         (ST_Dump(ST_Buffer((ST_Union(ST_Buffer(ocs.geom, 50))), 0.0, 'join=bevel'))).geom::geometry(Polygon, 2154) AS geom
     FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
     WHERE
         ((LEFT (cs21,5) = 'CS1.1' AND LEFT(us21,3) NOT IN ('US1','US4','US7')) 
         OR (LEFT(us21,3) IN ('US2','US3','US5')) 
@@ -132,7 +132,7 @@ WITH dilatation_enveloppe AS (
     SELECT
         (ST_Dump(ST_Buffer((ST_Union(ST_Buffer(ocs.geom, 50))), 0.0, 'join=bevel'))).geom::geometry(Polygon, 2154) AS geom
     FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
     WHERE
         ((LEFT (cs15,5) = 'CS1.1' AND LEFT(us15,3) NOT IN ('US1','US4','US7')) 
         OR (LEFT(us15,3) IN ('US2','US3','US5')) 
@@ -228,7 +228,7 @@ WITH dilatation_enveloppe AS (
     SELECT
         (ST_Dump(ST_Buffer((ST_Union(ST_Buffer(ocs.geom, 50))), 0.0, 'join=bevel'))).geom::geometry(Polygon, 2154) AS geom
     FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
     WHERE
         ((LEFT (cs10,5) = 'CS1.1' AND LEFT(us10,3) NOT IN ('US1','US4','US7')) 
         OR (LEFT(us10,3) IN ('US2','US3','US5')) 
@@ -324,7 +324,7 @@ WITH dilatation_enveloppe AS (
     SELECT
         (ST_Dump(ST_Buffer((ST_Union(ST_Buffer(ocs.geom, 50))), 0.0, 'join=bevel'))).geom::geometry(Polygon, 2154) AS geom
     FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
     WHERE
         ((LEFT (cs05,5) = 'CS1.1' AND LEFT(us05,3) NOT IN ('US1','US4','US7')) 
         OR (LEFT(us05,3) IN ('US2','US3','US5')) 
@@ -427,7 +427,7 @@ CREATE TABLE wip.structure_agricole_2021 AS
   SELECT
       (ST_Dump(ST_Buffer(ST_Union(ocs.geom), 0.0))).geom::geometry(Polygon, 2154) AS geom
   FROM
-      ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+      ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
   WHERE
       (LEFT(ocs.us21, 5) = 'US1.1' AND LEFT(ocs.cs21, 5) = 'CS1.1') OR (LEFT(ocs.us21, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs21, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us21, 7) = 'US1.4.0' AND LEFT(ocs.cs21, 5) = 'CS1.1')
   ;
@@ -447,7 +447,7 @@ CREATE TABLE wip.structure_agricole_2015 AS
   SELECT
       (ST_Dump(ST_Buffer(ST_Union(ocs.geom), 0.0))).geom::geometry(Polygon, 2154) AS geom
   FROM
-      ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+      ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
   WHERE
       (LEFT(ocs.us15, 5) = 'US1.1' AND LEFT(ocs.cs15, 5) = 'CS1.1') OR (LEFT(ocs.us15, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs15, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us15, 7) = 'US1.4.0' AND LEFT(ocs.cs15, 5) = 'CS1.1')
   ;
@@ -467,7 +467,7 @@ CREATE TABLE wip.structure_agricole_2010 AS
   SELECT
       (ST_Dump(ST_Buffer(ST_Union(ocs.geom), 0.0))).geom::geometry(Polygon, 2154) AS geom
   FROM
-      ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+      ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
   WHERE
       (LEFT(ocs.us10, 5) = 'US1.1' AND LEFT(ocs.cs10, 5) = 'CS1.1') OR (LEFT(ocs.us10, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs10, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us10, 7) = 'US1.4.0' AND LEFT(ocs.cs10, 5) = 'CS1.1')
   ;
@@ -487,7 +487,7 @@ CREATE TABLE wip.structure_agricole_2005 AS
   SELECT
       (ST_Dump(ST_Buffer(ST_Union(ocs.geom), 0.0))).geom::geometry(Polygon, 2154) AS geom
   FROM
-      ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+      ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
   WHERE
       (LEFT(ocs.us05, 5) = 'US1.1' AND LEFT(ocs.cs05, 5) = 'CS1.1') OR (LEFT(ocs.us05, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs05, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us05, 7) = 'US1.4.0' AND LEFT(ocs.cs05, 5) = 'CS1.1')
   ;
@@ -506,7 +506,7 @@ CREATE INDEX idx_structure_agricole_2005_geom ON wip.structure_agricole_2005 USI
 -- Les codes de la matrice ENAF sont définis par l'IGN et sont décrits dans la documentation de la matrice ENAF
 
 -- La requête utilise les tables suivantes :
--- - ocs2d.ocs2d_hdf_2005_2010_2015_2021 : table contenant les données de l'occupation du sol pour les millésimes 2005, 2010, 2015 et 2021
+-- - ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 : table contenant les données de l'occupation du sol pour les millésimes 2005, 2010, 2015 et 2021
 -- - wip.structure_agricole_xxxx : table contenant les emprises agricoles pour le millésime xxxx
 -- - wip.ocs2d_enveloppe_urbaine_xxxx : table contenant les enveloppes urbaines pour le millésime xxxx
 
@@ -515,119 +515,119 @@ CREATE INDEX idx_structure_agricole_2005_geom ON wip.structure_agricole_2005 USI
 -- - enaf_xxxx : code de la matrice ENAF pour le millésime xxxx
 -- - urba_xxxx : code de la matrice ENAF pour le millésime xxxx
 
-DROP MATERIALIZED VIEW IF EXISTS ocs2d.ocs2d_enaf_2005_2010_2015_2021;
-CREATE MATERIALIZED VIEW ocs2d.ocs2d_enaf_2005_2010_2015_2021 AS
+DROP TABLE IF EXISTS ocs2d_2021.ocs2d_enaf_2005_2010_2015_2021;
+CREATE TABLE ocs2d_2021.ocs2d_enaf_2005_2010_2015_2021 AS
 
 --- Analyse du bati agricole 2021 ---
   WITH bati_agricole_2021 AS (
-    SELECT DISTINCT ON (ocs.gid) 
-      ocs.gid,
+    SELECT DISTINCT ON (ocs.fid) 
+      ocs.fid,
       CASE
         WHEN eu.geom IS NOT NULL THEN TRUE
         ELSE FALSE
       END AS contexte,
       ocs.geom
       FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
     LEFT JOIN wip.structure_agricole_2021 AS sa ON ST_Intersects(sa.geom, ocs.geom)
     LEFT JOIN wip.ocs2d_enveloppe_urbaine_2021 AS eu ON ST_DWithin(sa.geom, eu.geom, 50)
     WHERE
       (LEFT(ocs.us21, 5) = 'US1.1' AND LEFT(ocs.cs21, 5) = 'CS1.1') OR (LEFT(ocs.us21, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs21, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us21, 7) = 'US1.4.0' AND LEFT(ocs.cs21, 5) = 'CS1.1')
-    ORDER BY ocs.gid  
+    ORDER BY ocs.fid  
   ),
 
   --- Analyse du bati agricole 2015 ---
    bati_agricole_2015 AS (
-    SELECT DISTINCT ON (ocs.gid) 
-      ocs.gid,
+    SELECT DISTINCT ON (ocs.fid) 
+      ocs.fid,
       CASE
         WHEN eu.geom IS NOT NULL THEN TRUE
         ELSE FALSE
       END AS contexte,
       ocs.geom
       FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
     LEFT JOIN wip.structure_agricole_2015 AS sa ON ST_Intersects(sa.geom, ocs.geom)
     LEFT JOIN wip.ocs2d_enveloppe_urbaine_2015 AS eu ON ST_DWithin(sa.geom, eu.geom, 50)
     WHERE
       (LEFT(ocs.us15, 5) = 'US1.1' AND LEFT(ocs.cs15, 5) = 'CS1.1') OR (LEFT(ocs.us15, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs15, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us15, 7) = 'US1.4.0' AND LEFT(ocs.cs15, 5) = 'CS1.1')
-    ORDER BY ocs.gid  
+    ORDER BY ocs.fid  
   ),
 
 --- Analyse du bati agricole 2010 ---
   bati_agricole_2010 AS (
-    SELECT DISTINCT ON (ocs.gid) 
-      ocs.gid,
+    SELECT DISTINCT ON (ocs.fid) 
+      ocs.fid,
       CASE
         WHEN eu.geom IS NOT NULL THEN TRUE
         ELSE FALSE
       END AS contexte,
       ocs.geom
       FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
     LEFT JOIN wip.structure_agricole_2010 AS sa ON ST_Intersects(sa.geom, ocs.geom)
     LEFT JOIN wip.ocs2d_enveloppe_urbaine_2010 AS eu ON ST_DWithin(sa.geom, eu.geom, 50)
     WHERE
       (LEFT(ocs.us10, 5) = 'US1.1' AND LEFT(ocs.cs10, 5) = 'CS1.1') OR (LEFT(ocs.us10, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs10, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us10, 7) = 'US1.4.0' AND LEFT(ocs.cs10, 5) = 'CS1.1')
-    ORDER BY ocs.gid  
+    ORDER BY ocs.fid  
   ),
 
   --- Analyse du bati agricole 2005 ---
    bati_agricole_2005 AS (
-    SELECT DISTINCT ON (ocs.gid) 
-      ocs.gid,
+    SELECT DISTINCT ON (ocs.fid) 
+      ocs.fid,
       CASE
         WHEN eu.geom IS NOT NULL THEN TRUE
         ELSE FALSE
       END AS contexte,
       ocs.geom
       FROM
-        ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs
+        ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs
     LEFT JOIN wip.structure_agricole_2005 AS sa ON ST_Intersects(sa.geom, ocs.geom)
     LEFT JOIN wip.ocs2d_enveloppe_urbaine_2005 AS eu ON ST_DWithin(sa.geom, eu.geom, 50)
     WHERE
       (LEFT(ocs.us05, 5) = 'US1.1' AND LEFT(ocs.cs05, 5) = 'CS1.1') OR (LEFT(ocs.us05, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs05, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us05, 7) = 'US1.4.0' AND LEFT(ocs.cs05, 5) = 'CS1.1')
-    ORDER BY ocs.gid  
+    ORDER BY ocs.fid  
   )
 
   SELECT
-  ocs.gid,
+  ocs.fid,
   --------------------------------
   -- Ventilation ENAF pour 2021 --
   --------------------------------
   CASE
     -- Ventilation selon la localisation par rapport à l'enveloppe urbaine
-    WHEN ((LEFT(us21, 5) = 'US1.1' AND LEFT(cs21, 5) = 'CS1.1') OR (LEFT(us21, 7) = 'US1.1.7' AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us21, 7) = 'US1.4.0' AND LEFT(ocs.cs21, 5) = 'CS1.1')) AND ba_2021.contexte IS TRUE THEN 'Ue'
-    WHEN ((LEFT(us21, 5) = 'US1.1' AND LEFT(cs21, 5) = 'CS1.1') OR (LEFT(us21, 7) = 'US1.1.7' AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us21, 7) = 'US1.4.0' AND LEFT(ocs.cs21, 5) = 'CS1.1')) AND ba_2021.contexte IS FALSE THEN 'A'
+    WHEN ((LEFT(us21, 5) = 'US1.1' AND LEFT(cs21, 5) = 'CS1.1') OR (LEFT(us21, 7) = 'US1.1.7' AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us21, 7) = 'US1.4.0' AND LEFT(ocs.cs21, 5) = 'CS1.1')) AND ba_2021.contexte IS TRUE THEN 'Activité'
+    WHEN ((LEFT(us21, 5) = 'US1.1' AND LEFT(cs21, 5) = 'CS1.1') OR (LEFT(us21, 7) = 'US1.1.7' AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us21, 7) = 'US1.4.0' AND LEFT(ocs.cs21, 5) = 'CS1.1')) AND ba_2021.contexte IS FALSE THEN 'Agricole'
     -- Ventilation selon la nomenclature en 4 postes
-    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 1 THEN 'Ua'
-    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 2 THEN 'A'
-    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 3 THEN 'N'
-    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 4 THEN 'Ui'
+    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 1 THEN 'Urbanisé autre'
+    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 2 THEN 'Agricole'
+    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 3 THEN 'Naturel'
+    WHEN LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_21 = 4 THEN 'Infrastructure'
     -- Ventilation selon matrice sans pondération 4 postes ou enveloppe urbaine 
     WHEN (LEFT(us21,5) = 'US1.1' 
       OR LEFT(us21,5) = 'US1.4' 
       OR LEFT(us21,7) IN ('US2.1.3','US2.1.5')) 
-      AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'A'
+      AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Agricole'
     WHEN (LEFT(us21,5) = 'US1.2' AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) 
-      OR (LEFT(us21,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs21,3) = 'CS4') THEN 'F'
+      OR (LEFT(us21,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs21,3) = 'CS4') THEN 'Forêt'
     WHEN (LEFT(us21,7) IN ('US2.1.1','US2.1.2','US2.1.4','US2.2.0') 
       OR LEFT(us21,5) = 'US3.1'
       OR LEFT(us21,7) IN ('US3.2.2','US3.2.3','US3.2.4','US3.2.5')
       OR (LEFT(us21,7) = 'US3.2.1' AND LEFT(cs21,3) = 'CS1')
       OR LEFT(us21,7) = 'US6.2.1')
-      AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Ue'
-    WHEN LEFT(us21,3) = 'US5' AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Uh'
+      AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Activité'
+    WHEN LEFT(us21,3) = 'US5' AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Habitat'
     WHEN (LEFT(us21,3) = 'US4' AND LEFT(cs21,3) IN ('CS1','CS2','CS4','CS5','CS6')) 
-      OR (LEFT(us21,3) = 'US4' AND LEFT(cs21,7) IN ('CS3.1.1')) THEN 'Ui'
+      OR (LEFT(us21,3) = 'US4' AND LEFT(cs21,7) IN ('CS3.1.1')) THEN 'Infrastructure'
     WHEN (LEFT(us21,7) IN ('US6.1.1','US6.2.2') AND NOT LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2'))
-      OR (LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Ua'
+      OR (LEFT(us21,7) = 'US7.0.0' AND LEFT(cs21,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Urbanisé autre'
     WHEN LEFT(us21,7) IN ('US1.3.1','US1.3.2','US6.1.2')
       OR (LEFT(us21,7) = 'US3.2.1' AND LEFT(cs21,3) IN ('CS2','CS3','CS4','CS5','CS6'))
       OR (LEFT(us21,7) = 'US4.4.0' AND LEFT(cs21,7) = 'CS3.1.1')
       OR (LEFT(us21,7) = 'US6.2.3' AND LEFT(cs21,3) IN ('CS1','CS2','CS3','CS5','CS6'))
       OR (LEFT(us21,7) = 'US7.0.0' AND (LEFT(cs21,7) = 'CS1.2.1' OR LEFT(cs21,3) IN ('CS2','CS3','CS5','CS6')))
-      OR LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'N'
+      OR LEFT(cs21,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Naturel'
     ELSE 'XX' -- Contrôle en cas de non association
   END AS enaf_2021,
   CASE
@@ -671,37 +671,37 @@ CREATE MATERIALIZED VIEW ocs2d.ocs2d_enaf_2005_2010_2015_2021 AS
   --------------------------------
   CASE
     -- Ventilation selon la localisation par rapport à l'enveloppe urbaine
-    WHEN ((LEFT(us15, 5) = 'US1.1' AND LEFT(cs15, 5) = 'CS1.1') OR (LEFT(us15, 7) = 'US1.1.7' AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us15, 7) = 'US1.4.0' AND LEFT(ocs.cs15, 5) = 'CS1.1')) AND ba_2015.contexte IS TRUE THEN 'Ue'
-    WHEN ((LEFT(us15, 5) = 'US1.1' AND LEFT(cs15, 5) = 'CS1.1') OR (LEFT(us15, 7) = 'US1.1.7' AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us15, 7) = 'US1.4.0' AND LEFT(ocs.cs15, 5) = 'CS1.1')) AND ba_2015.contexte IS FALSE THEN 'A'
+    WHEN ((LEFT(us15, 5) = 'US1.1' AND LEFT(cs15, 5) = 'CS1.1') OR (LEFT(us15, 7) = 'US1.1.7' AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us15, 7) = 'US1.4.0' AND LEFT(ocs.cs15, 5) = 'CS1.1')) AND ba_2015.contexte IS TRUE THEN 'Activité'
+    WHEN ((LEFT(us15, 5) = 'US1.1' AND LEFT(cs15, 5) = 'CS1.1') OR (LEFT(us15, 7) = 'US1.1.7' AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us15, 7) = 'US1.4.0' AND LEFT(ocs.cs15, 5) = 'CS1.1')) AND ba_2015.contexte IS FALSE THEN 'Agricole'
     -- Ventilation selon la nomenclature en 4 postes
-    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 1 THEN 'Ua'
-    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 2 THEN 'A'
-    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 3 THEN 'N'
-    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 4 THEN 'Ui'
+    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 1 THEN 'Urbanisé autre'
+    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 2 THEN 'Agricole'
+    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 3 THEN 'Naturel'
+    WHEN LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_15 = 4 THEN 'Infrastructure'
     -- Ventilation selon matrice sans pondération 4 postes ou enveloppe urbaine 
     WHEN (LEFT(us15,5) = 'US1.1' 
       OR LEFT(us15,5) = 'US1.4' 
       OR LEFT(us15,7) IN ('US2.1.3','US2.1.5')) 
-      AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'A'
+      AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Agricole'
     WHEN (LEFT(us15,5) = 'US1.2' AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) 
-      OR (LEFT(us15,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs15,3) = 'CS4') THEN 'F'
+      OR (LEFT(us15,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs15,3) = 'CS4') THEN 'Forêt'
     WHEN (LEFT(us15,7) IN ('US2.1.1','US2.1.2','US2.1.4','US2.2.0') 
       OR LEFT(us15,5) = 'US3.1'
       OR LEFT(us15,7) IN ('US3.2.2','US3.2.3','US3.2.4','US3.2.5')
       OR (LEFT(us15,7) = 'US3.2.1' AND LEFT(cs15,3) = 'CS1')
       OR LEFT(us15,7) = 'US6.2.1')
-      AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Ue'
-    WHEN LEFT(us15,3) = 'US5' AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Uh'
+      AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Activité'
+    WHEN LEFT(us15,3) = 'US5' AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Habitat'
     WHEN (LEFT(us15,3) = 'US4' AND LEFT(cs15,3) IN ('CS1','CS2','CS4','CS5','CS6')) 
-      OR (LEFT(us15,3) = 'US4' AND LEFT(cs15,7) IN ('CS3.1.1')) THEN 'Ui'
+      OR (LEFT(us15,3) = 'US4' AND LEFT(cs15,7) IN ('CS3.1.1')) THEN 'Infrastructure'
     WHEN (LEFT(us15,7) IN ('US6.1.1','US6.2.2') AND NOT LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2'))
-      OR (LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Ua'
+      OR (LEFT(us15,7) = 'US7.0.0' AND LEFT(cs15,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Urbanisé autre'
     WHEN LEFT(us15,7) IN ('US1.3.1','US1.3.2','US6.1.2')
       OR (LEFT(us15,7) = 'US3.2.1' AND LEFT(cs15,3) IN ('CS2','CS3','CS4','CS5','CS6'))
       OR (LEFT(us15,7) = 'US4.4.0' AND LEFT(cs15,7) = 'CS3.1.1')
       OR (LEFT(us15,7) = 'US6.2.3' AND LEFT(cs15,3) IN ('CS1','CS2','CS3','CS5','CS6'))
       OR (LEFT(us15,7) = 'US7.0.0' AND (LEFT(cs15,7) = 'CS1.2.1' OR LEFT(cs15,3) IN ('CS2','CS3','CS5','CS6')))
-      OR LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'N'
+      OR LEFT(cs15,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Naturel'
     ELSE 'XX' -- Contrôle en cas de non association
   END AS enaf_2015,
   CASE
@@ -745,37 +745,37 @@ CREATE MATERIALIZED VIEW ocs2d.ocs2d_enaf_2005_2010_2015_2021 AS
   --------------------------------
   CASE
     -- Ventilation selon la localisation par rapport à l'enveloppe urbaine
-    WHEN ((LEFT(us10, 5) = 'US1.1' AND LEFT(cs10, 5) = 'CS1.1') OR (LEFT(us10, 7) = 'US1.1.7' AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us10, 7) = 'US1.4.0' AND LEFT(ocs.cs10, 5) = 'CS1.1'))  AND ba_2010.contexte IS TRUE THEN 'Ue'
-    WHEN ((LEFT(us10, 5) = 'US1.1' AND LEFT(cs10, 5) = 'CS1.1') OR (LEFT(us10, 7) = 'US1.1.7' AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us10, 7) = 'US1.4.0' AND LEFT(ocs.cs10, 5) = 'CS1.1'))  AND ba_2010.contexte IS FALSE THEN 'A'
+    WHEN ((LEFT(us10, 5) = 'US1.1' AND LEFT(cs10, 5) = 'CS1.1') OR (LEFT(us10, 7) = 'US1.1.7' AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us10, 7) = 'US1.4.0' AND LEFT(ocs.cs10, 5) = 'CS1.1'))  AND ba_2010.contexte IS TRUE THEN 'Activité'
+    WHEN ((LEFT(us10, 5) = 'US1.1' AND LEFT(cs10, 5) = 'CS1.1') OR (LEFT(us10, 7) = 'US1.1.7' AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us10, 7) = 'US1.4.0' AND LEFT(ocs.cs10, 5) = 'CS1.1'))  AND ba_2010.contexte IS FALSE THEN 'Agricole'
     -- Ventilation selon la nomenclature en 4 postes /!\ Attention faux pour ce millésime / Besoin d'un recalcul de la donnée source /!\
-    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 1 THEN 'Ua'
-    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 2 THEN 'A'
-    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 3 THEN 'N'
-    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 4 THEN 'Ui'
+    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 1 THEN 'Urbanisé autre'
+    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 2 THEN 'Agricole'
+    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 3 THEN 'Naturel'
+    WHEN LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_10 = 4 THEN 'Infrastructure'
     -- Ventilation selon matrice sans pondération 4 postes ou enveloppe urbaine 
     WHEN (LEFT(us10,5) = 'US1.1' 
       OR LEFT(us10,5) = 'US1.4' 
       OR LEFT(us10,7) IN ('US2.1.3','US2.1.5')) 
-      AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'A'
+      AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Agricole'
     WHEN (LEFT(us10,5) = 'US1.2' AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) 
-      OR (LEFT(us10,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs10,3) = 'CS4') THEN 'F'
+      OR (LEFT(us10,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs10,3) = 'CS4') THEN 'Forêt'
     WHEN (LEFT(us10,7) IN ('US2.1.1','US2.1.2','US2.1.4','US2.2.0') 
       OR LEFT(us10,5) = 'US3.1'
       OR LEFT(us10,7) IN ('US3.2.2','US3.2.3','US3.2.4','US3.2.5')
       OR (LEFT(us10,7) = 'US3.2.1' AND LEFT(cs10,3) = 'CS1')
       OR LEFT(us10,7) = 'US6.2.1')
-      AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Ue'
-    WHEN LEFT(us10,3) = 'US5' AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Uh'
+      AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Activité'
+    WHEN LEFT(us10,3) = 'US5' AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Habitat'
     WHEN (LEFT(us10,3) = 'US4' AND LEFT(cs10,3) IN ('CS1','CS2','CS4','CS5','CS6')) 
-      OR (LEFT(us10,3) = 'US4' AND LEFT(cs10,7) IN ('CS3.1.1')) THEN 'Ui'
+      OR (LEFT(us10,3) = 'US4' AND LEFT(cs10,7) IN ('CS3.1.1')) THEN 'Infrastructure'
     WHEN (LEFT(us10,7) IN ('US6.1.1','US6.2.2') AND NOT LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2'))
-      OR (LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Ua'
+      OR (LEFT(us10,7) = 'US7.0.0' AND LEFT(cs10,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Urbanisé autre'
     WHEN LEFT(us10,7) IN ('US1.3.1','US1.3.2','US6.1.2')
       OR (LEFT(us10,7) = 'US3.2.1' AND LEFT(cs10,3) IN ('CS2','CS3','CS4','CS5','CS6'))
       OR (LEFT(us10,7) = 'US4.4.0' AND LEFT(cs10,7) = 'CS3.1.1')
       OR (LEFT(us10,7) = 'US6.2.3' AND LEFT(cs10,3) IN ('CS1','CS2','CS3','CS5','CS6'))
       OR (LEFT(us10,7) = 'US7.0.0' AND (LEFT(cs10,7) = 'CS1.2.1' OR LEFT(cs10,3) IN ('CS2','CS3','CS5','CS6')))
-      OR LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'N'
+      OR LEFT(cs10,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Naturel'
     ELSE 'XX' -- Contrôle en cas de non association
   END AS enaf_2010,
   CASE
@@ -819,37 +819,37 @@ CREATE MATERIALIZED VIEW ocs2d.ocs2d_enaf_2005_2010_2015_2021 AS
   --------------------------------
   CASE
     -- Ventilation selon la localisation par rapport à l'enveloppe urbaine
-    WHEN ((LEFT(us05, 5) = 'US1.1' AND LEFT(cs05, 5) = 'CS1.1') OR (LEFT(us05, 7) = 'US1.1.7' AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us05, 7) = 'US1.4.0' AND LEFT(ocs.cs05, 5) = 'CS1.1')) AND ba_2005.contexte IS TRUE THEN 'Ue'
-    WHEN ((LEFT(us05, 5) = 'US1.1' AND LEFT(cs05, 5) = 'CS1.1') OR (LEFT(us05, 7) = 'US1.1.7' AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us05, 7) = 'US1.4.0' AND LEFT(ocs.cs05, 5) = 'CS1.1')) AND ba_2005.contexte IS FALSE THEN 'A'
+    WHEN ((LEFT(us05, 5) = 'US1.1' AND LEFT(cs05, 5) = 'CS1.1') OR (LEFT(us05, 7) = 'US1.1.7' AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us05, 7) = 'US1.4.0' AND LEFT(ocs.cs05, 5) = 'CS1.1')) AND ba_2005.contexte IS TRUE THEN 'Activité'
+    WHEN ((LEFT(us05, 5) = 'US1.1' AND LEFT(cs05, 5) = 'CS1.1') OR (LEFT(us05, 7) = 'US1.1.7' AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) OR (LEFT(ocs.us05, 7) = 'US1.4.0' AND LEFT(ocs.cs05, 5) = 'CS1.1')) AND ba_2005.contexte IS FALSE THEN 'Agricole'
     -- Ventilation selon la nomenclature en 4 postes
-    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 1 THEN 'Ua'
-    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 2 THEN 'A'
-    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 3 THEN 'N'
-    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 4 THEN 'Ui'
+    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 1 THEN 'Urbanisé autre'
+    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 2 THEN 'Agricole'
+    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 3 THEN 'Naturel'
+    WHEN LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.2.1','CS5.1.1','CS6.6.0') AND p4_05 = 4 THEN 'Infrastructure'
     -- Ventilation selon matrice sans pondération 4 postes ou enveloppe urbaine 
     WHEN (LEFT(us05,5) = 'US1.1' 
       OR LEFT(us05,5) = 'US1.4' 
       OR LEFT(us05,7) IN ('US2.1.3','US2.1.5')) 
-      AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'A'
+      AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Agricole'
     WHEN (LEFT(us05,5) = 'US1.2' AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2')) 
-      OR (LEFT(us05,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs05,3) = 'CS4') THEN 'F'
+      OR (LEFT(us05,7) IN ('US6.2.3','US7.0.0') AND LEFT(cs05,3) = 'CS4') THEN 'Forêt'
     WHEN (LEFT(us05,7) IN ('US2.1.1','US2.1.2','US2.1.4','US2.2.0') 
       OR LEFT(us05,5) = 'US3.1'
       OR LEFT(us05,7) IN ('US3.2.2','US3.2.3','US3.2.4','US3.2.5')
       OR (LEFT(us05,7) = 'US3.2.1' AND LEFT(cs05,3) = 'CS1')
       OR LEFT(us05,7) = 'US6.2.1')
-      AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Ue'
-    WHEN LEFT(us05,3) = 'US5' AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Uh'
+      AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Activité'
+    WHEN LEFT(us05,3) = 'US5' AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Habitat'
     WHEN (LEFT(us05,3) = 'US4' AND LEFT(cs05,3) IN ('CS1','CS2','CS4','CS5','CS6')) 
-      OR (LEFT(us05,3) = 'US4' AND LEFT(cs05,7) IN ('CS3.1.1')) THEN 'Ui'
+      OR (LEFT(us05,3) = 'US4' AND LEFT(cs05,7) IN ('CS3.1.1')) THEN 'Infrastructure'
     WHEN (LEFT(us05,7) IN ('US6.1.1','US6.2.2') AND NOT LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2'))
-      OR (LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Ua'
+      OR (LEFT(us05,7) = 'US7.0.0' AND LEFT(cs05,7) IN ('CS1.1.1','CS1.1.2','CS1.2.2')) THEN 'Urbanisé autre'
     WHEN LEFT(us05,7) IN ('US1.3.1','US1.3.2','US6.1.2')
       OR (LEFT(us05,7) = 'US3.2.1' AND LEFT(cs05,3) IN ('CS2','CS3','CS4','CS5','CS6'))
       OR (LEFT(us05,7) = 'US4.4.0' AND LEFT(cs05,7) = 'CS3.1.1')
       OR (LEFT(us05,7) = 'US6.2.3' AND LEFT(cs05,3) IN ('CS1','CS2','CS3','CS5','CS6'))
       OR (LEFT(us05,7) = 'US7.0.0' AND (LEFT(cs05,7) = 'CS1.2.1' OR LEFT(cs05,3) IN ('CS2','CS3','CS5','CS6')))
-      OR LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'N'
+      OR LEFT(cs05,7) IN ('CS3.1.2','CS3.2.1','CS3.2.2') THEN 'Naturel'
     ELSE 'XX' -- Contrôle en cas de non association
   END AS enaf_2005,
   CASE
@@ -906,9 +906,9 @@ CREATE MATERIALIZED VIEW ocs2d.ocs2d_enaf_2005_2010_2015_2021 AS
   ST_Area(ocs.geom) AS surf_m2,
   ocs.geom::geometry(Polygon,2154) AS geom
 FROM
-  ocs2d.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
-LEFT JOIN bati_agricole_2021 AS ba_2021 ON ocs.gid = ba_2021.gid -- sélection des infrastructures agricoles 2021
-LEFT JOIN bati_agricole_2015 AS ba_2015 ON ocs.gid = ba_2015.gid -- sélection des infrastructures agricoles 2015
-LEFT JOIN bati_agricole_2010 AS ba_2010 ON ocs.gid = ba_2010.gid -- sélection des infrastructures agricoles 2010
-LEFT JOIN bati_agricole_2005 AS ba_2005 ON ocs.gid = ba_2005.gid -- sélection des infrastructures agricoles 2005
+  ocs2d_2021.ocs2d_hdf_2005_2010_2015_2021 AS ocs 
+LEFT JOIN bati_agricole_2021 AS ba_2021 ON ocs.fid = ba_2021.fid -- sélection des infrastructures agricoles 2021
+LEFT JOIN bati_agricole_2015 AS ba_2015 ON ocs.fid = ba_2015.fid -- sélection des infrastructures agricoles 2015
+LEFT JOIN bati_agricole_2010 AS ba_2010 ON ocs.fid = ba_2010.fid -- sélection des infrastructures agricoles 2010
+LEFT JOIN bati_agricole_2005 AS ba_2005 ON ocs.fid = ba_2005.fid -- sélection des infrastructures agricoles 2005
 ;

@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Cette méthode concerne le protocole CQP utilisé pour le millésime OCS2D 2021.
+
 # Contrôle Qualité Partenarial (CQP) de l'OCS2d avec QGIS
 
 ![Logo_Geo2France](./img/geo2france_alt.png)
@@ -12,22 +15,8 @@ En complément, trois documents essentiels sont à consulter :
 
 ## Prérequis
 
-- QGIS version LTR [3.28] ou supérieure
-- Une connexion Internet (les fonds de plan sont des flux OGC)
-
-## Ressources en ligne
-
-- Télécharger l'intégralité du dépôt <https://github.com/geo2france/ocs2d/> via le bouton **Code** > Download ZIP
-![Telechargement_Depot](./img/github_1.png)
-- Télécharger la zone test à vérifier depuis le répertoire **Sources** via Pydio sur Geo2France accessible depuis : <https://www.geo2france.fr/files/ws--28/Nord/Sources>
-![Pydio](./img/pydio_1.gif)
-
-> :information_source: **Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France** :information_source:
-
-## Indexer des couches téléchargeables
-
-Référencer les fichiers téléchargés dans le tableau en ligne ci-dessous et n'oubliez pas de mettre à jour le champ **Etat** (liste déroulante)
-[Index_Couches_Nord](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?pli=1#gid=199319142)
+- QGIS version LTR [3.40] ou supérieure
+- Une connexion Internet (les fonds de plan sont des flux OGC ou en COG)
 
 ## Utilisation de QGIS
 
@@ -101,43 +90,6 @@ Une fois le formulaire validé (le contour du polygone changera de couleur), se 
 #### Demo
 
 ![Demo CQP](./img/demo_cqp_1.gif)
-
-----
-
-### CQP terminé
-
-Le contrôle est terminé lorsque l'ensemble des polygones des différentes couches (GPKG) ont été vérifiés. Vous ne devez plus avoir de symbole :warning: visible sur la carte (ou de polygone avec un contour blanc).
-
-Une fois la phase de contrôle terminée :
-
-1. Renvoyer les GPKG sur Pydio/Geo2France dans le dossier **CQ_Finalise** : <https://www.geo2france.fr/files/ws--28/Nord/CQ_Finalise>
-
-> :information_source: Vous devez être membre du CoTech OCS2d et connecté sur le portail Geo2France :information_source:
-
-> :warning: **S'assurer que la couche au format GPKG n'est plus ouverte dans QGIS avant upload sur Pydio (en cas de doute, fermer QGIS). Lorsqu'ils sont ouverts, les GPKG créés 2 fichiers de verrouillage (`*.gpgk-shm` et `*.gpkg-wal`) qui pourraient empêcher le CQE de vérifier correctement les différentes couches**
-
-2. Mettre à jour le champ **Etat** du fichier [Index_Couches_Nord](https://docs.google.com/spreadsheets/d/141QZYF7PUW_Cr1RG6Ragm9nKG9eFurMOu5JM8RGYMDk/edit?pli=1#gid=199319142)
-
-### Comment signaler des erreurs manifestes hors tirage du CQE ?
-
-Ne pas ajouter d'objets directement sur les couches de tirage du CQE.
-Il conviendra d'ajouter une couche complémentaire de type point dans le GeoPackage.
-
-**Menu _Couche_**: _Créer une nouvelle couche_ > _Nouvelle couche GeoPackage_
-
-- Sélectionner le GPKG existant d'une zone test dans laquelle vous voulez ajouter un signalement (hors tirage CQE)
-- Sélectionner type de Point, EPSG:2154
-- Ajouter les champs utiles (à minima champ commentaire)
-
-![gpkg_1](https://raw.githubusercontent.com/geo2france/ocs2d/main/documentation/img/creation_couche_gpkg_1.png)
-
-- Lors de l'affichage de cet avertissement, choisir d'_ajouter une nouvelle couche_
-
-![gpkg_2](https://raw.githubusercontent.com/geo2france/ocs2d/main/documentation/img/creation_couche_gpkg_2.png)
-
-La base GeoPackage contient maintenant une couche de signalement en plus du tirage CQE.
-
-![gpkg_3](https://raw.githubusercontent.com/geo2france/ocs2d/main/documentation/img/creation_couche_gpkg_3.png)
 
 ---
 
