@@ -67,13 +67,79 @@ Avant de signaler une erreur, assurez vous de vous être référé aux seuils et
 
 ### Avec QGIS (recommandé)
 
-- Charger le projet type `model_maintenance_ocs2d.qgz` disponible dans le dossier `/maintenance`.
-- Sélectionner la couche `Signalement d'erreurs manifestes` et activez l'outil d'édition.
-- Cliquer sur le bouton `Ajouter un objet` et localiser le point
+Deux projets QGIS pré configurés sont disponibles dans le dossier `/maintenance/QGIS` :
 
+| Projet | Compatibilité | Usage |
+|--------|---------------|-------|
+| `model_maintenance_ocs2d.qgz` | QGIS LTR 3.44+ | Version courante |
+| `model_maintenance_oc2d_legacy.qgz` | QGIS 3.40 (ancienne LTR) | Version legacy |
 
-> [!NOTE]
-> Vous pouvez charger le GPKG dans votre propre projet QGIS. Le style et le formulaire sont préconfigurés.
+#### Méthode de signalement
+
+1. **Choisir le projet adapté** à votre version de QGIS et ouvrir le fichier `.qgz`
+2. **Sélectionner la couche** `ocs2d_2024_maintenance` dans le panneau des couches
+3. **Activer l'outil d'édition** (touche `E` ou icône crayon)
+4. **Cliquer sur `Ajouter un objet`** et localiser le point de l'erreur sur la carte
+5. **Remplir le formulaire** qui s'affiche automatiquement (voir ci-dessous)
+6. **Sauvegarder les modifications** et désactiver l'édition
+7. **Verser le GeoPackage** dans le dépôt collaboratif via le portail Geo2France : <https://www.geo2france.fr/portal/s/5/documents?folderId=0165aa00ac12001116c69efee21ad603>
+
+### Mode de fonctionnement du formulaire GPKG
+
+Le GeoPackage `ocs2d_2024_maintenance.gpkg` intègre un formulaire de saisie pré configuré organisé en deux onglets :
+
+#### Onglet 1 : Déclarer une erreur manifeste
+
+| Champ | Type | Description |
+|-------|------|-------------|
+| `etat_cqp` | Liste déroulante | Choix du type d'erreur (couvert ou usage) |
+| `cs24` | Liste déroulante | Code couvert sol OCS2d existant |
+| `us24` | Liste déroulante | Code usage sol OCS2d existant |
+| `erreur_geo` | Case à cocher | Cocher si l'erreur est géométrique |
+| `code_rempl` | Liste déroulante | Code de remplacement |
+| `com_cqp` | Texte | Commentaire |
+| `data_exo` | Booléen | Donnée exogène mobilisée |
+
+#### Onglet 2 : Espace réservé au CQE (Contrôle Qualité Externe)
+
+| Champ | Type | Description |
+|-------|------|-------------|
+| `geometrie` | Géométrie | Erreur géométrique |
+| `thematique` | Texte | Erreur thématique |
+| `code1` | Texte | Code de remplacement approuvé par le CQE (si différent) |
+| `com_cqe` | Texte | Commentaire du contrôle qualité externe |
+| `type` | Texte | Typologie du point d'erreur |
+
+#### Champs non éditables
+
+Certains champs sont gérés automatiquement et ne doivent pas être modifiés :
+
+- `fid` : identifiant technique auto-incrémenté
+- `surf_m2` : surface en mètres carrés (non applicable pour les points)
+- `libelle_no` : libellé sans accent
+
+> [!WARNING]
+> Un point d'erreur par dimension, s'il faut corriger à la fois le code couvert sol et le code usage sol, il faut créer deux points d'erreur distincts (cote à cote).
+
+> [!TIP]
+> Les listes déroulantes pour `cs24` et `us24` sont alimentées par le fichier `list_ocs2d_maintenance.csv` et contiennent toutes les valeurs valides de la nomenclature OCS2d.
+
+### Alternative : chargement dans un projet existant
+
+Vous pouvez charger le GPKG `ocs2d_2024_maintenance.gpkg` dans votre propre projet QGIS. Le style et le formulaire sont préconfigurés.
+
+### Consultation des erreurs signalées
+
+Après vérification par le contrôle qualité, les différents éléments seront publiés dans l'application cartographique : <https://www.geo2france.fr/mviewer/?config=apps/geo2france/ocs2d_maintenance.xml#>
+
+```bash
+# Structure du dossier maintenance/QGIS
+maintenance/QGIS/
+├── ocs2d_2024_maintenance.gpkg    # GeoPackage avec couche et formulaire
+├── model_maintenance_ocs2d.qgz    # Projet QGIS LTR 3.44+
+├── model_maintenance_oc2d_legacy.qgz  # Projet legacy (QGIS < 3.44)
+└── list_ocs2d_maintenance.csv     # Liste des codes CS/US valides
+```
 
 ### Sémiologie graphique OCS2d
 
