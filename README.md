@@ -65,15 +65,15 @@ Avant de signaler une erreur, assurez vous de vous être référé aux seuils et
 
 **Chaque signalement sera passé en revue par le contrôle qualité pour valider ou non la prise en compte du signalement**
 
-### Avec GeoContrib (recommandé)
+### Avec QGIS (recommandé)
 
-**Assurez-vous d'être connecté au portail Geo2France et d'être membre du comité technique OCS2d.**
-Dans le cas contraire, vous pourrez consulter les signalements sans pouvoir en ajouter de nouveaux.
-Rendez-vous sur le projet de maintenance OCS2d via GeoContrib : <https://www.geo2france.fr/geocontrib/projet/40-maintenance-ocs2d>
+- Charger le projet type `model_maintenance_ocs2d.qgz` disponible dans le dossier `/maintenance`.
+- Sélectionner la couche `Signalement d'erreurs manifestes` et activez l'outil d'édition.
+- Cliquer sur le bouton `Ajouter un objet` et localiser le point
 
-- Ne rien indiquer dans le `Nom` ou la `Description` et se concentrer uniquement que les informations de la partie **Données Métier**
-- Toutes les valeurs sont bien présentes pour `Code CS de remplacement` et `Code US de remplacement`. Seuls les 10 premiers éléments s'affichent par défaut. Saisissez dans le champs une partie du libellé ou du code pour afficher les valeurs possibles.
-- Les champs `Pris en compte` et `Version` sont réservés au prestataire, merci de les laisser en l'état.
+
+> [!NOTE]
+> Vous pouvez charger le GPKG dans votre propre projet QGIS. Le style et le formulaire sont préconfigurés.
 
 ### Sémiologie graphique OCS2d
 
