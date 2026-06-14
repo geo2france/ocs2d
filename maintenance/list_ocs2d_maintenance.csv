@@ -1,0 +1,87 @@
+TYPE;CODE;LIBELLE_NOACCENT
+cs;CS1.1.1;CS1.1.1 Surfaces baties
+cs;CS1.1.2;CS1.1.2 Surfaces non baties
+cs;CS1.2.1;CS1.2.1 Surfaces a materiaux mineraux - pierre - terre
+cs;CS1.2.2;CS1.2.2 Surfaces composees d autres materiaux
+cs;CS2.1.1;CS2.1.1 Plage de sable
+cs;CS2.1.2;CS2.1.2 Dunes
+cs;CS2.1.3;CS2.1.3 Vasieres et alluvions sableux
+cs;CS2.2.1;CS2.2.1 Plages de galets et alluvions grossiers
+cs;CS2.2.2;CS2.2.2 Cotes rocheuses et falaises
+cs;CS3.1.1;CS3.1.1 Plans d eau
+cs;CS3.1.2;CS3.1.2 Cours d eau
+cs;CS3.2.1;CS3.2.1 Zone subtidale saumatre
+cs;CS3.2.2;CS3.2.2 Mer
+cs;CS4.1.1;CS4.1.1 Feuillus sur dunes
+cs;CS4.1.2;CS4.1.2 Feuillus
+cs;CS4.1.3;CS4.1.3 Boisements humides
+cs;CS4.2.1;CS4.2.1 Coniferes sur dunes
+cs;CS4.2.2;CS4.2.2 Coniferes
+cs;CS4.3.1;CS4.3.1 Peuplements mixtes sur dunes
+cs;CS4.3.2;CS4.3.2 Peuplements mixtes ou indetermines
+cs;CS4.4.0;CS4.4.0 Vergers
+cs;CS5.1.1;CS5.1.1 Landes - fourres - broussailles
+cs;CS5.1.2;CS5.1.2 Landes et fourres humides
+cs;CS5.1.3;CS5.1.3 Vegetations arbustives sur dunes
+cs;CS5.2.0;CS5.2.0 Vignes
+cs;CS6.1.1;CS6.1.1 Prairies mesophiles
+cs;CS6.1.2;CS6.1.2 Prairies humides
+cs;CS6.2.0;CS6.2.0 Pelouses naturelles
+cs;CS6.3.0;CS6.3.0 Terres arables
+cs;CS6.4.1;CS6.4.1 Formations herbacees humides continentales
+cs;CS6.4.2;CS6.4.2 Formations herbacees humides maritimes
+cs;CS6.5.0;CS6.5.0 Formations herbacees sur dunes
+cs;CS6.6.0;CS6.6.0 Autres couverts a dominante herbacee
+us;US1.1.1;US1.1.1 Prairies
+us;US1.1.2;US1.1.2 Bandes enherbees
+us;US1.1.3;US1.1.3 Cultures annuelles
+us;US1.1.4;US1.1.4 Horticulture - pepinieres
+us;US1.1.5;US1.1.5 Cultures permanentes
+us;US1.1.6;US1.1.6 Autoconsommation
+us;US1.1.7;US1.1.7 Infrastructures agricoles
+us;US1.2.1;US1.2.1 Zones de coupes
+us;US1.2.2;US1.2.2 Peupleraies
+us;US1.2.3;US1.2.3 Plantations recentes
+us;US1.2.4;US1.2.4 Autres plantations
+us;US1.3.1;US1.3.1 Extraction de materiaux en exploitation
+us;US1.3.2;US1.3.2 Terrils en exploitation
+us;US1.4.0;US1.4.0 Aquaculture - pisciculture
+us;US2.1.1;US2.1.1 Zones industrielles et activites economiques
+us;US2.1.2;US2.1.2 Zone de stockage ou production d energie fossile
+us;US2.1.3;US2.1.3 Zone de stockage ou production de biogaz
+us;US2.1.4;US2.1.4 Zone de production d energie solaire
+us;US2.1.5;US2.1.5 Zone de production eolienne
+us;US2.2.0;US2.2.0 Zones commerciales
+us;US3.1.1;US3.1.1 Emprises scolaires - universitaires
+us;US3.1.2;US3.1.2 Emprises hospitalieres
+us;US3.1.3;US3.1.3 Cimetieres et lieux de culte
+us;US3.1.4;US3.1.4 Parkings et places
+us;US3.1.5;US3.1.5 Dechetteries et decharges publiques
+us;US3.1.6;US3.1.6 Autres emprises collectives
+us;US3.2.1;US3.2.1 Parcs et espaces verts paysagers
+us;US3.2.2;US3.2.2 Complexes sportifs et terrains de sports
+us;US3.2.3;US3.2.3 Golfs
+us;US3.2.4;US3.2.4 Campings
+us;US3.2.5;US3.2.5 Complexes culturels et zones de loisirs
+us;US4.1.1;US4.1.1 Routier principal
+us;US4.1.2;US4.1.2 Routier secondaire
+us;US4.2.1;US4.2.1 Ferre principal
+us;US4.2.2;US4.2.2 Ferre secondaire
+us;US4.3.0;US4.3.0 Aerien
+us;US4.4.0;US4.4.0 Fluvial et maritime
+us;US4.5.0;US4.5.0 Espaces associes aux reseaux de transport
+us;US5.1.1;US5.1.1 Habitat continu fortement compact
+us;US5.1.2;US5.1.2 Habitat continu moyennement compact
+us;US5.1.3;US5.1.3 Habitat continu faiblement compact
+us;US5.2.1;US5.2.1 Habitat discontinu fortement compact
+us;US5.2.2;US5.2.2 Habitat discontinu moyennement compact
+us;US5.2.3;US5.2.3 Habitat discontinu faiblement compact
+us;US5.3.1;US5.3.1 Grands ensembles collectifs
+us;US5.3.2;US5.3.2 Collectifs
+us;US5.4.0;US5.4.0 Habitat isole
+us;US6.1.1;US6.1.1 Chantiers
+us;US6.1.2;US6.1.2 Extraction de materiaux en mutation
+us;US6.2.1;US6.2.1 Friches economiques
+us;US6.2.2;US6.2.2 Vacants urbains
+us;US6.2.3;US6.2.3 Espaces agricoles non exploites
+us;US7.0.0;US7.0.0 Usages indetermines
