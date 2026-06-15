@@ -82,7 +82,7 @@ Deux projets QGIS pré configurés sont disponibles dans le dossier `/maintenanc
 4. **Cliquer sur `Ajouter un objet`** et localiser le point de l'erreur sur la carte
 5. **Remplir le formulaire** qui s'affiche automatiquement (voir ci-dessous)
 6. **Sauvegarder les modifications** et désactiver l'édition
-7. **Verser le GeoPackage** dans le dépôt collaboratif via le portail Geo2France : <https://www.geo2france.fr/portal/s/5/documents?folderId=0165aa00ac12001116c69efee21ad603>
+7. **Verser le GeoPackage** dans le dossier _Maintenance_ du dépôt collaboratif via le portail Geo2France : <https://www.geo2france.fr/portal/s/5/documents?folderId=0165aa00ac12001116c69efee21ad603>
 
 ### Mode de fonctionnement du formulaire GPKG
 
@@ -96,7 +96,7 @@ Le GeoPackage `ocs2d_2024_maintenance.gpkg` intègre un formulaire de saisie pr�
 | `cs24` | Liste déroulante | Code couvert sol OCS2d existant |
 | `us24` | Liste déroulante | Code usage sol OCS2d existant |
 | `erreur_geo` | Case à cocher | Cocher si l'erreur est géométrique |
-| `code_rempl` | Liste déroulante | Code de remplacement |
+| `code_rempl` | Liste déroulante | Code de remplacement proposé |
 | `com_cqp` | Texte | Commentaire |
 | `data_exo` | Booléen | Donnée exogène mobilisée |
 
@@ -119,7 +119,7 @@ Certains champs sont gérés automatiquement et ne doivent pas être modifiés :
 - `libelle_no` : libellé sans accent
 
 > [!WARNING]
-> Un point d'erreur par dimension, s'il faut corriger à la fois le code couvert sol et le code usage sol, il faut créer deux points d'erreur distincts (cote à cote).
+> **Un point d'erreur par dimension**, s'il faut corriger à la fois le code couvert sol et le code usage sol, il faut créer deux points d'erreur distincts (cote à cote).
 
 > [!TIP]
 > Les listes déroulantes pour `cs24` et `us24` sont alimentées par le fichier `list_ocs2d_maintenance.csv` et contiennent toutes les valeurs valides de la nomenclature OCS2d.
