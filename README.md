@@ -92,11 +92,12 @@ Le GeoPackage `ocs2d_2024_maintenance.gpkg` intègre un formulaire de saisie pr�
 
 | Champ | Type | Description |
 |-------|------|-------------|
-| `etat_cqp` | Liste déroulante | Choix du type d'erreur (couvert ou usage) |
+| `etat_cqp` | Liste déroulante | Choix du type d'erreur (couvert ou usage ou photovoltaique) |
 | `cs24` | Liste déroulante | Code couvert sol OCS2d existant |
 | `us24` | Liste déroulante | Code usage sol OCS2d existant |
 | `erreur_geo` | Case à cocher | Cocher si l'erreur est géométrique |
 | `code_rempl` | Liste déroulante | Code de remplacement proposé |
+| `photovolt` | Case à cocher | Cocher si présence (oubli) panneau photovoltaïque |
 | `com_cqp` | Texte | Commentaire |
 | `data_exo` | Booléen | Donnée exogène mobilisée |
 
