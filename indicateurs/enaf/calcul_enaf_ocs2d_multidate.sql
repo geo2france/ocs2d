@@ -629,8 +629,26 @@ CREATE INDEX idx_structure_agricole_2005_geom ON wip.structure_agricole_2005 USI
 -- - enaf_xxxx : code de la matrice ENAF pour le millésime xxxx
 -- - urba_xxxx : code de la matrice ENAF pour le millésime xxxx
 
-DROP TABLE IF EXISTS ocs2d.ocs2d_enaf_2005_2010_2015_2021;
-CREATE TABLE ocs2d.ocs2d_enaf_2005_2010_2015_2021 AS
+DROP TABLE IF EXISTS ocs2d.ocs2d_enaf_2005_2010_2015_2021_2024;
+CREATE TABLE ocs2d.ocs2d_enaf_2005_2010_2015_2021_2024 AS
+
+--- Analyse du bati agricole 2024 ---
+  WITH bati_agricole_2024 AS (
+    SELECT DISTINCT ON (ocs.fid) 
+      ocs.fid,
+      CASE
+        WHEN eu.geom IS NOT NULL THEN TRUE
+        ELSE FALSE
+      END AS contexte,
+      ocs.geom
+      FROM
+        ocs2d.ocs2d_hdf_2005_2010_2015_2021_2024 AS ocs
+    LEFT JOIN wip.structure_agricole_2024 AS sa ON ST_Intersects(sa.geom, ocs.geom)
+    LEFT JOIN wip.ocs2d_enveloppe_urbaine_2021 AS eu ON ST_DWithin(sa.geom, eu.geom, 50) -- On garde les enveloppes 2021 pour la période 2021-2030
+    WHERE
+      (LEFT(ocs.us24, 5) = 'US1.1' AND LEFT(ocs.cs24, 5) = 'CS1.1') OR (LEFT(ocs.us24, 7) = 'US1.1.7' AND NOT LEFT(ocs.cs24, 7) IN ('CS3.1.2', 'CS3.2.1', 'CS3.2.2')) OR (LEFT(ocs.us24, 7) = 'US1.4.0' AND LEFT(ocs.cs24, 5) = 'CS1.1')
+    ORDER BY ocs.fid  
+  ),
 
 --- Analyse du bati agricole 2021 ---
   WITH bati_agricole_2021 AS (
