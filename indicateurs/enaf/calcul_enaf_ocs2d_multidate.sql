@@ -39,11 +39,11 @@ WITH dilatation_enveloppe AS (
     FROM
         ocs2d.ocs2d_hdf_2005_2010_2015_2021_2024 AS ocs 
     WHERE
-        ((LEFT (cs21,5) = 'CS1.1' AND LEFT(us21,3) NOT IN ('US1','US4','US7')) 
-        OR (LEFT(us21,3) IN ('US2','US3','US5')) 
-        OR (LEFT(us21,7) IN ('US6.1.1','US6.2.1','US6.2.2','US6.2.3')) 
-        OR (LEFT(us21,5) IN ('US4.3','US4.4') AND LEFT(cs21,3) != 'CS3')
-        OR (LEFT(us21,5) IN ('US4.1','US4.2') AND LEFT(cs21,7) = 'CS1.1.1'))
+        ((LEFT (cs24,5) = 'CS1.1' AND LEFT(us24,3) NOT IN ('US1','US4','US7')) 
+        OR (LEFT(us24,3) IN ('US2','US3','US5')) 
+        OR (LEFT(us24,7) IN ('US6.1.1','US6.2.1','US6.2.2','US6.2.3')) 
+        OR (LEFT(us24,5) IN ('US4.3','US4.4') AND LEFT(cs24,3) != 'CS3')
+        OR (LEFT(us24,5) IN ('US4.1','US4.2') AND LEFT(cs24,7) = 'CS1.1.1'))
     )
 SELECT
     ROW_NUMBER() OVER ()::integer AS gid,
@@ -651,7 +651,7 @@ CREATE TABLE ocs2d.ocs2d_enaf_2005_2010_2015_2021_2024 AS
   ),
 
 --- Analyse du bati agricole 2021 ---
-  WITH bati_agricole_2021 AS (
+  bati_agricole_2021 AS (
     SELECT DISTINCT ON (ocs.fid) 
       ocs.fid,
       CASE
